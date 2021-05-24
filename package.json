@@ -2,7 +2,14 @@
     "name": "SunSynk-NodeRed",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-cycle": "0.1.4",
+        "node-red-contrib-modbus": "5.14.0",
+        "node-red-contrib-queue-gate": "1.5.3",
+        "node-red-contrib-schedex": "1.10.3",
+        "node-red-contrib-simple-gate": "0.4.0",
+        "node-red-dashboard": "2.29.1"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
