@@ -7927,8 +7927,8 @@
         "z": "ceeb1673.a381f8",
         "name": "Monitoring_Read_In",
         "info": "",
-        "x": 730,
-        "y": 560,
+        "x": 710,
+        "y": 580,
         "wires": []
     },
     {
