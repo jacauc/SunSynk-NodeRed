@@ -10,6 +10,13 @@
         "id": "a110c719.4112f8",
         "type": "tab",
         "label": "Inverter Monitoring",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "6896d5b1.4a006c",
+        "type": "tab",
+        "label": "New Inverter Monitoring",
         "disabled": false,
         "info": ""
     },
@@ -235,7 +242,9 @@
             "2cc3c002.c63f7"
         ],
         "x": 1354,
-        "y": 2419
+        "y": 2419,
+        "w": 1092,
+        "h": 82
     },
     {
         "id": "20834ce6.8d1bf4",
@@ -255,7 +264,9 @@
             "d2de9f2b.669fc"
         ],
         "x": 1354,
-        "y": 2217
+        "y": 2217,
+        "w": 1092,
+        "h": 84
     },
     {
         "id": "1230dd84.dafaa2",
@@ -275,7 +286,9 @@
             "882ebac6.a77068"
         ],
         "x": 1354,
-        "y": 757
+        "y": 757,
+        "w": 1092,
+        "h": 84
     },
     {
         "id": "a517472f.a486d8",
@@ -295,7 +308,9 @@
             "7a392b48.c9e944"
         ],
         "x": 1354,
-        "y": 1159
+        "y": 1159,
+        "w": 1092,
+        "h": 82
     },
     {
         "id": "e627b6a2.1ac7a8",
@@ -315,7 +330,9 @@
             "8476801b.bb2c7"
         ],
         "x": 1354,
-        "y": 139
+        "y": 139,
+        "w": 1052,
+        "h": 82
     },
     {
         "id": "fa75d572.8f94d8",
@@ -335,7 +352,9 @@
             "fa9040ba.01176"
         ],
         "x": 1354,
-        "y": 2019
+        "y": 2019,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "39d5d44b.d59d3c",
@@ -355,7 +374,9 @@
             "6b27d594.93504c"
         ],
         "x": 1354,
-        "y": 359
+        "y": 359,
+        "w": 1092,
+        "h": 82
     },
     {
         "id": "65f91f4d.4d063",
@@ -375,7 +396,9 @@
             "5972b08.5713a5"
         ],
         "x": 1354,
-        "y": 1399
+        "y": 1399,
+        "w": 1112,
+        "h": 82
     },
     {
         "id": "2938c2ea.ff16fe",
@@ -395,7 +418,9 @@
             "946ee36.8eb4b2"
         ],
         "x": 1354,
-        "y": 2519
+        "y": 2519,
+        "w": 1112,
+        "h": 82
     },
     {
         "id": "25aec8d3.b8b768",
@@ -415,7 +440,9 @@
             "cb1e7ad4.81c828"
         ],
         "x": 1354,
-        "y": 2317
+        "y": 2317,
+        "w": 1112,
+        "h": 84
     },
     {
         "id": "91b5df3a.b5f0a",
@@ -435,7 +462,9 @@
             "55f3d932.386ab8"
         ],
         "x": 1354,
-        "y": 1259
+        "y": 1259,
+        "w": 1092,
+        "h": 82
     },
     {
         "id": "6081678f.e1c608",
@@ -455,7 +484,9 @@
             "353778f7.a55438"
         ],
         "x": 1354,
-        "y": 559
+        "y": 559,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "9688c61a.a2c068",
@@ -475,7 +506,9 @@
             "4a03d98.95a8928"
         ],
         "x": 1354,
-        "y": 1679
+        "y": 1679,
+        "w": 1032,
+        "h": 82
     },
     {
         "id": "d953e85e.db11e8",
@@ -495,7 +528,9 @@
             "8f10d8fc.bffeb8"
         ],
         "x": 1354,
-        "y": 459
+        "y": 459,
+        "w": 1092,
+        "h": 82
     },
     {
         "id": "d501c535.e09788",
@@ -515,7 +550,9 @@
             "d834be79.7cdc2"
         ],
         "x": 1354,
-        "y": 659
+        "y": 659,
+        "w": 1032,
+        "h": 82
     },
     {
         "id": "2e11f045.59a47",
@@ -538,7 +575,9 @@
             "5b9c36a8.4e0188"
         ],
         "x": 1354,
-        "y": 899
+        "y": 899,
+        "w": 1252,
+        "h": 142
     },
     {
         "id": "18c9ddc8.9a6082",
@@ -558,7 +597,9 @@
             "720fe4a6.1e6bcc"
         ],
         "x": 1354,
-        "y": 259
+        "y": 259,
+        "w": 1032,
+        "h": 82
     },
     {
         "id": "bee77910.bfb878",
@@ -578,7 +619,9 @@
             "6a9d2369.6ab6fc"
         ],
         "x": 1354,
-        "y": 1059
+        "y": 1059,
+        "w": 1052,
+        "h": 82
     },
     {
         "id": "477c79c3.5d9fd8",
@@ -598,7 +641,9 @@
             "724433bd.dec18c"
         ],
         "x": 1354,
-        "y": 1879
+        "y": 1879,
+        "w": 1052,
+        "h": 82
     },
     {
         "id": "5fdbf14d.213e9",
@@ -618,7 +663,9 @@
             "a84cda91.188958"
         ],
         "x": 1354,
-        "y": 1779
+        "y": 1779,
+        "w": 1052,
+        "h": 82
     },
     {
         "id": "9cbc8b08.9962f8",
@@ -638,7 +685,9 @@
             "da493f19.b4d7f"
         ],
         "x": 1354,
-        "y": 2119
+        "y": 2119,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "d959fc34.a475c",
@@ -658,7 +707,649 @@
             "e48cfc08.b7c8b"
         ],
         "x": 1354,
-        "y": 1579
+        "y": 1579,
+        "w": 1032,
+        "h": 82
+    },
+    {
+        "id": "1ffe3b56.7131e5",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6cc9079a.72c3d8",
+            "1e11acc8.b90fe3"
+        ],
+        "x": 1354,
+        "y": 2259,
+        "w": 1032,
+        "h": 82
+    },
+    {
+        "id": "300a1c98.83fec4",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f262ce66.d7a3d",
+            "6bd5ba35.6c43e4"
+        ],
+        "x": 1354,
+        "y": 659,
+        "w": 1032,
+        "h": 82
+    },
+    {
+        "id": "39401e3.a77fde2",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "390bbfb.d268d4",
+            "e21ff015.dfedc"
+        ],
+        "x": 1354,
+        "y": 2999,
+        "w": 1092,
+        "h": 82
+    },
+    {
+        "id": "435a1086.af927",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f3eec5fd.c37da8",
+            "32a08277.fbddde"
+        ],
+        "x": 1354,
+        "y": 2359,
+        "w": 1052,
+        "h": 82
+    },
+    {
+        "id": "51dd32ce.89e32c",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9a9d5fca.1a60a",
+            "7bc90644.9c6ed8",
+            "48d4a353.b8402c",
+            "f2fcdb83.cfd138"
+        ],
+        "x": 1354,
+        "y": 1099,
+        "w": 1072,
+        "h": 142
+    },
+    {
+        "id": "58b56243.c85e0c",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "df11248d.6d2708",
+            "69828bbb.231c14"
+        ],
+        "x": 1354,
+        "y": 259,
+        "w": 1032,
+        "h": 82
+    },
+    {
+        "id": "6a507d4d.cf6194",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "61fc72e0.49c60c",
+            "1726151d.11f0fb"
+        ],
+        "x": 1354,
+        "y": 2159,
+        "w": 1032,
+        "h": 82
+    },
+    {
+        "id": "8837c96e.409d88",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "42dcedf2.a6b324",
+            "83db4068.7280e"
+        ],
+        "x": 1354,
+        "y": 1259,
+        "w": 1052,
+        "h": 82
+    },
+    {
+        "id": "914d7215.00176",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "3d1decef.134f84",
+            "b2c32086.bbcf2"
+        ],
+        "x": 1354,
+        "y": 2599,
+        "w": 1072,
+        "h": 82
+    },
+    {
+        "id": "98918c1c.76378",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "55d38a80.aa28c4",
+            "ac6a4cbe.90735"
+        ],
+        "x": 1354,
+        "y": 139,
+        "w": 1052,
+        "h": 82
+    },
+    {
+        "id": "b80c7172.9534",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "10142f4d.ffa221",
+            "b791079c.57ae38"
+        ],
+        "x": 1354,
+        "y": 1459,
+        "w": 1092,
+        "h": 82
+    },
+    {
+        "id": "c10595c.247af68",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "bd1f7163.7da5d",
+            "c3586ebd.49ede"
+        ],
+        "x": 1354,
+        "y": 559,
+        "w": 1072,
+        "h": 82
+    },
+    {
+        "id": "c3799290.7992",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "996e4aa8.2909b8",
+            "1e2347e0.0a5578"
+        ],
+        "x": 1354,
+        "y": 2897,
+        "w": 1112,
+        "h": 84
+    },
+    {
+        "id": "c4204055.d7371",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9f0c5030.e3318",
+            "9084a823.c77a48"
+        ],
+        "x": 1354,
+        "y": 757,
+        "w": 1092,
+        "h": 84
+    },
+    {
+        "id": "cd3450d5.bf5dc",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "e4f6bad6.6b6c38",
+            "15324286.fab59d"
+        ],
+        "x": 1354,
+        "y": 2699,
+        "w": 1072,
+        "h": 82
+    },
+    {
+        "id": "d3a8885.d493678",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cc8b90d6.514c4",
+            "a6a7d1bb.d44ec"
+        ],
+        "x": 1354,
+        "y": 1799,
+        "w": 1112,
+        "h": 82
+    },
+    {
+        "id": "d3d2309e.bae77",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "95a6aed8.a8832",
+            "39b7f801.bc5548"
+        ],
+        "x": 1354,
+        "y": 2797,
+        "w": 1092,
+        "h": 84
+    },
+    {
+        "id": "e2d25ca1.1948b",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "6adc17ec.8c5828",
+            "1c2efe62.235e02"
+        ],
+        "x": 1354,
+        "y": 2459,
+        "w": 1052,
+        "h": 82
+    },
+    {
+        "id": "e3713a8d.e69168",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "cff37781.271d68",
+            "c1dae33d.984b4"
+        ],
+        "x": 1354,
+        "y": 359,
+        "w": 1092,
+        "h": 82
+    },
+    {
+        "id": "f3e7ec42.67f53",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "7cca98a5.0d1d48",
+            "10a25ae1.7b7635"
+        ],
+        "x": 1354,
+        "y": 1359,
+        "w": 1092,
+        "h": 82
+    },
+    {
+        "id": "f4495bc9.d199e8",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "eb6e3973.e3ade8",
+            "52ee82b7.ebb01c"
+        ],
+        "x": 1354,
+        "y": 3099,
+        "w": 1112,
+        "h": 82
+    },
+    {
+        "id": "fcc6de89.f9e7e",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "2c43e7bb.e28a28",
+            "20c1f234.3fd57e"
+        ],
+        "x": 1354,
+        "y": 459,
+        "w": 1092,
+        "h": 82
+    },
+    {
+        "id": "5724f87.3647b08",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "aea82a20.cdc4a8",
+            "f17643b5.e7c9"
+        ],
+        "x": 1354,
+        "y": 1559,
+        "w": 1072,
+        "h": 82
+    },
+    {
+        "id": "6f668266.28115c",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "f12e413c.e81eb",
+            "f838144.ce46be8"
+        ],
+        "x": 1354,
+        "y": 859,
+        "w": 1072,
+        "h": 82
+    },
+    {
+        "id": "238a5e29.43b452",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "9e5c4ee2.45a8f",
+            "5302ee97.6844e"
+        ],
+        "x": 1354,
+        "y": 1899,
+        "w": 1072,
+        "h": 82
+    },
+    {
+        "id": "ab847c0d.edd5c",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "4e23e423.fd1d9c",
+            "5f1b70e0.6cba2"
+        ],
+        "x": 1354,
+        "y": 3199,
+        "w": 1072,
+        "h": 82
+    },
+    {
+        "id": "dd5a7a66.dae718",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "34053025.9eb31",
+            "c75fb32.13f405"
+        ],
+        "x": 1354,
+        "y": 1659,
+        "w": 1072,
+        "h": 82
+    },
+    {
+        "id": "a724b215.1ec92",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "38f0e849.c1f338",
+            "710ad2d5.408b4c"
+        ],
+        "x": 1354,
+        "y": 959,
+        "w": 1072,
+        "h": 82
+    },
+    {
+        "id": "cace543c.22fd18",
+        "type": "group",
+        "z": "6896d5b1.4a006c",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "278feac9.6dc826",
+            "68ad34a7.98de7c"
+        ],
+        "x": 1354,
+        "y": 1999,
+        "w": 1072,
+        "h": 82
     },
     {
         "id": "d239680b.10de98",
@@ -7640,7 +8331,8 @@
         "z": "ceeb1673.a381f8",
         "name": "MonitoringIn",
         "links": [
-            "462bbf23.8ea09"
+            "462bbf23.8ea09",
+            "511925dd.5f613c"
         ],
         "x": 755,
         "y": 620,
@@ -7658,7 +8350,8 @@
         "links": [
             "c50b6255.ec40e",
             "61f02d9e.851584",
-            "657793b8.f8696c"
+            "657793b8.f8696c",
+            "afe31d87.67f0c"
         ],
         "x": 1335,
         "y": 620,
@@ -29042,10 +29735,10 @@
         "id": "118dd23d.2cd0de",
         "type": "link in",
         "z": "28c7d530.54db9a",
-        "name": "MQTT Publish",
+        "name": "MQTT & Influx Publish",
         "links": [
-            "752a8702.286638",
-            "bad983f5.47048"
+            "e2b400a4.a7a0d",
+            "f9fe055.26195f8"
         ],
         "x": 295,
         "y": 220,
@@ -31071,6 +31764,2402 @@
         "wires": [
             [
                 "13748da7.2c0cd2"
+            ]
+        ]
+    },
+    {
+        "id": "3d1decef.134f84",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "914d7215.00176",
+        "name": "Grid_Import_day - 76 ",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 76, \n    'quantity': 1 }; \nmsg.topic = \"grid_gridbuy_day\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 2640,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "b2c32086.bbcf2",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "914d7215.00176",
+        "name": "Grid_Import_day",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"grid_gridbuy_day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2310,
+        "y": 2640,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "e4f6bad6.6b6c38",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "cd3450d5.bf5dc",
+        "name": "Grid_Export_Day - 77",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 77, \n    'quantity': 1 }; \nmsg.topic = \"grid_export_day\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 2740,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "15324286.fab59d",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "cd3450d5.bf5dc",
+        "name": "Grid_Export_Day",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"grid_export_day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2310,
+        "y": 2740,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "2c43e7bb.e28a28",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "fcc6de89.f9e7e",
+        "name": "Grid_Inverter_Voltage - 154",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 154, \n    'quantity': 1 }; \nmsg.topic = \"voltage_inverter\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 500,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "20c1f234.3fd57e",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "fcc6de89.f9e7e",
+        "name": "Grid_Inverter_Voltage",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"voltage_inverter\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2320,
+        "y": 500,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "bd1f7163.7da5d",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "c10595c.247af68",
+        "name": "Grid_Grid_Voltage - 150",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 150, \n    'quantity': 1 }; \nmsg.topic = \"voltage_grid\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 600,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "c3586ebd.49ede",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "c10595c.247af68",
+        "name": "Grid_Grid_Voltage",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"voltage_grid\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2310,
+        "y": 600,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "9a9d5fca.1a60a",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "51dd32ce.89e32c",
+        "name": "Total_Load - 178",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 178, \n    'quantity': 1 }; \nmsg.topic = \"total_load\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 1140,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "7bc90644.9c6ed8",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "51dd32ce.89e32c",
+        "name": "Total_Load",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"total_load\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2290,
+        "y": 1140,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "48d4a353.b8402c",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "51dd32ce.89e32c",
+        "name": "Grid_Inverter_Load - 167",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 167, \n    'quantity': 1 }; \nmsg.topic = \"load_grid_inverter\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 1200,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "f2fcdb83.cfd138",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "51dd32ce.89e32c",
+        "name": "Grid_Inverter_Load",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"load_grid_inverter\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2310,
+        "y": 1200,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "42dcedf2.a6b324",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "8837c96e.409d88",
+        "name": "Grid_Grid_CT - 172",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 172, \n    'quantity': 1 }; \nmsg.topic = \"grid_ct\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 1300,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "83db4068.7280e",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "8837c96e.409d88",
+        "name": "Grid_Grid_CT",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"grid_ct\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2300,
+        "y": 1300,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "f262ce66.d7a3d",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "300a1c98.83fec4",
+        "name": "Battery_Volts - 183",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 183, \n    'quantity': 1 }; \nmsg.topic = \"battery_volt\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 700,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "6bd5ba35.6c43e4",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "300a1c98.83fec4",
+        "name": "Battery_Volts",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 100;\n} else {\n    msg.payload = (a) / 100;\n}\nif (msg.topic === \"battery_volt\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2290,
+        "y": 700,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "df11248d.6d2708",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "58b56243.c85e0c",
+        "name": "Battery_SoC 184",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 184, \n    'quantity': 1 }; \nmsg.topic = \"battery_soc\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 300,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "69828bbb.231c14",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "58b56243.c85e0c",
+        "name": "Battery_SoC",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"battery_soc\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2290,
+        "y": 300,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "10142f4d.ffa221",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "b80c7172.9534",
+        "name": "Battery_Output_Power - 190",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 190, \n    'quantity': 1 }; \nmsg.topic = \"battery_output_power\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 1500,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "b791079c.57ae38",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "b80c7172.9534",
+        "name": "Battery_Output_Power",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (0 - a + 65535) / 1;\n} else {\n    msg.payload = (0 - a) / 1;\n}\nif (msg.topic === \"battery_output_power\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2320,
+        "y": 1500,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "cc8b90d6.514c4",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "d3a8885.d493678",
+        "name": "Battery_Output_Current - 191",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 191, \n    'quantity': 1 }; \nmsg.topic = \"battery_output_current\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1510,
+        "y": 1840,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "a6a7d1bb.d44ec",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "d3a8885.d493678",
+        "name": "Battery_Output_Current",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (0 - a + 65535) / 100;\n} else {\n    msg.payload = (0 - a) / 100;\n}\nif (msg.topic === \"battery_output_current\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2330,
+        "y": 1840,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "55d38a80.aa28c4",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "98918c1c.76378",
+        "name": "Overall_State - 59",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 59, \n    'quantity': 1 }; \nmsg.topic = \"overall_state\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 180,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "ac6a4cbe.90735",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "98918c1c.76378",
+        "name": "Overall_State",
+        "func": "if (msg.topic === \"overall_state\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2300,
+        "y": 180,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "95a6aed8.a8832",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "d3d2309e.bae77",
+        "name": "Battery_Charge_Day - 70",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 70, \n    'quantity': 1 }; \nmsg.topic = \"overall_battery_charge_day\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 2840,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "39b7f801.bc5548",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "d3d2309e.bae77",
+        "name": "Battery_Charge_Day",
+        "func": "var a\na = (msg.payload.data / 10)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"overall_battery_charge_day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2320,
+        "y": 2838,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "a2565a1c.ec5f28",
+        "type": "gate",
+        "z": "6896d5b1.4a006c",
+        "name": "Monitor_Gate",
+        "controlTopic": "monitor_gate",
+        "defaultState": "open",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "persist": false,
+        "x": 260,
+        "y": 1920,
+        "wires": [
+            [
+                "d6b3d858.c23e48"
+            ]
+        ]
+    },
+    {
+        "id": "68d949e7.0872f8",
+        "type": "inject",
+        "z": "6896d5b1.4a006c",
+        "name": "timestamp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 1920,
+        "wires": [
+            [
+                "a2565a1c.ec5f28"
+            ]
+        ]
+    },
+    {
+        "id": "996e4aa8.2909b8",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "c3799290.7992",
+        "name": "Battery_Discharge_Day - 71",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 71, \n    'quantity': 1 }; \nmsg.topic = \"overall_battery_discharge_day\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 2940,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "1e2347e0.0a5578",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "c3799290.7992",
+        "name": "Battery_Discharge_Day",
+        "func": "var a\na = (msg.payload.data / 10)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"overall_battery_discharge_day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2330,
+        "y": 2938,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "9f0c5030.e3318",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "c4204055.d7371",
+        "name": "Battery_Charge_Volts - 312",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 312, \n    'quantity': 1 }; \nmsg.topic = \"battery_charge_volts\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 800,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "9084a823.c77a48",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "c4204055.d7371",
+        "name": "Battery_Charge_Volts",
+        "func": "var a\na = (msg.payload.data / -1)\nif (a > 32767) {\n  msg.payload = (0 - a + 65535) / 100;\n} else {\n    msg.payload = (0 - a) / 100;\n}\nif (msg.topic === \"battery_charge_volts\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2320,
+        "y": 798,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "cff37781.271d68",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "e3713a8d.e69168",
+        "name": "Grid_Grid_Frequency - 079",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 079, \n    'quantity': 1 }; \nmsg.topic = \"grid_frequency\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 400,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "c1dae33d.984b4",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "e3713a8d.e69168",
+        "name": "Grid_Grid_Frequency",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"grid_frequency\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2320,
+        "y": 400,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "61fc72e0.49c60c",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "6a507d4d.cf6194",
+        "name": "Temperature Battery - 182",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 182, \n    'quantity': 1 }; \nmsg.topic = \"temp_batt\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 2200,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "6cc9079a.72c3d8",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "1ffe3b56.7131e5",
+        "name": "Temperature Environment - 095",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 095, \n    'quantity': 1 }; \nmsg.topic = \"temp_enviro\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1510,
+        "y": 2300,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "f3eec5fd.c37da8",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "435a1086.af927",
+        "name": "Temperature DC Transformer - 090",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 090, \n    'quantity': 1 }; \nmsg.topic = \"temp_DCtrans\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 2400,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "6adc17ec.8c5828",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "e2d25ca1.1948b",
+        "name": "Temperature Radiator - 091",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 091, \n    'quantity': 1 }; \nmsg.topic = \"temp_radiator\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 2500,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "1726151d.11f0fb",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "6a507d4d.cf6194",
+        "name": "Temp_Batt",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = ((a - 65535)-1000) / 10;\n} else {\n    msg.payload = ((a)-1000) / 10;\n}\nif (msg.topic === \"temp_batt\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2290,
+        "y": 2200,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "1e11acc8.b90fe3",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "1ffe3b56.7131e5",
+        "name": "temp_enviro",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"temp_enviro\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2290,
+        "y": 2300,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "32a08277.fbddde",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "435a1086.af927",
+        "name": "temp_DCtrans",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 100;\n} else {\n    msg.payload = (a) / 100;\n}\nif (msg.topic === \"temp_DCtrans\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2300,
+        "y": 2400,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "1c2efe62.235e02",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "e2d25ca1.1948b",
+        "name": "temp_radiator",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = ((a - 65535)-1000) / 10;\n} else {\n    msg.payload = ((a)-1000) / 10;\n}\nif (msg.topic === \"temp_radiator\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2300,
+        "y": 2500,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "7cca98a5.0d1d48",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "f3e7ec42.67f53",
+        "name": "Inverter_total_power - 175",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 175, \n    'quantity': 1 }; \nmsg.topic = \"invrt_total_pwr\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 1400,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "10a25ae1.7b7635",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "f3e7ec42.67f53",
+        "name": "Inverter_total_power",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"invrt_total_pwr\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2320,
+        "y": 1400,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "afe31d87.67f0c",
+        "type": "link in",
+        "z": "6896d5b1.4a006c",
+        "name": "ModBusRead_In",
+        "links": [
+            "c9dbf7d1.cf6138"
+        ],
+        "x": 1935,
+        "y": 1980,
+        "wires": [
+            [
+                "f2fcdb83.cfd138",
+                "b2c32086.bbcf2",
+                "15324286.fab59d",
+                "20c1f234.3fd57e",
+                "c3586ebd.49ede",
+                "7bc90644.9c6ed8",
+                "83db4068.7280e",
+                "6bd5ba35.6c43e4",
+                "69828bbb.231c14",
+                "b791079c.57ae38",
+                "a6a7d1bb.d44ec",
+                "ac6a4cbe.90735",
+                "39b7f801.bc5548",
+                "1e2347e0.0a5578",
+                "9084a823.c77a48",
+                "c1dae33d.984b4",
+                "1726151d.11f0fb",
+                "1e11acc8.b90fe3",
+                "32a08277.fbddde",
+                "1c2efe62.235e02",
+                "10a25ae1.7b7635",
+                "e21ff015.dfedc",
+                "52ee82b7.ebb01c",
+                "f17643b5.e7c9",
+                "f838144.ce46be8",
+                "5f1b70e0.6cba2",
+                "c75fb32.13f405",
+                "710ad2d5.408b4c",
+                "5302ee97.6844e",
+                "68ad34a7.98de7c"
+            ]
+        ]
+    },
+    {
+        "id": "511925dd.5f613c",
+        "type": "link out",
+        "z": "6896d5b1.4a006c",
+        "name": "ModBusRead_Out",
+        "links": [
+            "33447edd.f55762"
+        ],
+        "x": 1835,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "390bbfb.d268d4",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "39401e3.a77fde2",
+        "name": "DayActive PowerWh - 60",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 60, \n    'quantity': 1 }; \nmsg.topic = \"dayactive_powerWh\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 3040,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "eb6e3973.e3ade8",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "f4495bc9.d199e8",
+        "name": "DayReactive_PowerWh - 061",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 61, \n    'quantity': 1 }; \nmsg.topic = \"dayreactive_powerWh\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 3140,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "e21ff015.dfedc",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "39401e3.a77fde2",
+        "name": "DayActive PowerWh",
+        "func": "var a\na = (msg.payload.data / 10)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"dayactive_powerWh\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2320,
+        "y": 3040,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "52ee82b7.ebb01c",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "f4495bc9.d199e8",
+        "name": "DayReactive_PowerWh",
+        "func": "var a\na = (msg.payload.data / 10)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"dayreactive_powerWh\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2330,
+        "y": 3140,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "e2b400a4.a7a0d",
+        "type": "link out",
+        "z": "6896d5b1.4a006c",
+        "name": "Send to MQTT ",
+        "links": [
+            "118dd23d.2cd0de"
+        ],
+        "x": 3035,
+        "y": 1960,
+        "wires": []
+    },
+    {
+        "id": "e62021dd.5a974",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "power",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "W",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1300,
+        "wires": [
+            [
+                "42dcedf2.a6b324"
+            ]
+        ]
+    },
+    {
+        "id": "7970b4eb.506aac",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Voltage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "voltage",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "V",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 700,
+        "wires": [
+            [
+                "f262ce66.d7a3d"
+            ]
+        ]
+    },
+    {
+        "id": "a58bda76.107608",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Frequency",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "none",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "hz",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 400,
+        "wires": [
+            [
+                "cff37781.271d68"
+            ]
+        ]
+    },
+    {
+        "id": "cfb8a426.b79128",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Percentage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "battery",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "%",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 300,
+        "wires": [
+            [
+                "df11248d.6d2708"
+            ]
+        ]
+    },
+    {
+        "id": "b737e5ba.522598",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "temperature",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "°C",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 2400,
+        "wires": [
+            [
+                "f3eec5fd.c37da8"
+            ]
+        ]
+    },
+    {
+        "id": "10c776d1.7f4ec9",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Current",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "current",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "A",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 1840,
+        "wires": [
+            [
+                "cc8b90d6.514c4"
+            ]
+        ]
+    },
+    {
+        "id": "aa096e1c.4953a",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "energy",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "kWh",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 2840,
+        "wires": [
+            [
+                "95a6aed8.a8832"
+            ]
+        ]
+    },
+    {
+        "id": "95c1ac5e.8a12",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Voltage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "voltage",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "V",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 800,
+        "wires": [
+            [
+                "9f0c5030.e3318"
+            ]
+        ]
+    },
+    {
+        "id": "ce70e67.52c0b18",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Voltage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "voltage",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "V",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 500,
+        "wires": [
+            [
+                "2c43e7bb.e28a28"
+            ]
+        ]
+    },
+    {
+        "id": "37a0df5d.d4c3",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Voltage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "voltage",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "V",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 600,
+        "wires": [
+            [
+                "bd1f7163.7da5d"
+            ]
+        ]
+    },
+    {
+        "id": "2459503f.18e",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "power",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "W",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1200,
+        "wires": [
+            [
+                "48d4a353.b8402c"
+            ]
+        ]
+    },
+    {
+        "id": "28d1e477.27f3dc",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "power",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "W",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1400,
+        "wires": [
+            [
+                "7cca98a5.0d1d48"
+            ]
+        ]
+    },
+    {
+        "id": "8eaf640b.b5fb18",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "power",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "W",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1140,
+        "wires": [
+            [
+                "9a9d5fca.1a60a"
+            ]
+        ]
+    },
+    {
+        "id": "14480be7.813004",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "power",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "W",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1500,
+        "wires": [
+            [
+                "10142f4d.ffa221"
+            ]
+        ]
+    },
+    {
+        "id": "a7326c7c.036b5",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "temperature",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "°C",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 2500,
+        "wires": [
+            [
+                "6adc17ec.8c5828"
+            ]
+        ]
+    },
+    {
+        "id": "3ae30313.f7972c",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "temperature",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "°C",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 2300,
+        "wires": [
+            [
+                "6cc9079a.72c3d8"
+            ]
+        ]
+    },
+    {
+        "id": "40b551bb.882b1",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Temperature",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "temperature",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "°C",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 950,
+        "y": 2200,
+        "wires": [
+            [
+                "61fc72e0.49c60c"
+            ]
+        ]
+    },
+    {
+        "id": "63d92c33.baae14",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "energy",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "kWh",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 2740,
+        "wires": [
+            [
+                "e4f6bad6.6b6c38"
+            ]
+        ]
+    },
+    {
+        "id": "dbd233f1.a0ed7",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "energy",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "kWh",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 2940,
+        "wires": [
+            [
+                "996e4aa8.2909b8"
+            ]
+        ]
+    },
+    {
+        "id": "62a4a5b5.fd27dc",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "energy",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "kWh",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 3140,
+        "wires": [
+            [
+                "eb6e3973.e3ade8"
+            ]
+        ]
+    },
+    {
+        "id": "a5309e38.e7791",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "energy",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "kWh",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 2640,
+        "wires": [
+            [
+                "3d1decef.134f84"
+            ]
+        ]
+    },
+    {
+        "id": "88ae229e.ec47c",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "energy",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "kWh",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 3040,
+        "wires": [
+            [
+                "390bbfb.d268d4"
+            ]
+        ]
+    },
+    {
+        "id": "aea82a20.cdc4a8",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "5724f87.3647b08",
+        "name": "Solar_PV1_Power 186",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 186, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV1_Power\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 1600,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "f12e413c.e81eb",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "6f668266.28115c",
+        "name": "Solar_PV1_Voltage 109",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 109, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV1_volts\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 900,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "4e23e423.fd1d9c",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "ab847c0d.edd5c",
+        "name": "Solar_PV_Day",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 108, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV_Day\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1460,
+        "y": 3240,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "b9b6620d.bd7aa",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "power",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "W",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1600,
+        "wires": [
+            [
+                "aea82a20.cdc4a8"
+            ]
+        ]
+    },
+    {
+        "id": "447f3b68.910e14",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Voltage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "voltage",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "V",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 900,
+        "wires": [
+            [
+                "f12e413c.e81eb"
+            ]
+        ]
+    },
+    {
+        "id": "7481b913.1cbb58",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Energy",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "energy",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "kWh",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 3240,
+        "wires": [
+            [
+                "4e23e423.fd1d9c"
+            ]
+        ]
+    },
+    {
+        "id": "5f1b70e0.6cba2",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "ab847c0d.edd5c",
+        "name": "Solar_PV_Day",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"Solar_PV_Day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2320,
+        "y": 3240,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "f17643b5.e7c9",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "5724f87.3647b08",
+        "name": "Solar_PV1_Power",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Solar_PV1_Power\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 2310,
+        "y": 1600,
+        "wires": [
+            [
+                "e2b400a4.a7a0d",
+                "11be1c8e.ca6a63"
+            ]
+        ]
+    },
+    {
+        "id": "f838144.ce46be8",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "6f668266.28115c",
+        "name": "Solar_PV1_Voltage",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"Solar_PV1_volts\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2310,
+        "y": 900,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "34053025.9eb31",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "dd5a7a66.dae718",
+        "name": "Solar_PV2_Power 187",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 187, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV2_Power\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 1700,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "38f0e849.c1f338",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "a724b215.1ec92",
+        "name": "Solar_PV2_Voltage 111",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 111, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV2_volts\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1490,
+        "y": 1000,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "83c26b1e.eba798",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Power",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "power",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "W",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 1700,
+        "wires": [
+            [
+                "34053025.9eb31"
+            ]
+        ]
+    },
+    {
+        "id": "1727ef59.133b71",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Voltage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "voltage",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "V",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 1000,
+        "wires": [
+            [
+                "38f0e849.c1f338"
+            ]
+        ]
+    },
+    {
+        "id": "c75fb32.13f405",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "dd5a7a66.dae718",
+        "name": "Solar_PV2_Power",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Solar_PV2_Power\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2310,
+        "y": 1700,
+        "wires": [
+            [
+                "e2b400a4.a7a0d",
+                "11be1c8e.ca6a63"
+            ]
+        ]
+    },
+    {
+        "id": "710ad2d5.408b4c",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "a724b215.1ec92",
+        "name": "Solar_PV2_Voltage",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"Solar_PV2_volts\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2310,
+        "y": 1000,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "d6b3d858.c23e48",
+        "type": "cycle",
+        "z": "6896d5b1.4a006c",
+        "name": "",
+        "outputs": 29,
+        "x": 470,
+        "y": 1920,
+        "wires": [
+            [
+                "cfb8a426.b79128"
+            ],
+            [
+                "a58bda76.107608"
+            ],
+            [
+                "ce70e67.52c0b18"
+            ],
+            [
+                "37a0df5d.d4c3"
+            ],
+            [
+                "7970b4eb.506aac"
+            ],
+            [
+                "95c1ac5e.8a12"
+            ],
+            [
+                "447f3b68.910e14"
+            ],
+            [
+                "1727ef59.133b71"
+            ],
+            [
+                "8eaf640b.b5fb18"
+            ],
+            [
+                "2459503f.18e"
+            ],
+            [
+                "e62021dd.5a974"
+            ],
+            [
+                "28d1e477.27f3dc"
+            ],
+            [
+                "14480be7.813004"
+            ],
+            [
+                "b9b6620d.bd7aa"
+            ],
+            [
+                "83c26b1e.eba798"
+            ],
+            [
+                "10c776d1.7f4ec9"
+            ],
+            [
+                "ad823dda.051e9"
+            ],
+            [
+                "322c0c70.7167d4"
+            ],
+            [
+                "40b551bb.882b1"
+            ],
+            [
+                "3ae30313.f7972c"
+            ],
+            [
+                "b737e5ba.522598"
+            ],
+            [
+                "a7326c7c.036b5"
+            ],
+            [
+                "a5309e38.e7791"
+            ],
+            [
+                "63d92c33.baae14"
+            ],
+            [
+                "aa096e1c.4953a"
+            ],
+            [
+                "dbd233f1.a0ed7"
+            ],
+            [
+                "88ae229e.ec47c"
+            ],
+            [
+                "62a4a5b5.fd27dc"
+            ],
+            [
+                "7481b913.1cbb58"
+            ]
+        ]
+    },
+    {
+        "id": "11be1c8e.ca6a63",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "name": "Solar_total_Power",
+        "func": "var p1value = flow.get(\"p1value\");\nvar p2value = flow.get(\"p2value\");\nvar total;\n\nif (msg.topic == \"Solar_PV1_Power\") {\n    v1value = msg.payload;\n    flow.set(\"p1value\",msg.payload);\n}else if (msg.topic == \"Solar_PV2_Power\"){\n    v2value = msg.payload;\n    flow.set(\"p2value\",msg.payload);\n}\nif (p1value !== undefined && p2value !== undefined) {\n   total = p1value + p2value;\n   msg.payload = total;\n   msg.topic = 'solar_total_power';\n   return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2570,
+        "y": 1660,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "278feac9.6dc826",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "cace543c.22fd18",
+        "name": "Solar_PV2_Amps 112",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 112, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV2_Amps\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 2040,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "68ad34a7.98de7c",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "cace543c.22fd18",
+        "name": "Solar_PV2_Amps",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Solar_PV2_Amps\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2310,
+        "y": 2040,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "9e5c4ee2.45a8f",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "238a5e29.43b452",
+        "name": "Solar_PV1_Amps  110",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 110, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV1_Amps\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 1940,
+        "wires": [
+            [
+                "511925dd.5f613c"
+            ]
+        ]
+    },
+    {
+        "id": "5302ee97.6844e",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "g": "238a5e29.43b452",
+        "name": "Solar_PV1_Amps",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Solar_PV1_Amps\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2310,
+        "y": 1940,
+        "wires": [
+            [
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "322c0c70.7167d4",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Current",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "current",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "A",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 2040,
+        "wires": [
+            [
+                "278feac9.6dc826"
+            ]
+        ]
+    },
+    {
+        "id": "ad823dda.051e9",
+        "type": "change",
+        "z": "6896d5b1.4a006c",
+        "name": "Current",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "current",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "A",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 1940,
+        "wires": [
+            [
+                "9e5c4ee2.45a8f"
             ]
         ]
     }
