@@ -29401,8 +29401,8 @@
         "correl": "",
         "expiry": "",
         "broker": "f35ad748.1790a8",
-        "x": 1150,
-        "y": 340,
+        "x": 1030,
+        "y": 280,
         "wires": []
     },
     {
@@ -29418,8 +29418,8 @@
         "targetType": "full",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1070,
-        "y": 400,
+        "x": 990,
+        "y": 360,
         "wires": []
     },
     {
