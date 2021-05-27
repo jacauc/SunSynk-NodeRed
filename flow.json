@@ -21,13 +21,6 @@
         "info": ""
     },
     {
-        "id": "83f51df8.1b7f6",
-        "type": "tab",
-        "label": "ModBusWrite",
-        "disabled": true,
-        "info": ""
-    },
-    {
         "id": "ca54f1a.9c8f41",
         "type": "tab",
         "label": "SSFormRead",
@@ -49,24 +42,31 @@
         "info": ""
     },
     {
+        "id": "83f51df8.1b7f6",
+        "type": "tab",
+        "label": "ModBusWrite",
+        "disabled": true,
+        "info": ""
+    },
+    {
         "id": "e12893dc.317f",
         "type": "tab",
         "label": "SSFormWrite",
-        "disabled": true,
+        "disabled": false,
         "info": ""
     },
     {
         "id": "cd29128b.0ecbb",
         "type": "tab",
         "label": "SSDSWrite",
-        "disabled": true,
+        "disabled": false,
         "info": ""
     },
     {
         "id": "b2b37438.6fe6a8",
         "type": "tab",
         "label": "SSLSWrite",
-        "disabled": true,
+        "disabled": false,
         "info": ""
     },
     {
