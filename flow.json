@@ -28285,7 +28285,7 @@
         "repeat": "1800",
         "crontab": "",
         "once": true,
-        "onceDelay": "5",
+        "onceDelay": "60",
         "topic": "",
         "payload": "",
         "payloadType": "date",
