@@ -1594,8 +1594,8 @@
         "serialConnectionDelay": "1000",
         "unit_id": "1",
         "commandDelay": "10",
-        "clientTimeout": "100",
-        "reconnectOnTimeout": true,
+        "clientTimeout": "1000",
+        "reconnectOnTimeout": false,
         "reconnectTimeout": "2000",
         "parallelUnitIdsAllowed": true
     },
