@@ -9,14 +9,14 @@
     {
         "id": "6896d5b1.4a006c",
         "type": "tab",
-        "label": "Inverter Monitoring",
+        "label": "Inverter_Monitoring",
         "disabled": false,
         "info": ""
     },
     {
         "id": "28c7d530.54db9a",
         "type": "tab",
-        "label": "Publish Externally",
+        "label": "Inverter_Monitor_Publish",
         "disabled": false,
         "info": ""
     },
@@ -24,13 +24,6 @@
         "id": "b6d18ded.3db32",
         "type": "tab",
         "label": "LoadshedStatus",
-        "disabled": true,
-        "info": ""
-    },
-    {
-        "id": "384889e.31c6d76",
-        "type": "tab",
-        "label": "Inverter Monitoring old",
         "disabled": true,
         "info": ""
     },
@@ -235,7 +228,7 @@
             "1e11acc8.b90fe3"
         ],
         "x": 1354,
-        "y": 2259,
+        "y": 2499,
         "w": 1032,
         "h": 82
     },
@@ -279,7 +272,7 @@
             "e21ff015.dfedc"
         ],
         "x": 1354,
-        "y": 2999,
+        "y": 3239,
         "w": 1092,
         "h": 82
     },
@@ -301,7 +294,7 @@
             "32a08277.fbddde"
         ],
         "x": 1354,
-        "y": 2359,
+        "y": 2599,
         "w": 1052,
         "h": 82
     },
@@ -369,7 +362,7 @@
             "1726151d.11f0fb"
         ],
         "x": 1354,
-        "y": 2159,
+        "y": 2399,
         "w": 1032,
         "h": 82
     },
@@ -413,7 +406,7 @@
             "b2c32086.bbcf2"
         ],
         "x": 1354,
-        "y": 2599,
+        "y": 2839,
         "w": 1072,
         "h": 82
     },
@@ -501,7 +494,7 @@
             "1e2347e0.0a5578"
         ],
         "x": 1354,
-        "y": 2897,
+        "y": 3137,
         "w": 1112,
         "h": 84
     },
@@ -545,7 +538,7 @@
             "15324286.fab59d"
         ],
         "x": 1354,
-        "y": 2699,
+        "y": 2939,
         "w": 1072,
         "h": 82
     },
@@ -589,7 +582,7 @@
             "39b7f801.bc5548"
         ],
         "x": 1354,
-        "y": 2797,
+        "y": 3037,
         "w": 1092,
         "h": 84
     },
@@ -611,7 +604,7 @@
             "1c2efe62.235e02"
         ],
         "x": 1354,
-        "y": 2459,
+        "y": 2699,
         "w": 1052,
         "h": 82
     },
@@ -677,7 +670,7 @@
             "52ee82b7.ebb01c"
         ],
         "x": 1354,
-        "y": 3099,
+        "y": 3339,
         "w": 1112,
         "h": 82
     },
@@ -787,7 +780,7 @@
             "5f1b70e0.6cba2"
         ],
         "x": 1354,
-        "y": 3199,
+        "y": 2079,
         "w": 1072,
         "h": 82
     },
@@ -1717,767 +1710,6 @@
         "verifyservercert": false
     },
     {
-        "id": "5307b848.bbd128",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Solar_PV_Day",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 108, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV_Day\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1060,
-        "y": 1060,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "3ccfdd24.a8d272",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Solar_PV1_Power",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 186, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV1_Power\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1070,
-        "y": 160,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "4cc43446.cc094c",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Solar_PV_Day",
-        "topic": "SunSynk/Solar_PV_Day",
-        "qos": "",
-        "retain": "true",
-        "broker": "f35ad748.1790a8",
-        "x": 2080,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "1e3efcdd.4c1c53",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Solar_PV_Day",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"Solar_PV_Day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1840,
-        "y": 100,
-        "wires": [
-            [
-                "4cc43446.cc094c",
-                "fa7bcc8a.50a48",
-                "1270c0d5.4d35cf"
-            ]
-        ]
-    },
-    {
-        "id": "ca124d32.07475",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Solar_PV1_Power",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Solar_PV1_Power\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1850,
-        "y": 160,
-        "wires": [
-            [
-                "76df6146.7095b",
-                "a6d5c54e.b671c8"
-            ]
-        ]
-    },
-    {
-        "id": "76df6146.7095b",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Solar_PV1_Power",
-        "topic": "SunSynk/Solar_PV1_Power",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2091,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "66e5cbb4.ea8da4",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Solar_PV1_Voltage",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 109, \n    'quantity': 1 }; \nmsg.topic = \"Solar_PV1_volts\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1070,
-        "y": 220,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "e1ff25e3.a90ef8",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Solar_PV1_Voltage",
-        "topic": "SunSynk/Solar_PV1_Volts",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2091,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "20ed4f50.ced8",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Solar_PV1_Voltage",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"Solar_PV1_volts\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1850,
-        "y": 220,
-        "wires": [
-            [
-                "e1ff25e3.a90ef8",
-                "7244af8e.519c2"
-            ]
-        ]
-    },
-    {
-        "id": "55f48d2a.771974",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Import_day",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 76, \n    'quantity': 1 }; \nmsg.topic = \"grid_gridbuy_day\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1070,
-        "y": 1120,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "f8e3b31b.fbb41",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Import_day",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"grid_gridbuy_day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1850,
-        "y": 300,
-        "wires": [
-            [
-                "59b433e9.ed029c",
-                "4451a322.3cf5bc"
-            ]
-        ]
-    },
-    {
-        "id": "59b433e9.ed029c",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Import_day",
-        "topic": "SunSynk/grid_gridbuy_day",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2091,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "1beb1576.5d9f5b",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Export_Day",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 77, \n    'quantity': 1 }; \nmsg.topic = \"grid_export_day\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1070,
-        "y": 1180,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "4d31561f.8f71f8",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Export_Day",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"grid_export_day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1850,
-        "y": 360,
-        "wires": [
-            [
-                "ce9dd330.c0d87",
-                "c92b9dfe.b3e8f"
-            ]
-        ]
-    },
-    {
-        "id": "ce9dd330.c0d87",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Export_Grid",
-        "topic": "SunSynk/grid_export_day",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2091,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "e0d3a6c7.1df068",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Inverter_Voltage",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 154, \n    'quantity': 1 }; \nmsg.topic = \"voltage_inverter\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1080,
-        "y": 320,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "8c037545.0e2bd8",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Inverter_Voltage",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"voltage_inverter\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1860,
-        "y": 420,
-        "wires": [
-            [
-                "2e8b4c85.88c744",
-                "945c3632.b84088"
-            ]
-        ]
-    },
-    {
-        "id": "2e8b4c85.88c744",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Inverter_Voltage",
-        "topic": "SunSynk/grid_voltage_inverter",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2101,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "aa441c11.eea51",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Grid_Voltage",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 150, \n    'quantity': 1 }; \nmsg.topic = \"voltage_grid\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1070,
-        "y": 380,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "c6f63a84.ab5a78",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Grid_Voltage",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"voltage_grid\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1850,
-        "y": 480,
-        "wires": [
-            [
-                "7080f438.f5488c",
-                "de17d306.e294d"
-            ]
-        ]
-    },
-    {
-        "id": "7080f438.f5488c",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Grid_Voltage",
-        "topic": "SunSynk/grid_voltage_grid",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2091,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "1b5ce15b.398c9f",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Inverter_Load",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 178, \n    'quantity': 1 }; \nmsg.topic = \"load_inverter\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1070,
-        "y": 440,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "67c04e18.d11cd",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Inverter_Load",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"load_inverter\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1850,
-        "y": 540,
-        "wires": [
-            [
-                "849347f0.9b1a78",
-                "af18abca.f7bf28",
-                "a65bfd70.ad2f5"
-            ]
-        ]
-    },
-    {
-        "id": "849347f0.9b1a78",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Inverter_Load",
-        "topic": "SunSynk/grid_inverter_load",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2090,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "807db0c6.dd139",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Grid_Load",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 167, \n    'quantity': 1 }; \nmsg.topic = \"load_grid\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1060,
-        "y": 500,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "bd704573.7fefd8",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Grid_Load",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"load_grid\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1840,
-        "y": 660,
-        "wires": [
-            [
-                "659bf297.4627fc"
-            ]
-        ]
-    },
-    {
-        "id": "270b1c34.e6e334",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Grid_Load",
-        "topic": "SunSynk/grid_grid_load",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2240,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "92e6ec11.a909d",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Grid_CT",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 172, \n    'quantity': 1 }; \nmsg.topic = \"grid_ct\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1060,
-        "y": 560,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "414b05ea.0c132c",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Grid_CT",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"grid_ct\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1840,
-        "y": 720,
-        "wires": [
-            [
-                "f0ef7846.950178",
-                "3fc55163.42d52e",
-                "659bf297.4627fc"
-            ]
-        ]
-    },
-    {
-        "id": "f0ef7846.950178",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Grid_CT",
-        "topic": "SunSynk/grid_grid_ct",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2240,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "1a3d8d58.191293",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Volts",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 183, \n    'quantity': 1 }; \nmsg.topic = \"battery_volt\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1050,
-        "y": 660,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "f8fb7e24.5b013",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Volts",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 100;\n} else {\n    msg.payload = (a) / 100;\n}\nif (msg.topic === \"battery_volt\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1830,
-        "y": 862,
-        "wires": [
-            [
-                "f21cf021.c2c72",
-                "a96d016e.bff21"
-            ]
-        ]
-    },
-    {
-        "id": "f21cf021.c2c72",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Volts",
-        "topic": "SunSynk/battery_volts",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2070,
-        "y": 862,
-        "wires": []
-    },
-    {
-        "id": "d3decbb2.9ea328",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_SoC",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 184, \n    'quantity': 1 }; \nmsg.topic = \"battery_soc\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1050,
-        "y": 720,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "86c7d14e.852c4",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_SoC",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"battery_soc\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1830,
-        "y": 922,
-        "wires": [
-            [
-                "3b38a4dd.07f06c",
-                "877c53e.b744cb"
-            ]
-        ]
-    },
-    {
-        "id": "3b38a4dd.07f06c",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Battery_SoC",
-        "topic": "SunSynk/battery_soc",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2070,
-        "y": 922,
-        "wires": []
-    },
-    {
-        "id": "614409ba.1501a8",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Output_Power",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 190, \n    'quantity': 1 }; \nmsg.topic = \"battery_output_power\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1080,
-        "y": 780,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "af4b67ea.c083e8",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Output_Power",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (0 - a + 65535) / 1;\n} else {\n    msg.payload = (0 - a) / 1;\n}\nif (msg.topic === \"battery_output_power\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1860,
-        "y": 982,
-        "wires": [
-            [
-                "5f64ff23.7887b",
-                "ec5a6a9a.95a218"
-            ]
-        ]
-    },
-    {
-        "id": "5f64ff23.7887b",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Output_Power",
-        "topic": "SunSynk/battery_output_power",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2100,
-        "y": 982,
-        "wires": []
-    },
-    {
-        "id": "8e0cdcfc.b86b8",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Output_Current",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 191, \n    'quantity': 1 }; \nmsg.topic = \"battery_output_current\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1090,
-        "y": 840,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "a870c8f2.8896a8",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Output_Current",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (0 - a + 65535) / 100;\n} else {\n    msg.payload = (0 - a) / 100;\n}\nif (msg.topic === \"battery_output_current\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1870,
-        "y": 1042,
-        "wires": [
-            [
-                "ae9be712.212428",
-                "d4a41261.3efbc"
-            ]
-        ]
-    },
-    {
-        "id": "ae9be712.212428",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Output_Current",
-        "topic": "SunSynk/battery_output_current",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2110,
-        "y": 1042,
-        "wires": []
-    },
-    {
-        "id": "488c5c9d.8653e4",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Overall_State",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 59, \n    'quantity': 1 }; \nmsg.topic = \"overall_state\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1060,
-        "y": 1240,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "e824761c.7f5898",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Overall_State",
-        "func": "if (msg.topic === \"overall_state\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 1840,
-        "y": 1180,
-        "wires": [
-            [
-                "314ec124.9c28ce"
-            ]
-        ]
-    },
-    {
-        "id": "314ec124.9c28ce",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Overall_State",
-        "topic": "SunSynk/overall_runstate",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2080,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "786be742.8a0d98",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Charge_Day",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 70, \n    'quantity': 1 }; \nmsg.topic = \"overall_battery_charge_day\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1080,
-        "y": 1300,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "65dc025a.8c255c",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Charge_Day",
-        "func": "var a\na = (msg.payload.data / 10)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"overall_battery_charge_day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1860,
-        "y": 1240,
-        "wires": [
-            [
-                "c2db61bf.16396"
-            ]
-        ]
-    },
-    {
-        "id": "c2db61bf.16396",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Charge_Day",
-        "topic": "SunSynk/battery_charge_day",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2100,
-        "y": 1240,
-        "wires": []
-    },
-    {
         "id": "7fd203b2.2a95bc",
         "type": "function",
         "z": "ca54f1a.9c8f41",
@@ -3293,38 +2525,6 @@
         ]
     },
     {
-        "id": "68ac5903.445398",
-        "type": "ui_switch",
-        "z": "384889e.31c6d76",
-        "name": "",
-        "label": "Monitoring Switch",
-        "tooltip": "",
-        "group": "bded4c6c.4d80c",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "monitor_gate",
-        "style": "",
-        "onvalue": "open",
-        "onvalueType": "str",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "close",
-        "offvalueType": "str",
-        "officon": "",
-        "offcolor": "",
-        "x": 370,
-        "y": 560,
-        "wires": [
-            [
-                "cf71daa3.a62778",
-                "11bc5862.595178"
-            ]
-        ]
-    },
-    {
         "id": "d05d1b9c.580448",
         "type": "function",
         "z": "ca54f1a.9c8f41",
@@ -3962,32 +3162,6 @@
                 "9ea51801.cb7ed8"
             ]
         ]
-    },
-    {
-        "id": "fa7bcc8a.50a48",
-        "type": "ui_gauge",
-        "z": "384889e.31c6d76",
-        "name": "Gauge_Solar_PV_Day",
-        "group": "7086287.7d055d8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "Solar Produced Today",
-        "label": "units",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "30",
-        "colors": [
-            "#fa0011",
-            "#e6e600",
-            "#44ff00"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "x": 2600,
-        "y": 100,
-        "wires": []
     },
     {
         "id": "6bc7b0a7.3c6d",
@@ -4677,115 +3851,6 @@
         ],
         "x": 965,
         "y": 240,
-        "wires": []
-    },
-    {
-        "id": "cf71daa3.a62778",
-        "type": "gate",
-        "z": "384889e.31c6d76",
-        "name": "Monitor_Gate",
-        "controlTopic": "monitor_gate",
-        "defaultState": "open",
-        "openCmd": "open",
-        "closeCmd": "close",
-        "toggleCmd": "toggle",
-        "defaultCmd": "default",
-        "persist": false,
-        "x": 580,
-        "y": 560,
-        "wires": [
-            [
-                "3ccfdd24.a8d272",
-                "66e5cbb4.ea8da4",
-                "e0d3a6c7.1df068",
-                "aa441c11.eea51",
-                "1b5ce15b.398c9f",
-                "807db0c6.dd139",
-                "92e6ec11.a909d",
-                "1a3d8d58.191293",
-                "d3decbb2.9ea328",
-                "614409ba.1501a8",
-                "8e0cdcfc.b86b8",
-                "5fed0396.69f04c"
-            ]
-        ]
-    },
-    {
-        "id": "854eeda8.6c5c9",
-        "type": "inject",
-        "z": "384889e.31c6d76",
-        "name": "timestamp",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1.5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 370,
-        "y": 520,
-        "wires": [
-            [
-                "cf71daa3.a62778"
-            ]
-        ]
-    },
-    {
-        "id": "705e1875.51b678",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Discharge_Day",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 71, \n    'quantity': 1 }; \nmsg.topic = \"overall_battery_discharge_day\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1090,
-        "y": 1360,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "f9d20219.8b48b",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Discharge_Day",
-        "func": "var a\na = (msg.payload.data / 10)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"overall_battery_discharge_day\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1870,
-        "y": 1300,
-        "wires": [
-            [
-                "c93ffc81.9e042"
-            ]
-        ]
-    },
-    {
-        "id": "c93ffc81.9e042",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Discharge_Day",
-        "topic": "SunSynk/battery_discharge_day",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2110,
-        "y": 1300,
         "wires": []
     },
     {
@@ -7888,239 +6953,6 @@
         ]
     },
     {
-        "id": "6bd4891f.a53df8",
-        "type": "link out",
-        "z": "384889e.31c6d76",
-        "name": "ModBusRead_Out",
-        "links": [],
-        "x": 1285,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "138ba6ac.9d86a9",
-        "type": "link in",
-        "z": "384889e.31c6d76",
-        "name": "ModBusRead_In",
-        "links": [
-            "98c41121.a29ce"
-        ],
-        "x": 1575,
-        "y": 560,
-        "wires": [
-            [
-                "bd704573.7fefd8",
-                "1e3efcdd.4c1c53",
-                "ca124d32.07475",
-                "20ed4f50.ced8",
-                "f8e3b31b.fbb41",
-                "4d31561f.8f71f8",
-                "8c037545.0e2bd8",
-                "c6f63a84.ab5a78",
-                "67c04e18.d11cd",
-                "414b05ea.0c132c",
-                "f8fb7e24.5b013",
-                "86c7d14e.852c4",
-                "af4b67ea.c083e8",
-                "a870c8f2.8896a8",
-                "e824761c.7f5898",
-                "65dc025a.8c255c",
-                "f9d20219.8b48b",
-                "aa864331.30eb5"
-            ]
-        ]
-    },
-    {
-        "id": "1270c0d5.4d35cf",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Solar_PV_Day",
-        "measurement": "Solar_PV_Day",
-        "precision": "",
-        "retentionPolicy": "",
-        "database": "",
-        "retentionPolicyV18Flux": "",
-        "org": "",
-        "bucket": "",
-        "x": 2320,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "a6d5c54e.b671c8",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Solar_PV1_Power",
-        "measurement": "Solar_PV1_Power",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2330,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "7244af8e.519c2",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Solar_PV1_volts",
-        "measurement": "Solar_PV1_volts",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2330,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "4451a322.3cf5bc",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Grid_Import_day",
-        "measurement": "grid_gridbuy_day",
-        "precision": "",
-        "retentionPolicy": "",
-        "database": "",
-        "retentionPolicyV18Flux": "",
-        "org": "",
-        "bucket": "",
-        "x": 2330,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "c92b9dfe.b3e8f",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Grid_Export_day",
-        "measurement": "grid_export_day",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2330,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "945c3632.b84088",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Grid_Inverter_Voltage",
-        "measurement": "voltage_inverter",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2340,
-        "y": 420,
-        "wires": []
-    },
-    {
-        "id": "de17d306.e294d",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Grid_Grid_Voltage",
-        "measurement": "voltage_grid",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2330,
-        "y": 480,
-        "wires": []
-    },
-    {
-        "id": "af18abca.f7bf28",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Grid_Inverter_Load",
-        "measurement": "load_inverter",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2330,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "219cf0a2.05c49",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Grid_Grid_Load",
-        "measurement": "load_grid",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2480,
-        "y": 660,
-        "wires": []
-    },
-    {
-        "id": "3fc55163.42d52e",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Grid_Grid_CT",
-        "measurement": "grid_ct",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2480,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "a96d016e.bff21",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Battery_Volt",
-        "measurement": "battery_volt",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2310,
-        "y": 862,
-        "wires": []
-    },
-    {
-        "id": "877c53e.b744cb",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Battery_SoC",
-        "measurement": "battery_SoC",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2310,
-        "y": 922,
-        "wires": []
-    },
-    {
-        "id": "ec5a6a9a.95a218",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "battery_output_power",
-        "measurement": "battery_output_power",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2340,
-        "y": 982,
-        "wires": []
-    },
-    {
-        "id": "d4a41261.3efbc",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "battery_output_current",
-        "measurement": "battery_output_current",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2340,
-        "y": 1042,
-        "wires": []
-    },
-    {
         "id": "a1e6bb32.8fd848",
         "type": "comment",
         "z": "ceeb1673.a381f8",
@@ -8251,80 +7083,6 @@
         "x": 1420,
         "y": 660,
         "wires": []
-    },
-    {
-        "id": "659bf297.4627fc",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Load_Calc",
-        "func": "var v1value = flow.get(\"v1value\");\nvar v2value = flow.get(\"v2value\");\nvar total;\n\nif (msg.topic == \"grid_ct\") {\n    v1value = msg.payload;\n    flow.set(\"v1value\",msg.payload);\n}else if (msg.topic == \"load_grid\"){\n    v2value = msg.payload;\n    flow.set(\"v2value\",msg.payload);\n}\nif (v1value !== undefined && v2value !== undefined) {\n   total = v1value - v2value;\n   msg.payload = total;\n   msg.topic = 'Grid_Load_Calc';\n   return msg;\n}",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 2040,
-        "y": 660,
-        "wires": [
-            [
-                "219cf0a2.05c49",
-                "270b1c34.e6e334",
-                "a65bfd70.ad2f5"
-            ]
-        ]
-    },
-    {
-        "id": "6b6e908.d22da7",
-        "type": "inject",
-        "z": "384889e.31c6d76",
-        "name": "timestamp",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "60",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "1",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 410,
-        "y": 1020,
-        "wires": [
-            [
-                "11bc5862.595178"
-            ]
-        ]
-    },
-    {
-        "id": "11bc5862.595178",
-        "type": "gate",
-        "z": "384889e.31c6d76",
-        "name": "Monitor_Gate",
-        "controlTopic": "monitor_gate",
-        "defaultState": "open",
-        "openCmd": "open",
-        "closeCmd": "close",
-        "toggleCmd": "toggle",
-        "defaultCmd": "default",
-        "persist": false,
-        "x": 620,
-        "y": 1060,
-        "wires": [
-            [
-                "5307b848.bbd128",
-                "55f48d2a.771974",
-                "1beb1576.5d9f5b",
-                "488c5c9d.8653e4",
-                "786be742.8a0d98",
-                "705e1875.51b678"
-            ]
-        ]
     },
     {
         "id": "c841bd3d.0bc7c",
@@ -11882,51 +10640,6 @@
                 "ad951321.5b689"
             ]
         ]
-    },
-    {
-        "id": "a65bfd70.ad2f5",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Total_Load_Calc",
-        "func": "var v3value = flow.get(\"v3value\");\nvar v4value = flow.get(\"v4value\");\nvar total;\n\nif (msg.topic == \"Grid_Load_Calc\") {\n    v1value = msg.payload;\n    flow.set(\"v3value\",msg.payload);\n}else if (msg.topic == \"load_inverter\"){\n    v2value = msg.payload;\n    flow.set(\"v4value\",msg.payload);\n}\nif (v1value !== undefined && v2value !== undefined) {\n   total = v3value + v4value;\n   msg.payload = total;\n   msg.topic = 'Total_Load_Calc';\n   return msg;\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 2310,
-        "y": 600,
-        "wires": [
-            [
-                "a900933e.2f1bd",
-                "91b77bab.7295e8"
-            ]
-        ]
-    },
-    {
-        "id": "91b77bab.7295e8",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Grid_Total_Load",
-        "topic": "SunSynk/grid_total_load",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2540,
-        "y": 600,
-        "wires": []
-    },
-    {
-        "id": "a900933e.2f1bd",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "Grid_Total_Load",
-        "measurement": "total_inverter",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2780,
-        "y": 600,
-        "wires": []
     },
     {
         "id": "d663f7dd.d1a278",
@@ -18206,69 +16919,6 @@
                 "a91ead8e.950b8"
             ]
         ]
-    },
-    {
-        "id": "5fed0396.69f04c",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Charge_Volts",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 312, \n    'quantity': 1 }; \nmsg.topic = \"battery_charge_volts\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1080,
-        "y": 900,
-        "wires": [
-            [
-                "6bd4891f.a53df8"
-            ]
-        ]
-    },
-    {
-        "id": "aa864331.30eb5",
-        "type": "function",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Charge_Volts",
-        "func": "var a\na = (msg.payload.data / -1)\nif (a > 32767) {\n  msg.payload = (0 - a + 65535) / 10;\n} else {\n    msg.payload = (0 - a) / 10;\n}\nif (msg.topic === \"battery_charge_volts\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1860,
-        "y": 1100,
-        "wires": [
-            [
-                "7116d62.8f28728",
-                "6697c203.20201c"
-            ]
-        ]
-    },
-    {
-        "id": "7116d62.8f28728",
-        "type": "mqtt out",
-        "z": "384889e.31c6d76",
-        "name": "Battery_Charge_Volts",
-        "topic": "SunSynk/battery_charge_volts",
-        "qos": "",
-        "retain": "false",
-        "broker": "f35ad748.1790a8",
-        "x": 2100,
-        "y": 1100,
-        "wires": []
-    },
-    {
-        "id": "6697c203.20201c",
-        "type": "influxdb out",
-        "z": "384889e.31c6d76",
-        "influxdb": "332d824c.c7d53e",
-        "name": "battery_charge_volts",
-        "measurement": "battery_charge_volts",
-        "precision": "",
-        "retentionPolicy": "",
-        "x": 2340,
-        "y": 1100,
-        "wires": []
     },
     {
         "id": "b0a6e0f.1ae492",
@@ -29309,7 +27959,7 @@
         "wires": [
             [
                 "294abb40.fafc64",
-                "eb8183bd.14e79"
+                "bd764a32.3d0268"
             ]
         ]
     },
@@ -29328,23 +27978,6 @@
         "statusType": "auto",
         "x": 810,
         "y": 620,
-        "wires": []
-    },
-    {
-        "id": "eb8183bd.14e79",
-        "type": "influxdb batch",
-        "z": "28c7d530.54db9a",
-        "influxdb": "332d824c.c7d53e",
-        "precision": "",
-        "retentionPolicy": "",
-        "name": "Send to Influx",
-        "database": "database",
-        "precisionV18FluxV20": "ms",
-        "retentionPolicyV18Flux": "",
-        "org": "organisation",
-        "bucket": "bucket",
-        "x": 820,
-        "y": 580,
         "wires": []
     },
     {
@@ -29435,7 +28068,7 @@
         "finalize": "",
         "libs": [],
         "x": 1480,
-        "y": 2640,
+        "y": 2880,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -29452,7 +28085,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 2310,
-        "y": 2640,
+        "y": 2880,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -29472,7 +28105,7 @@
         "finalize": "",
         "libs": [],
         "x": 1480,
-        "y": 2740,
+        "y": 2980,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -29489,7 +28122,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 2310,
-        "y": 2740,
+        "y": 2980,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -29649,7 +28282,8 @@
         "y": 1200,
         "wires": [
             [
-                "e2b400a4.a7a0d"
+                "e2b400a4.a7a0d",
+                "e005e762.e94c68"
             ]
         ]
     },
@@ -29682,11 +28316,15 @@
         "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"grid_ct\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 2300,
         "y": 1300,
         "wires": [
             [
-                "e2b400a4.a7a0d"
+                "e2b400a4.a7a0d",
+                "e005e762.e94c68"
             ]
         ]
     },
@@ -29896,7 +28534,7 @@
         "finalize": "",
         "libs": [],
         "x": 1490,
-        "y": 2840,
+        "y": 3080,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -29915,7 +28553,7 @@
         "initialize": "",
         "finalize": "",
         "x": 2320,
-        "y": 2838,
+        "y": 3078,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -29956,7 +28594,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "0.1",
+        "repeat": "0.2",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
@@ -29984,7 +28622,7 @@
         "finalize": "",
         "libs": [],
         "x": 1500,
-        "y": 2940,
+        "y": 3180,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -30003,7 +28641,7 @@
         "initialize": "",
         "finalize": "",
         "x": 2330,
-        "y": 2938,
+        "y": 3178,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -30103,7 +28741,7 @@
         "finalize": "",
         "libs": [],
         "x": 1490,
-        "y": 2200,
+        "y": 2440,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -30123,7 +28761,7 @@
         "finalize": "",
         "libs": [],
         "x": 1510,
-        "y": 2300,
+        "y": 2540,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -30143,7 +28781,7 @@
         "finalize": "",
         "libs": [],
         "x": 1520,
-        "y": 2400,
+        "y": 2640,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -30163,7 +28801,7 @@
         "finalize": "",
         "libs": [],
         "x": 1500,
-        "y": 2500,
+        "y": 2740,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -30183,7 +28821,7 @@
         "finalize": "",
         "libs": [],
         "x": 2290,
-        "y": 2200,
+        "y": 2440,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -30203,7 +28841,7 @@
         "finalize": "",
         "libs": [],
         "x": 2290,
-        "y": 2300,
+        "y": 2540,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -30223,7 +28861,7 @@
         "finalize": "",
         "libs": [],
         "x": 2300,
-        "y": 2400,
+        "y": 2640,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -30243,7 +28881,7 @@
         "finalize": "",
         "libs": [],
         "x": 2300,
-        "y": 2500,
+        "y": 2740,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -30285,7 +28923,8 @@
         "y": 1400,
         "wires": [
             [
-                "e2b400a4.a7a0d"
+                "e2b400a4.a7a0d",
+                "bb12693b.eda228"
             ]
         ]
     },
@@ -30359,7 +28998,7 @@
         "finalize": "",
         "libs": [],
         "x": 1490,
-        "y": 3040,
+        "y": 3280,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -30379,7 +29018,7 @@
         "finalize": "",
         "libs": [],
         "x": 1500,
-        "y": 3140,
+        "y": 3380,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -30399,7 +29038,7 @@
         "finalize": "",
         "libs": [],
         "x": 2320,
-        "y": 3040,
+        "y": 3280,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -30419,7 +29058,7 @@
         "finalize": "",
         "libs": [],
         "x": 2330,
-        "y": 3140,
+        "y": 3380,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -30601,7 +29240,7 @@
         "to": "",
         "reg": false,
         "x": 950,
-        "y": 2400,
+        "y": 2640,
         "wires": [
             [
                 "f3eec5fd.c37da8"
@@ -30669,7 +29308,7 @@
         "to": "",
         "reg": false,
         "x": 940,
-        "y": 2840,
+        "y": 3080,
         "wires": [
             [
                 "95a6aed8.a8832"
@@ -30941,7 +29580,7 @@
         "to": "",
         "reg": false,
         "x": 950,
-        "y": 2500,
+        "y": 2740,
         "wires": [
             [
                 "6adc17ec.8c5828"
@@ -30975,7 +29614,7 @@
         "to": "",
         "reg": false,
         "x": 950,
-        "y": 2300,
+        "y": 2540,
         "wires": [
             [
                 "6cc9079a.72c3d8"
@@ -31009,7 +29648,7 @@
         "to": "",
         "reg": false,
         "x": 950,
-        "y": 2200,
+        "y": 2440,
         "wires": [
             [
                 "61fc72e0.49c60c"
@@ -31043,7 +29682,7 @@
         "to": "",
         "reg": false,
         "x": 940,
-        "y": 2740,
+        "y": 2980,
         "wires": [
             [
                 "e4f6bad6.6b6c38"
@@ -31077,7 +29716,7 @@
         "to": "",
         "reg": false,
         "x": 940,
-        "y": 2940,
+        "y": 3180,
         "wires": [
             [
                 "996e4aa8.2909b8"
@@ -31111,7 +29750,7 @@
         "to": "",
         "reg": false,
         "x": 940,
-        "y": 3140,
+        "y": 3380,
         "wires": [
             [
                 "eb6e3973.e3ade8"
@@ -31145,7 +29784,7 @@
         "to": "",
         "reg": false,
         "x": 940,
-        "y": 2640,
+        "y": 2880,
         "wires": [
             [
                 "3d1decef.134f84"
@@ -31179,7 +29818,7 @@
         "to": "",
         "reg": false,
         "x": 940,
-        "y": 3040,
+        "y": 3280,
         "wires": [
             [
                 "390bbfb.d268d4"
@@ -31238,7 +29877,7 @@
         "initialize": "",
         "finalize": "",
         "x": 1460,
-        "y": 3240,
+        "y": 2120,
         "wires": [
             [
                 "511925dd.5f613c"
@@ -31340,7 +29979,7 @@
         "to": "",
         "reg": false,
         "x": 940,
-        "y": 3240,
+        "y": 2120,
         "wires": [
             [
                 "4e23e423.fd1d9c"
@@ -31360,7 +29999,7 @@
         "finalize": "",
         "libs": [],
         "x": 2320,
-        "y": 3240,
+        "y": 2120,
         "wires": [
             [
                 "e2b400a4.a7a0d"
@@ -31558,9 +30197,9 @@
         "id": "d6b3d858.c23e48",
         "type": "cycle",
         "z": "6896d5b1.4a006c",
-        "name": "",
-        "outputs": 29,
-        "x": 470,
+        "name": "Cycle - 0.2 seconds",
+        "outputs": 19,
+        "x": 510,
         "y": 1920,
         "wires": [
             [
@@ -31616,36 +30255,6 @@
             ],
             [
                 "322c0c70.7167d4"
-            ],
-            [
-                "40b551bb.882b1"
-            ],
-            [
-                "3ae30313.f7972c"
-            ],
-            [
-                "b737e5ba.522598"
-            ],
-            [
-                "a7326c7c.036b5"
-            ],
-            [
-                "a5309e38.e7791"
-            ],
-            [
-                "63d92c33.baae14"
-            ],
-            [
-                "aa096e1c.4953a"
-            ],
-            [
-                "dbd233f1.a0ed7"
-            ],
-            [
-                "88ae229e.ec47c"
-            ],
-            [
-                "62a4a5b5.fd27dc"
             ],
             [
                 "7481b913.1cbb58"
@@ -31816,6 +30425,162 @@
         "wires": [
             [
                 "9e5c4ee2.45a8f"
+            ]
+        ]
+    },
+    {
+        "id": "bd764a32.3d0268",
+        "type": "influxdb batch",
+        "z": "28c7d530.54db9a",
+        "influxdb": "332d824c.c7d53e",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "Send to Influx",
+        "x": 820,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "b2a8c602.292988",
+        "type": "cycle",
+        "z": "6896d5b1.4a006c",
+        "name": "Cycle - 1 Minute",
+        "outputs": 10,
+        "x": 500,
+        "y": 2760,
+        "wires": [
+            [
+                "40b551bb.882b1"
+            ],
+            [
+                "3ae30313.f7972c"
+            ],
+            [
+                "b737e5ba.522598"
+            ],
+            [
+                "a7326c7c.036b5"
+            ],
+            [
+                "a5309e38.e7791"
+            ],
+            [
+                "63d92c33.baae14"
+            ],
+            [
+                "aa096e1c.4953a"
+            ],
+            [
+                "dbd233f1.a0ed7"
+            ],
+            [
+                "88ae229e.ec47c"
+            ],
+            [
+                "62a4a5b5.fd27dc"
+            ]
+        ]
+    },
+    {
+        "id": "b51f0ee6.9e80d",
+        "type": "inject",
+        "z": "6896d5b1.4a006c",
+        "name": "timestamp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 2760,
+        "wires": [
+            [
+                "2bfb0859.6d8b88"
+            ]
+        ]
+    },
+    {
+        "id": "2bfb0859.6d8b88",
+        "type": "gate",
+        "z": "6896d5b1.4a006c",
+        "name": "Monitor_Gate",
+        "controlTopic": "monitor_gate",
+        "defaultState": "open",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "persist": false,
+        "x": 260,
+        "y": 2760,
+        "wires": [
+            [
+                "b2a8c602.292988"
+            ]
+        ]
+    },
+    {
+        "id": "ea730fef.c866a",
+        "type": "debug",
+        "z": "6896d5b1.4a006c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 3130,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "bb12693b.eda228",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "name": "Grid_Total_Load_Calc",
+        "func": "var v3value = flow.get(\"v3value\");\nvar v4value = flow.get(\"v4value\");\nvar total;\n\nif (msg.topic == \"grid_load_calc\") {\n    v1value = msg.payload;\n    flow.set(\"v3value\",msg.payload);\n}else if (msg.topic == \"invrt_total_pwr\"){\n    v2value = msg.payload;\n    flow.set(\"v4value\",msg.payload);\n}\nif (v1value !== undefined && v2value !== undefined) {\n   total = v3value + v4value;\n   msg.payload = total;\n   msg.topic = 'total_load_calc';\n   return msg;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2840,
+        "y": 1260,
+        "wires": [
+            [
+                "ea730fef.c866a",
+                "e2b400a4.a7a0d"
+            ]
+        ]
+    },
+    {
+        "id": "e005e762.e94c68",
+        "type": "function",
+        "z": "6896d5b1.4a006c",
+        "name": "Grid_Load_Calc",
+        "func": "var v1value = flow.get(\"v1value\");\nvar v2value = flow.get(\"v2value\");\nvar total;\n\nif (msg.topic == \"grid_ct\") {\n    v1value = msg.payload;\n    flow.set(\"v1value\",msg.payload);\n}else if (msg.topic == \"load_grid_inverter\"){\n    v2value = msg.payload;\n    flow.set(\"v2value\",msg.payload);\n}\nif (v1value !== undefined && v2value !== undefined) {\n   total = v1value - v2value;\n   msg.payload = total;\n   msg.topic = 'grid_load_calc';\n   return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 2560,
+        "y": 1260,
+        "wires": [
+            [
+                "bb12693b.eda228"
             ]
         ]
     }
