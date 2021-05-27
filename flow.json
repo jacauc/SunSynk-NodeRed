@@ -1848,7 +1848,7 @@
         "name": "",
         "topic": "",
         "unitid": 1,
-        "queueReadIntervalTime": "10",
+        "queueReadIntervalTime": "100",
         "lowLowLevel": 25,
         "lowLevel": 75,
         "highLevel": 150,
