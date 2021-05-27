@@ -1852,7 +1852,7 @@
         "lowLowLevel": 25,
         "lowLevel": 75,
         "highLevel": 150,
-        "highHighLevel": 300,
+        "highHighLevel": "2000",
         "server": "e58adf35.07bda",
         "errorOnHighLevel": false,
         "showStatusActivities": true,
