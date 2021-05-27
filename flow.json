@@ -4691,7 +4691,8 @@
         "y": 220,
         "wires": [
             [
-                "c9500251.88c4"
+                "c9500251.88c4",
+                "3834e407.ec9ddc"
             ]
         ]
     },
@@ -28268,5 +28269,21 @@
                 "a91ead8e.950b8"
             ]
         ]
+    },
+    {
+        "id": "3834e407.ec9ddc",
+        "type": "debug",
+        "z": "b6d18ded.3db32",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 320,
+        "wires": []
     }
 ]
