@@ -3068,7 +3068,7 @@
         "id": "e2b400a4.a7a0d",
         "type": "link out",
         "z": "6896d5b1.4a006c",
-        "name": "Send to MQTT ",
+        "name": "Send to MQTT and Influx",
         "links": [
             "118dd23d.2cd0de"
         ],
