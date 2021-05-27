@@ -28224,7 +28224,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "300",
+        "repeat": "1800",
         "crontab": "",
         "once": true,
         "onceDelay": "5",
