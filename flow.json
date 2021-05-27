@@ -2589,7 +2589,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "0.23",
+        "repeat": "0.5",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
