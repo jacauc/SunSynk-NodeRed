@@ -1651,7 +1651,7 @@
         "serialParity": "none",
         "serialConnectionDelay": "1000",
         "unit_id": "1",
-        "commandDelay": "10",
+        "commandDelay": "200",
         "clientTimeout": "1000",
         "reconnectOnTimeout": false,
         "reconnectTimeout": "2000",
