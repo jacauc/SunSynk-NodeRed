@@ -73,7 +73,7 @@
         "id": "860a82e0.55f59",
         "type": "tab",
         "label": "TimeMode",
-        "disabled": false,
+        "disabled": true,
         "info": "A neat online timer made in Dashboard.  You can link it with any automation setup in NodeRED, deploy multiple timers and add schedules to your devices. \nYou can customise the payload to suit your needs.\n![enter image description here](https://notenoughtech.com/wp-content/uploads/2019/11/YouTube-Thumb.jpg)\n\n**Instructions:**\nYou can read all [set up instructions here](https://notenoughtech.com/home-automation/nodered-home-automation/a-timer-in-nodered/)\n\n---\n\n**Features**:\n\n -   **Modular (as a subflow)**\n -   **Unlimited timers per device**\n -   **Supports “days of the week”**\n -   **works offline**\n -   **Dashboard interface**\n -   **One button reset**   \n\n**You will need the following nodes:**\n\n - node-red-dashboard\n - node-red-contrib-schedex\n---\n# Settings\n - **PayloadON** payload message sent on ON action\n - **PayloadOFF** payload message sent on OFF action\n - **TimerNumber** timer ID (unique for each timer)\n"
     },
     {
