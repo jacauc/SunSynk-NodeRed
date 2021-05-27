@@ -4771,8 +4771,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 830,
-        "y": 220,
+        "x": 850,
+        "y": 140,
         "wires": [
             [
                 "70c90e2.058f4f"
@@ -4780,7 +4780,9 @@
             [
                 "99c7c9aa.a72cb8"
             ],
-            []
+            [
+                "cab95e99.e0ad4"
+            ]
         ]
     },
     {
@@ -4796,7 +4798,7 @@
         "format": "{{msg.payload}}",
         "layout": "row-spread",
         "x": 860,
-        "y": 140,
+        "y": 80,
         "wires": []
     },
     {
@@ -28283,7 +28285,7 @@
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 660,
+        "x": 630,
         "y": 320,
         "wires": []
     }
