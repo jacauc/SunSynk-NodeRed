@@ -1652,7 +1652,7 @@
         "serialConnectionDelay": "1000",
         "unit_id": "1",
         "commandDelay": "0",
-        "clientTimeout": "500",
+        "clientTimeout": "1000",
         "reconnectOnTimeout": false,
         "reconnectTimeout": "2000",
         "parallelUnitIdsAllowed": false
