@@ -4887,7 +4887,7 @@
         "order": 9,
         "width": 0,
         "height": 0,
-        "passthru": false,
+        "passthru": true,
         "label": "Read",
         "tooltip": "",
         "color": "",
@@ -4896,8 +4896,9 @@
         "payload": "reset",
         "payloadType": "str",
         "topic": "Settings_Write_Gate",
-        "x": 50,
-        "y": 980,
+        "topicType": "str",
+        "x": 230,
+        "y": 1000,
         "wires": [
             [
                 "7fd203b2.2a95bc",
@@ -28268,6 +28269,35 @@
         "wires": [
             [
                 "a91ead8e.950b8"
+            ]
+        ]
+    },
+    {
+        "id": "e542b53f.82ca78",
+        "type": "inject",
+        "z": "ca54f1a.9c8f41",
+        "name": "timestamp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 70,
+        "y": 1000,
+        "wires": [
+            [
+                "a07399b7.408928"
             ]
         ]
     }
