@@ -1644,7 +1644,7 @@
         "tcpPort": "8899",
         "tcpType": "DEFAULT",
         "serialPort": "/dev/ttyS0",
-        "serialType": "RTU-BUFFERD",
+        "serialType": "RTU",
         "serialBaudrate": "38400",
         "serialDatabits": "8",
         "serialStopbits": "1",
