@@ -2600,7 +2600,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "0.3",
+        "repeat": "1.5",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
