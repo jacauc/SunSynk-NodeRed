@@ -1,5 +1,12 @@
 [
     {
+        "id": "83f51df8.1b7f6",
+        "type": "tab",
+        "label": "ModBusWrite",
+        "disabled": true,
+        "info": ""
+    },
+    {
         "id": "ceeb1673.a381f8",
         "type": "tab",
         "label": "ModBusRead",
@@ -39,13 +46,6 @@
         "type": "tab",
         "label": "SSLSRead",
         "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "83f51df8.1b7f6",
-        "type": "tab",
-        "label": "ModBusWrite",
-        "disabled": true,
         "info": ""
     },
     {
