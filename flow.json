@@ -38,35 +38,35 @@
         "id": "696c3f0a.59be2",
         "type": "tab",
         "label": "SSDSRead",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
         "id": "26a7fa50.8168a6",
         "type": "tab",
         "label": "SSLSRead",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
         "id": "e12893dc.317f",
         "type": "tab",
         "label": "SSFormWrite",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
         "id": "cd29128b.0ecbb",
         "type": "tab",
         "label": "SSDSWrite",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
         "id": "b2b37438.6fe6a8",
         "type": "tab",
         "label": "SSLSWrite",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
