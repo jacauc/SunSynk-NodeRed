@@ -6872,9 +6872,8 @@
         "z": "ca54f1a.9c8f41",
         "name": "FormDS_SoC_Zone4",
         "links": [
-            "1a2b0466.6b948c",
             "a862a227.7bbb2",
-            "c50d44ca.d99d88"
+            "ed2dca6a.9ca398"
         ],
         "x": 1595,
         "y": 740,
@@ -6887,8 +6886,7 @@
         "name": "FormDS_SoC_Zone5",
         "links": [
             "15e7f1c4.a0bfee",
-            "7dec58ab.8841a8",
-            "48f6ab07.4e8a24"
+            "ed2dca6a.9ca398"
         ],
         "x": 1595,
         "y": 800,
@@ -6900,9 +6898,8 @@
         "z": "ca54f1a.9c8f41",
         "name": "FormDS_SoC_Zone6",
         "links": [
-            "583de080.9ce0b",
             "d6c4a6d6.ac9338",
-            "5345a1be.28cb9"
+            "ed2dca6a.9ca398"
         ],
         "x": 1595,
         "y": 860,
@@ -6928,8 +6925,7 @@
         "name": "FormDS_GC_Zone2",
         "links": [
             "32415262.21465e",
-            "6c1fd8e5.aa4638",
-            "26775d5c.3a7c22"
+            "ed2dca6a.9ca398"
         ],
         "x": 1595,
         "y": 1000,
@@ -6942,8 +6938,7 @@
         "name": "FormDS_GC_Zone3",
         "links": [
             "73d8632b.f7104c",
-            "87f83b09.7e99c8",
-            "13fa5cfd.c7fef3"
+            "ed2dca6a.9ca398"
         ],
         "x": 1595,
         "y": 1060,
@@ -6956,8 +6951,7 @@
         "name": "FormDS_GC_Zone4",
         "links": [
             "35a3cce9.401714",
-            "855fa4dd.eb0618",
-            "b45ec2c8.0816a"
+            "ed2dca6a.9ca398"
         ],
         "x": 1595,
         "y": 1120,
@@ -6970,8 +6964,7 @@
         "name": "FormDS_GC_Zone5",
         "links": [
             "111860af.b6c04f",
-            "309b3865.48b248",
-            "e4216287.273d2"
+            "ed2dca6a.9ca398"
         ],
         "x": 1595,
         "y": 1180,
@@ -6984,8 +6977,7 @@
         "name": "FormDS_GC_Zone6",
         "links": [
             "530ec4f0.17e71c",
-            "e15de0a9.50f01",
-            "6f12e07f.6bbd9"
+            "ed2dca6a.9ca398"
         ],
         "x": 1595,
         "y": 1240,
@@ -6998,8 +6990,7 @@
         "name": "FormDS_PL",
         "links": [
             "30eb9ce6.c947d4",
-            "bf00b181.08d51",
-            "b07f76e3.3e7078"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 1759,
@@ -7012,8 +7003,7 @@
         "name": "FormDS_Use_Timer",
         "links": [
             "71a50425.0f369c",
-            "9d11fde9.480c5",
-            "2d54b0e2.2fd6f"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 1819,
@@ -7026,8 +7016,7 @@
         "name": "FormDS_Solar_Export",
         "links": [
             "4277f207.301cfc",
-            "41c156c8.5e55a8",
-            "6d3b5be0.b46b94"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 1879,
@@ -7040,8 +7029,7 @@
         "name": "FormDS_Load_Limit",
         "links": [
             "4b6380f2.177ad",
-            "a4323ef2.21c5",
-            "85e16d8b.976bd"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 1939,
@@ -7054,8 +7042,7 @@
         "name": "FormDS_Export_Limit",
         "links": [
             "64abf8dc.1a7168",
-            "b663d4a7.6b38a8",
-            "2289d395.84998c"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 1999,
@@ -7068,8 +7055,7 @@
         "name": "FormDS_BatShut",
         "links": [
             "669e0493.46387c",
-            "520ef76a.15ee08",
-            "dce192db.7812a"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 2139,
@@ -7082,8 +7068,7 @@
         "name": "FormDS_BatLow",
         "links": [
             "4797ca8b.fcd7b4",
-            "1ab6e690.c8a289",
-            "f1faaae7.7a0c68"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 2199,
@@ -7096,8 +7081,7 @@
         "name": "FormDS_BatRestart",
         "links": [
             "730dca72.594f34",
-            "67631460.4ee0ac",
-            "b62ca136.b8f2d"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 2259,
@@ -7110,8 +7094,7 @@
         "name": "FormDS_BatMaxC",
         "links": [
             "5e9b308f.ba4dc",
-            "e94e2b29.4e7fe8",
-            "b53b35e6.2500a8"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 2319,
@@ -7124,8 +7107,7 @@
         "name": "FormDS_BatMaxDC",
         "links": [
             "8c9184b.b71fb78",
-            "28a0ad4d.f30972",
-            "6504fccc.c1ce74"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 2379,
@@ -7137,9 +7119,8 @@
         "z": "ca54f1a.9c8f41",
         "name": "FormDS_Bat_GridEn",
         "links": [
-            "fe7fdb50.5d3198",
-            "79f06770.c31368",
-            "434b8127.a4f49"
+            "ed2dca6a.9ca398",
+            "fe7fdb50.5d3198"
         ],
         "x": 1584,
         "y": 2439,
@@ -7152,8 +7133,7 @@
         "name": "FormDS_GridC",
         "links": [
             "d368b04b.e8a7b",
-            "e985ed0.bda281",
-            "eef8acbe.80b23"
+            "ed2dca6a.9ca398"
         ],
         "x": 1584,
         "y": 2499,
@@ -7445,8 +7425,7 @@
         "name": "FormDS_SM_Zone1",
         "links": [
             "7f1b6947.727138",
-            "b6fddde1.3ce8e",
-            "25b80ae.016d6f6"
+            "ed2dca6a.9ca398"
         ],
         "x": 1604,
         "y": 1322,
@@ -7459,8 +7438,7 @@
         "name": "FormDS_SM_Zone2",
         "links": [
             "6e60bbb8.c065b4",
-            "f685b778.5740b8",
-            "12e8de00.0bc7e2"
+            "ed2dca6a.9ca398"
         ],
         "x": 1604,
         "y": 1382,
@@ -7473,8 +7451,7 @@
         "name": "FormDS_SM_Zone3",
         "links": [
             "24e97e6c.005ee2",
-            "72300a65.1e51e4",
-            "a429b169.919f1"
+            "ed2dca6a.9ca398"
         ],
         "x": 1604,
         "y": 1442,
@@ -7487,8 +7464,7 @@
         "name": "FormDS_SM_Zone4",
         "links": [
             "bd72aff0.392c3",
-            "3a290b7d.ffbf34",
-            "bb498a1b.5631f8"
+            "ed2dca6a.9ca398"
         ],
         "x": 1604,
         "y": 1502,
@@ -7501,8 +7477,7 @@
         "name": "FormDS_SM_Zone5",
         "links": [
             "bd21fa49.b7ac58",
-            "69387642.d96e38",
-            "847a6736.b02d48"
+            "ed2dca6a.9ca398"
         ],
         "x": 1604,
         "y": 1562,
@@ -7515,8 +7490,7 @@
         "name": "FormDS_SM_Zone6",
         "links": [
             "57eaaab0.1c1364",
-            "6d28567d.04dd48",
-            "b1c9b51e.42c558"
+            "ed2dca6a.9ca398"
         ],
         "x": 1604,
         "y": 1622,
@@ -28296,7 +28270,33 @@
             "71d26d9e.c2f954",
             "43092442.35c8ac",
             "e5da11ae.1ca8",
-            "edd83161.1fbdc"
+            "edd83161.1fbdc",
+            "e5d9a286.2faed",
+            "2de4865c.a0860a",
+            "70ba5371.9d6d1c",
+            "2af45570.01ff8a",
+            "8d8e9a95.b7ab68",
+            "cdcdb2d5.a08fb",
+            "c487d909.c51ad8",
+            "d6a079bf.fd8d68",
+            "a060b229.54ce6",
+            "b736f0ba.feebf",
+            "ea3205a3.ac6498",
+            "ced3bdb.eae6c4",
+            "c5084e47.e8fe5",
+            "fb1ba666.0252c8",
+            "93d94504.69ffd8",
+            "bf04c5f5.3cb2d8",
+            "48af54c9.9cd59c",
+            "69f7e73d.4e2398",
+            "615b8080.a4ec",
+            "a06f8151.e755c",
+            "a03788c2.679bb8",
+            "37e2d670.3ddd1a",
+            "38852b5f.67f6f4",
+            "8b9e9d0a.67306",
+            "5f551bd9.3e9324",
+            "83f034ae.f3bfd8"
         ],
         "x": 295,
         "y": 80,
