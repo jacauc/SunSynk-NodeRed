@@ -28338,7 +28338,7 @@
         "type": "debug",
         "z": "f6c1caf4.a89c98",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": true,
         "tostatus": true,
