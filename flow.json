@@ -5011,7 +5011,7 @@
         "y": 220,
         "wires": [
             [
-                "f9d9b6b0.e33198"
+                "db80724c.6ec12"
             ]
         ]
     },
@@ -28201,40 +28201,6 @@
             ],
             [
                 "7481b913.1cbb58"
-            ]
-        ]
-    },
-    {
-        "id": "f9d9b6b0.e33198",
-        "type": "change",
-        "z": "ca54f1a.9c8f41",
-        "name": "Percentage",
-        "rules": [
-            {
-                "t": "set",
-                "p": "deviceclass",
-                "pt": "msg",
-                "to": "none",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "unit",
-                "pt": "msg",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1310,
-        "y": 200,
-        "wires": [
-            [
-                "db80724c.6ec12"
             ]
         ]
     },
