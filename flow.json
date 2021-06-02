@@ -1889,8 +1889,7 @@
         "name": "MQTT & Influx Publish",
         "links": [
             "e2b400a4.a7a0d",
-            "f9fe055.26195f8",
-            "adcd4cc3.368f4"
+            "f9fe055.26195f8"
         ],
         "x": 295,
         "y": 220,
@@ -6756,8 +6755,8 @@
         "z": "ca54f1a.9c8f41",
         "name": "FormDS_Time_Zone1",
         "links": [
-            "118dd23d.2cd0de",
-            "9c6d3e2d.6020d"
+            "9c6d3e2d.6020d",
+            "ed2dca6a.9ca398"
         ],
         "x": 1595,
         "y": 160,
@@ -28293,6 +28292,22 @@
             ],
             [
                 "7481b913.1cbb58"
+            ]
+        ]
+    },
+    {
+        "id": "ed2dca6a.9ca398",
+        "type": "link in",
+        "z": "28c7d530.54db9a",
+        "name": "MQTT ONLY Publish",
+        "links": [
+            "adcd4cc3.368f4"
+        ],
+        "x": 295,
+        "y": 80,
+        "wires": [
+            [
+                "8bda0137.80198"
             ]
         ]
     }
