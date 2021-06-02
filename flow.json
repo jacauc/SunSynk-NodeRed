@@ -4832,10 +4832,12 @@
         "payloadType": "str",
         "topic": "Settings_Write_Gate",
         "topicType": "str",
-        "x": 230,
-        "y": 1000,
+        "x": 190,
+        "y": 960,
         "wires": [
-            []
+            [
+                "feee571.fa361a8"
+            ]
         ]
     },
     {
@@ -28153,7 +28155,7 @@
         "y": 1080,
         "wires": [
             [
-                "feee571.fa361a8"
+                "a07399b7.408928"
             ]
         ]
     },
