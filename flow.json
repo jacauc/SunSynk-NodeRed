@@ -28339,7 +28339,7 @@
         "type": "function",
         "z": "f6c1caf4.a89c98",
         "name": "Assemble Config",
-        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n\n  \"state_topic\": \"homeassistant/sensor/SunSynk\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynk_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"device\": {\n    \"identifiers\": [\n      \"SunSynk\"\n    ],\n    \"name\": \"SunSynk\",\n    \"model\": \"SynSynk\",\n    \"manufacturer\": \"SunSynk\"\n  }  \n}\nif ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n  msg.payload.device_class = msg.deviceclass\n}\nif (msg.unit != \"\") {\n  msg.payload.unit_of_measurement = msg.unit\n}  \nreturn msg;",
+        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynkSettings\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n\n  \"state_topic\": \"homeassistant/sensor/SunSynkSettings\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynkSettings_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"device\": {\n    \"identifiers\": [\n      \"SunSynkSettings\"\n    ],\n    \"name\": \"SunSynkSettings\",\n    \"model\": \"SynSynkSettings\",\n    \"manufacturer\": \"SunSynkSettings\"\n  }  \n}\nif ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n  msg.payload.device_class = msg.deviceclass\n}\nif (msg.unit != \"\") {\n  msg.payload.unit_of_measurement = msg.unit\n}  \nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
