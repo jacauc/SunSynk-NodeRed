@@ -28,6 +28,13 @@
         "info": ""
     },
     {
+        "id": "f6c1caf4.a89c98",
+        "type": "tab",
+        "label": "Inverter_Settings_Publish",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "ca54f1a.9c8f41",
         "type": "tab",
         "label": "SSFormRead",
@@ -6755,8 +6762,8 @@
         "z": "ca54f1a.9c8f41",
         "name": "FormDS_Time_Zone1",
         "links": [
-            "9c6d3e2d.6020d",
-            "ed2dca6a.9ca398"
+            "35d98f90.1738f",
+            "9c6d3e2d.6020d"
         ],
         "x": 1595,
         "y": 160,
@@ -28256,9 +28263,162 @@
         ]
     },
     {
-        "id": "ed2dca6a.9ca398",
+        "id": "f9d9b6b0.e33198",
+        "type": "change",
+        "z": "ca54f1a.9c8f41",
+        "name": "Percentage",
+        "rules": [
+            {
+                "t": "set",
+                "p": "deviceclass",
+                "pt": "msg",
+                "to": "battery",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "unit",
+                "pt": "msg",
+                "to": "%",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1470,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28fc0870.cf14d8",
+        "type": "mqtt out",
+        "z": "f6c1caf4.a89c98",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f35ad748.1790a8",
+        "x": 830,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "37b95ba1.4c56e4",
+        "type": "function",
+        "z": "f6c1caf4.a89c98",
+        "name": "Assemble Value",
+        "func": "//var fulltopic\nmsg.shorttopic = msg.topic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.topic + \"/\" + \"value\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "28fc0870.cf14d8",
+                "6ee3dd2d.4cc214",
+                "63f9fc74.ad0064"
+            ]
+        ]
+    },
+    {
+        "id": "6ee3dd2d.4cc214",
+        "type": "debug",
+        "z": "f6c1caf4.a89c98",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 790,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "72ff0cbd.2255b4",
+        "type": "comment",
+        "z": "f6c1caf4.a89c98",
+        "name": "Send to MQTT",
+        "info": "",
+        "x": 480,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "63f9fc74.ad0064",
+        "type": "function",
+        "z": "f6c1caf4.a89c98",
+        "name": "Assemble Config",
+        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n\n  \"state_topic\": \"homeassistant/sensor/SunSynk\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynk_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"device\": {\n    \"identifiers\": [\n      \"SunSynk\"\n    ],\n    \"name\": \"SunSynk\",\n    \"model\": \"SynSynk\",\n    \"manufacturer\": \"SunSynk\"\n  }  \n}\nif ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n  msg.payload.device_class = msg.deviceclass\n}\nif (msg.unit != \"\") {\n  msg.payload.unit_of_measurement = msg.unit\n}  \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 280,
+        "wires": [
+            [
+                "350ec448.db696c",
+                "7a501859.d3c608"
+            ]
+        ]
+    },
+    {
+        "id": "350ec448.db696c",
+        "type": "mqtt out",
+        "z": "f6c1caf4.a89c98",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f35ad748.1790a8",
+        "x": 1030,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7a501859.d3c608",
+        "type": "debug",
+        "z": "f6c1caf4.a89c98",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 990,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "35d98f90.1738f",
         "type": "link in",
-        "z": "28c7d530.54db9a",
+        "z": "f6c1caf4.a89c98",
         "name": "MQTT ONLY Publish",
         "links": [
             "adcd4cc3.368f4",
@@ -28298,44 +28458,12 @@
             "5f551bd9.3e9324",
             "83f034ae.f3bfd8"
         ],
-        "x": 295,
-        "y": 80,
+        "x": 275,
+        "y": 140,
         "wires": [
             [
-                "8bda0137.80198"
+                "37b95ba1.4c56e4"
             ]
-        ]
-    },
-    {
-        "id": "f9d9b6b0.e33198",
-        "type": "change",
-        "z": "ca54f1a.9c8f41",
-        "name": "Percentage",
-        "rules": [
-            {
-                "t": "set",
-                "p": "deviceclass",
-                "pt": "msg",
-                "to": "battery",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "unit",
-                "pt": "msg",
-                "to": "%",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1470,
-        "y": 80,
-        "wires": [
-            []
         ]
     }
 ]
