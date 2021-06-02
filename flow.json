@@ -4801,10 +4801,11 @@
         "wrap": false,
         "passthru": true,
         "topic": "Time_Zone1",
+        "topicType": "str",
         "format": "{{value}}",
         "min": 0,
         "max": "2359",
-        "step": "50",
+        "step": "1",
         "x": 1465,
         "y": 160,
         "wires": [
