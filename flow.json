@@ -4801,11 +4801,10 @@
         "wrap": false,
         "passthru": true,
         "topic": "Time_Zone1",
-        "topicType": "str",
         "format": "{{value}}",
         "min": 0,
         "max": "2359",
-        "step": "1",
+        "step": "50",
         "x": 1465,
         "y": 160,
         "wires": [
@@ -4833,11 +4832,46 @@
         "payloadType": "str",
         "topic": "Settings_Write_Gate",
         "topicType": "str",
-        "x": 190,
-        "y": 960,
+        "x": 230,
+        "y": 1000,
         "wires": [
             [
-                "feee571.fa361a8"
+                "42c1fc5b.cbe244",
+                "9dad3045.a72e8",
+                "fe31bd6e.aa04a",
+                "108f5915.eb7bf7",
+                "893a0d49.17346",
+                "2e94f451.69303c",
+                "a79c4f8b.9afec",
+                "b677fc71.d75",
+                "aeab9268.9aa4c",
+                "98d94e9a.48d64",
+                "7db6793a.e2bee8",
+                "2ba42c01.f957a4",
+                "8a6e9c61.e4adb",
+                "300d4307.795d3c",
+                "6e66c0b8.6c9d2",
+                "83ee7c82.ba98",
+                "393733aa.46bbbc",
+                "ac979e12.98be6",
+                "93745c18.b03c1",
+                "41eb1cc5.2376e4",
+                "debed75b.f8c8e8",
+                "fd676b46.12cbd8",
+                "8e32466d.f87f28",
+                "d05d1b9c.580448",
+                "fefbedd.643051",
+                "1cac4c95.80ac53",
+                "7d79d2aa.040a0c",
+                "2b9b1902.fd3206",
+                "2221e8b.f105b18",
+                "a8ad345d.7cf7e8",
+                "6701e16f.c5e7",
+                "3168cf3e.85b7c",
+                "e1ff3260.e9f79",
+                "4e4c3af8.355544",
+                "9fd69b2c.5d0218",
+                "7fd203b2.2a95bc"
             ]
         ]
     },
@@ -28145,7 +28179,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "5",
+        "repeat": "1800",
         "crontab": "",
         "once": true,
         "onceDelay": "60",
@@ -28398,58 +28432,6 @@
             [
                 "37b95ba1.4c56e4"
             ]
-        ]
-    },
-    {
-        "id": "feee571.fa361a8",
-        "type": "cycle",
-        "z": "ca54f1a.9c8f41",
-        "name": "Cycle - 0.4 seconds",
-        "outputs": 19,
-        "x": 330,
-        "y": 2080,
-        "wires": [
-            [
-                "7fd203b2.2a95bc"
-            ],
-            [
-                "9fd69b2c.5d0218"
-            ],
-            [
-                "4e4c3af8.355544"
-            ],
-            [
-                "e1ff3260.e9f79"
-            ],
-            [
-                "3168cf3e.85b7c"
-            ],
-            [
-                "6701e16f.c5e7"
-            ],
-            [
-                "93745c18.b03c1"
-            ],
-            [
-                "2221e8b.f105b18"
-            ],
-            [],
-            [],
-            [],
-            [],
-            [
-                "fe31bd6e.aa04a"
-            ],
-            [],
-            [],
-            [
-                "9dad3045.a72e8"
-            ],
-            [],
-            [
-                "108f5915.eb7bf7"
-            ],
-            []
         ]
     }
 ]
