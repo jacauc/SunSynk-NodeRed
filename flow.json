@@ -28291,7 +28291,7 @@
         "type": "function",
         "z": "f6c1caf4.a89c98",
         "name": "Assemble Value",
-        "func": "//var fulltopic\nmsg.shorttopic = msg.topic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.topic + \"/\" + \"value\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nreturn msg;",
+        "func": "//var fulltopic\nmsg.shorttopic = msg.topic\nmsg.topic = \"homeassistant/sensor/SunSynkSettings\" + \"/\" + \"/\" + msg.topic + \"/\" + \"value\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
