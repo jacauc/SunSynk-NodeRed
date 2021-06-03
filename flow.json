@@ -1760,8 +1760,7 @@
         "wires": [
             [],
             [
-                "c9dbf7d1.cf6138",
-                "98c41121.a29ce"
+                "c9dbf7d1.cf6138"
             ]
         ]
     },
@@ -1797,7 +1796,7 @@
         "y": 700,
         "wires": [
             [
-                "2d8785af.035c2a"
+                "db8372fd.13556"
             ]
         ]
     },
@@ -28438,6 +28437,29 @@
         "wires": [
             [
                 "37b95ba1.4c56e4"
+            ]
+        ]
+    },
+    {
+        "id": "db8372fd.13556",
+        "type": "modbus-flex-getter",
+        "z": "ceeb1673.a381f8",
+        "name": "Inverter",
+        "showStatusActivities": true,
+        "showErrors": true,
+        "logIOActivities": false,
+        "server": "e58adf35.07bda",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": true,
+        "x": 1060,
+        "y": 680,
+        "wires": [
+            [],
+            [
+                "98c41121.a29ce"
             ]
         ]
     }
