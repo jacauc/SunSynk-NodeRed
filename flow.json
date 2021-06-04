@@ -2573,7 +2573,7 @@
         "toggleCmd": "toggle",
         "defaultCmd": "default",
         "persist": false,
-        "x": 260,
+        "x": 320,
         "y": 1920,
         "wires": [
             [
@@ -2602,7 +2602,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 70,
+        "x": 110,
         "y": 1920,
         "wires": [
             [
@@ -4435,8 +4435,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 90,
-        "y": 2780,
+        "x": 110,
+        "y": 2760,
         "wires": [
             [
                 "2bfb0859.6d8b88"
@@ -4455,7 +4455,7 @@
         "toggleCmd": "toggle",
         "defaultCmd": "default",
         "persist": false,
-        "x": 260,
+        "x": 300,
         "y": 2760,
         "wires": [
             [
