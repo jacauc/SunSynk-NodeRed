@@ -28440,5 +28440,53 @@
                 "37b95ba1.4c56e4"
             ]
         ]
+    },
+    {
+        "id": "3f6d76bf.506dda",
+        "type": "exec",
+        "z": "ca54f1a.9c8f41",
+        "command": "sudo reboot",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "12f3e764.336849",
+        "type": "inject",
+        "z": "ca54f1a.9c8f41",
+        "name": "timestamp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 460,
+        "wires": [
+            [
+                "3f6d76bf.506dda"
+            ]
+        ]
     }
 ]
