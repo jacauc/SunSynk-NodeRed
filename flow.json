@@ -4823,7 +4823,7 @@
         "type": "function",
         "z": "ca54f1a.9c8f41",
         "name": "For_Time_Z1",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1  + (Math.random()*5);\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z1_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "func": "var a\na = (msg.payload.data / 1)  + (Math.random()*5);\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1 ;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z1_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
