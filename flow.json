@@ -2007,7 +2007,7 @@
         "type": "function",
         "z": "28c7d530.54db9a",
         "name": "Assemble Config",
-        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n // \"state_class\" : msg.stateclass,\n // \"last_reset\" : msg.lastreset,\n  \"state_topic\": \"homeassistant/sensor/SunSynk\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynk_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"device\": {\n    \"identifiers\": [\n      \"SunSynk\"\n    ],\n    \"name\": \"SunSynk\",\n    \"model\": \"SynSynk\",\n    \"manufacturer\": \"SunSynk\"\n  }  \n}\nif ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n  msg.payload.device_class = msg.deviceclass\n}\nif (msg.unit != \"\") {\n  msg.payload.unit_of_measurement = msg.unit\n}  \nreturn msg;",
+        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n  \"state_topic\": \"homeassistant/sensor/SunSynk\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynk_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"device\": {\n    \"identifiers\": [\n      \"SunSynk\"\n    ],\n    \"name\": \"SunSynk\",\n    \"model\": \"SynSynk\",\n    \"manufacturer\": \"SunSynk\"\n  }  \n}\nif ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n  msg.payload.device_class = msg.deviceclass\n}\nif (msg.unit != \"\") {\n  msg.payload.unit_of_measurement = msg.unit\n}  \nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -3972,20 +3972,6 @@
                 "p": "unit",
                 "pt": "msg",
                 "to": "kWh",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "stateclass",
-                "pt": "msg",
-                "to": "measurement",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "lastreset",
-                "pt": "msg",
-                "to": "0",
                 "tot": "str"
             }
         ],
