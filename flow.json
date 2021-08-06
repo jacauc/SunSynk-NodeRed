@@ -4443,12 +4443,11 @@
                 "vt": "str"
             }
         ],
-        "repeat": "10",
+        "repeat": "60",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "payload": "",
         "payloadType": "date",
         "x": 110,
         "y": 2760,
