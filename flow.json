@@ -4429,7 +4429,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "60",
+        "repeat": "10",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
