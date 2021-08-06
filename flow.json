@@ -2049,11 +2049,11 @@
         "tosidebar": true,
         "console": true,
         "tostatus": true,
-        "complete": "payload",
+        "complete": "topic",
         "targetType": "msg",
         "statusVal": "payload",
         "statusType": "auto",
-        "x": 1020,
+        "x": 1010,
         "y": 360,
         "wires": []
     },
