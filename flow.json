@@ -1523,7 +1523,7 @@
         "tcpHost": "192.168.1.111",
         "tcpPort": "8899",
         "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyAMA0",
+        "serialPort": "/dev/ttyS0",
         "serialType": "RTU",
         "serialBaudrate": "9600",
         "serialDatabits": "8",
