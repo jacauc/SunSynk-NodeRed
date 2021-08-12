@@ -2597,7 +2597,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "0.4",
+        "repeat": "0.5",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
@@ -4429,7 +4429,7 @@
                 "vt": "str"
             }
         ],
-        "repeat": "10",
+        "repeat": "60",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
@@ -25268,7 +25268,7 @@
         "id": "d6b3d858.c23e48",
         "type": "cycle",
         "z": "6896d5b1.4a006c",
-        "name": "Cycle - 0.4 seconds",
+        "name": "Cycle - 0.5 seconds",
         "outputs": 19,
         "x": 510,
         "y": 1920,
