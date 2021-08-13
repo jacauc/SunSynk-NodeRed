@@ -2568,7 +2568,7 @@
         "z": "6896d5b1.4a006c",
         "name": "Monitor_Gate",
         "controlTopic": "monitor_gate",
-        "defaultState": "closed",
+        "defaultState": "open",
         "openCmd": "open",
         "closeCmd": "close",
         "toggleCmd": "toggle",
