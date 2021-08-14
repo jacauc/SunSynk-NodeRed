@@ -1603,26 +1603,6 @@
         "parallelUnitIdsAllowed": false
     },
     {
-        "id": "3b2726f7.c4d8da",
-        "type": "mqtt-broker",
-        "broker": "localhost",
-        "port": "1883",
-        "clientid": "Pi2_NR-Live",
-        "usetls": false,
-        "verifyservercert": true,
-        "compatmode": false,
-        "keepalive": "15",
-        "cleansession": true,
-        "birthTopic": "DEVICES/PI2NR-LIVE",
-        "birthQos": "1",
-        "birthRetain": "false",
-        "birthPayload": "Online",
-        "willTopic": "DEVICES/PI2NR-LIVE",
-        "willQos": "1",
-        "willRetain": "false",
-        "willPayload": "Offline"
-    },
-    {
         "id": "d50d0c9f.31e858",
         "type": "tls-config",
         "name": "",
@@ -1633,18 +1613,6 @@
         "keyname": "",
         "caname": "",
         "servername": "",
-        "verifyservercert": false
-    },
-    {
-        "id": "f7f39f4e.896ae",
-        "type": "tls-config",
-        "name": "local-tls",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "",
-        "keyname": "",
-        "caname": "",
         "verifyservercert": false
     },
     {
