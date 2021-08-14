@@ -28,7 +28,14 @@
         "info": ""
     },
     {
-        "id": "ca54f1a.9c8f41",
+        "id": "f6c1caf4.a89c98",
+        "type": "tab",
+        "label": "Inverter_Settings_Publish",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "5d2e350d.a110ac",
         "type": "tab",
         "label": "SSFormRead",
         "disabled": false,
@@ -80,6 +87,13 @@
         "id": "b6d18ded.3db32",
         "type": "tab",
         "label": "LoadshedStatus",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "27b640f1a0c2d238",
+        "type": "tab",
+        "label": "Flow 1",
         "disabled": false,
         "info": ""
     },
@@ -1283,7 +1297,7 @@
         "clientid": "",
         "usetls": false,
         "compatmode": false,
-        "protocolVersion": "4",
+        "protocolVersion": "5",
         "keepalive": "60",
         "cleansession": true,
         "birthTopic": "",
@@ -1315,55 +1329,6 @@
         "rejectUnauthorized": false
     },
     {
-        "id": "b8c53cf1.ab4e4",
-        "type": "ui_tab",
-        "name": "System Settings",
-        "icon": "dashboard",
-        "order": 2,
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "bded4c6c.4d80c",
-        "type": "ui_group",
-        "name": "Solar - Time Zones",
-        "tab": "b8c53cf1.ab4e4",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": true
-    },
-    {
-        "id": "390e3beb.306c94",
-        "type": "ui_group",
-        "name": "Solar - Battery SoC",
-        "tab": "b8c53cf1.ab4e4",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "b7da8ffe.4e9ea",
-        "type": "ui_group",
-        "name": "Solar - Grid Charge",
-        "tab": "b8c53cf1.ab4e4",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "5c1577a6.26f468",
-        "type": "ui_group",
-        "name": "Solar - Settings",
-        "tab": "b8c53cf1.ab4e4",
-        "order": 5,
-        "disp": true,
-        "width": "8",
-        "collapse": false
-    },
-    {
         "id": "185f31e8.09195e",
         "type": "ui_tab",
         "name": "Monitor",
@@ -1389,16 +1354,6 @@
         "order": 7,
         "width": 1,
         "height": 1
-    },
-    {
-        "id": "96e729df.b8f718",
-        "type": "ui_group",
-        "name": "Battery Settings",
-        "tab": "b8c53cf1.ab4e4",
-        "order": 6,
-        "disp": true,
-        "width": "6",
-        "collapse": false
     },
     {
         "id": "b15210b4.4a59a",
@@ -1511,16 +1466,6 @@
         "name": "Battery Settings",
         "tab": "1f1c9eb7.61f711",
         "order": 6,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "801d051.dbea6f8",
-        "type": "ui_group",
-        "name": "Selling Point",
-        "tab": "b8c53cf1.ab4e4",
-        "order": 3,
         "disp": true,
         "width": "6",
         "collapse": false
@@ -1650,32 +1595,12 @@
         "serialStopbits": "1",
         "serialParity": "none",
         "serialConnectionDelay": "1000",
-        "unit_id": "1",
-        "commandDelay": "10",
-        "clientTimeout": "500",
+        "unit_id": 1,
+        "commandDelay": 10,
+        "clientTimeout": 500,
         "reconnectOnTimeout": true,
-        "reconnectTimeout": "2000",
+        "reconnectTimeout": 2000,
         "parallelUnitIdsAllowed": false
-    },
-    {
-        "id": "3b2726f7.c4d8da",
-        "type": "mqtt-broker",
-        "broker": "localhost",
-        "port": "1883",
-        "clientid": "Pi2_NR-Live",
-        "usetls": false,
-        "verifyservercert": true,
-        "compatmode": false,
-        "keepalive": "15",
-        "cleansession": true,
-        "birthTopic": "DEVICES/PI2NR-LIVE",
-        "birthQos": "1",
-        "birthRetain": "false",
-        "birthPayload": "Online",
-        "willTopic": "DEVICES/PI2NR-LIVE",
-        "willQos": "1",
-        "willRetain": "false",
-        "willPayload": "Offline"
     },
     {
         "id": "d50d0c9f.31e858",
@@ -1691,16 +1616,73 @@
         "verifyservercert": false
     },
     {
-        "id": "f7f39f4e.896ae",
-        "type": "tls-config",
-        "name": "local-tls",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "",
-        "keyname": "",
-        "caname": "",
-        "verifyservercert": false
+        "id": "bded4c6c.4d80c",
+        "type": "ui_group",
+        "name": "Solar - Time Zones",
+        "tab": "b8c53cf1.ab4e4",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": true
+    },
+    {
+        "id": "390e3beb.306c94",
+        "type": "ui_group",
+        "name": "Solar - Battery SoC",
+        "tab": "b8c53cf1.ab4e4",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b7da8ffe.4e9ea",
+        "type": "ui_group",
+        "name": "Solar - Grid Charge",
+        "tab": "b8c53cf1.ab4e4",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5c1577a6.26f468",
+        "type": "ui_group",
+        "name": "Solar - Settings",
+        "tab": "b8c53cf1.ab4e4",
+        "order": 5,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "96e729df.b8f718",
+        "type": "ui_group",
+        "name": "Battery Settings",
+        "tab": "b8c53cf1.ab4e4",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "801d051.dbea6f8",
+        "type": "ui_group",
+        "name": "Selling Point",
+        "tab": "b8c53cf1.ab4e4",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b8c53cf1.ab4e4",
+        "type": "ui_tab",
+        "name": "System Settings",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
     },
     {
         "id": "33447edd.f55762",
@@ -1740,7 +1722,7 @@
         "z": "ceeb1673.a381f8",
         "name": "Inverter",
         "showStatusActivities": true,
-        "showErrors": true,
+        "showErrors": false,
         "logIOActivities": false,
         "server": "e58adf35.07bda",
         "useIOFile": false,
@@ -1865,24 +1847,6 @@
         ]
     },
     {
-        "id": "50585779.327488",
-        "type": "mqtt out",
-        "z": "28c7d530.54db9a",
-        "name": "Publish to MQTT",
-        "topic": "",
-        "qos": "",
-        "retain": "false",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "f35ad748.1790a8",
-        "x": 830,
-        "y": 140,
-        "wires": []
-    },
-    {
         "id": "118dd23d.2cd0de",
         "type": "link in",
         "z": "28c7d530.54db9a",
@@ -1895,160 +1859,10 @@
         "y": 220,
         "wires": [
             [
-                "8bda0137.80198",
-                "dc909889.782338"
+                "48b808c0e9dfc11e",
+                "e0349bb8de69783d"
             ]
         ]
-    },
-    {
-        "id": "8bda0137.80198",
-        "type": "function",
-        "z": "28c7d530.54db9a",
-        "name": "Assemble Value",
-        "func": "//var fulltopic\nmsg.shorttopic = msg.topic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.topic + \"/\" + \"value\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 480,
-        "y": 140,
-        "wires": [
-            [
-                "50585779.327488",
-                "6fde1ced.cab524",
-                "be3ebae7.6ed828"
-            ]
-        ]
-    },
-    {
-        "id": "6fde1ced.cab524",
-        "type": "debug",
-        "z": "28c7d530.54db9a",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": true,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 790,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "dc909889.782338",
-        "type": "function",
-        "z": "28c7d530.54db9a",
-        "name": "Convert to Influx Friendly Value",
-        "func": "lowertopic = msg.topic\nlowertopic = lowertopic.toLowerCase()\nmsg.payload = [\n    {\n        measurement: lowertopic,\n        fields: {\n            value: Number(msg.payload),\n        },\n        timestamp: new Date()\n    }]\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 580,
-        "wires": [
-            [
-                "294abb40.fafc64",
-                "bd764a32.3d0268"
-            ]
-        ]
-    },
-    {
-        "id": "294abb40.fafc64",
-        "type": "debug",
-        "z": "28c7d530.54db9a",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": true,
-        "tostatus": true,
-        "complete": "topic",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 810,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "bf96e450.75e2c8",
-        "type": "comment",
-        "z": "28c7d530.54db9a",
-        "name": "Send to influxdb",
-        "info": "",
-        "x": 480,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "6da1888c.d76a78",
-        "type": "comment",
-        "z": "28c7d530.54db9a",
-        "name": "Send to MQTT",
-        "info": "",
-        "x": 480,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "be3ebae7.6ed828",
-        "type": "function",
-        "z": "28c7d530.54db9a",
-        "name": "Assemble Config",
-        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n  \"unit_of_measurement\": msg.unit,\n  \"state_topic\": \"homeassistant/sensor/SunSynk\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynk_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"device\": {\n    \"identifiers\": [\n      \"SunSynk\"\n    ],\n    \"name\": \"SunSynk\",\n    \"model\": \"SynSynk\",\n    \"manufacturer\": \"SunSynk\"\n  }  \n}\n  if ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n     msg.payload.device_class = msg.deviceclass\n  }\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 280,
-        "wires": [
-            [
-                "cf57d2c1.c918f",
-                "d329b5a1.56bb08"
-            ]
-        ]
-    },
-    {
-        "id": "cf57d2c1.c918f",
-        "type": "mqtt out",
-        "z": "28c7d530.54db9a",
-        "name": "Publish to MQTT",
-        "topic": "",
-        "qos": "",
-        "retain": "false",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "f35ad748.1790a8",
-        "x": 1030,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "d329b5a1.56bb08",
-        "type": "debug",
-        "z": "28c7d530.54db9a",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": true,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 990,
-        "y": 360,
-        "wires": []
     },
     {
         "id": "3d1decef.134f84",
@@ -2566,8 +2380,9 @@
         "closeCmd": "close",
         "toggleCmd": "toggle",
         "defaultCmd": "default",
+        "statusCmd": "",
         "persist": false,
-        "x": 260,
+        "x": 320,
         "y": 1920,
         "wires": [
             [
@@ -2589,14 +2404,13 @@
                 "vt": "str"
             }
         ],
-        "repeat": "0.4",
+        "repeat": "0.5",
         "crontab": "",
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "payload": "",
         "payloadType": "date",
-        "x": 70,
+        "x": 110,
         "y": 1920,
         "wires": [
             [
@@ -4233,7 +4047,7 @@
         "z": "6896d5b1.4a006c",
         "g": "cace543c.22fd18",
         "name": "Solar_PV2_Amps",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"Solar_PV2_Amps\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Solar_PV2_Amps\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4273,7 +4087,7 @@
         "z": "6896d5b1.4a006c",
         "g": "238a5e29.43b452",
         "name": "Solar_PV1_Amps",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 10;\n} else {\n    msg.payload = (a) / 10;\n}\nif (msg.topic === \"Solar_PV1_Amps\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Solar_PV1_Amps\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -4356,18 +4170,6 @@
         ]
     },
     {
-        "id": "bd764a32.3d0268",
-        "type": "influxdb batch",
-        "z": "28c7d530.54db9a",
-        "influxdb": "332d824c.c7d53e",
-        "precision": "",
-        "retentionPolicy": "",
-        "name": "Send to Influx",
-        "x": 820,
-        "y": 580,
-        "wires": []
-    },
-    {
         "id": "b2a8c602.292988",
         "type": "cycle",
         "z": "6896d5b1.4a006c",
@@ -4427,9 +4229,8 @@
         "once": true,
         "onceDelay": "1",
         "topic": "",
-        "payload": "",
         "payloadType": "date",
-        "x": 70,
+        "x": 110,
         "y": 2760,
         "wires": [
             [
@@ -4449,7 +4250,7 @@
         "toggleCmd": "toggle",
         "defaultCmd": "default",
         "persist": false,
-        "x": 260,
+        "x": 300,
         "y": 2760,
         "wires": [
             [
@@ -4751,2948 +4552,6 @@
         "x": 1015,
         "y": 220,
         "wires": []
-    },
-    {
-        "id": "7fd203b2.2a95bc",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_Time_Z1",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 250, \n    'quantity': 1 }; \nmsg.topic = \"Z1_Time\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 160,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "8e2a6066.b88f8",
-        "type": "modbus-response",
-        "z": "ca54f1a.9c8f41",
-        "name": "",
-        "registerShowMax": 20,
-        "x": 3307,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "f529ba09.ae1848",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "Time_Zone1",
-        "label": "Time Zone 1",
-        "tooltip": "",
-        "group": "bded4c6c.4d80c",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "Time_Zone1",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "2359",
-        "step": "50",
-        "x": 1465,
-        "y": 160,
-        "wires": [
-            [
-                "adcd4cc3.368f4"
-            ]
-        ]
-    },
-    {
-        "id": "a07399b7.408928",
-        "type": "ui_button",
-        "z": "ca54f1a.9c8f41",
-        "name": "",
-        "group": "bded4c6c.4d80c",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "label": "Read",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "",
-        "payload": "reset",
-        "payloadType": "str",
-        "topic": "Settings_Write_Gate",
-        "topicType": "str",
-        "x": 230,
-        "y": 1000,
-        "wires": [
-            [
-                "7fd203b2.2a95bc",
-                "9fd69b2c.5d0218",
-                "4e4c3af8.355544",
-                "e1ff3260.e9f79",
-                "3168cf3e.85b7c",
-                "6701e16f.c5e7",
-                "a8ad345d.7cf7e8",
-                "2221e8b.f105b18",
-                "2b9b1902.fd3206",
-                "7d79d2aa.040a0c",
-                "1cac4c95.80ac53",
-                "fefbedd.643051",
-                "d05d1b9c.580448",
-                "8e32466d.f87f28",
-                "fd676b46.12cbd8",
-                "debed75b.f8c8e8",
-                "93745c18.b03c1",
-                "41eb1cc5.2376e4",
-                "42c1fc5b.cbe244",
-                "aeab9268.9aa4c",
-                "98d94e9a.48d64",
-                "7db6793a.e2bee8",
-                "2ba42c01.f957a4",
-                "9dad3045.a72e8",
-                "fe31bd6e.aa04a",
-                "108f5915.eb7bf7",
-                "893a0d49.17346",
-                "2e94f451.69303c",
-                "a79c4f8b.9afec",
-                "b677fc71.d75",
-                "ac979e12.98be6",
-                "6e66c0b8.6c9d2",
-                "83ee7c82.ba98",
-                "393733aa.46bbbc",
-                "8a6e9c61.e4adb",
-                "300d4307.795d3c"
-            ]
-        ]
-    },
-    {
-        "id": "aa5b6bfe.586a18",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_Time_Z1",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z1_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1151,
-        "y": 160,
-        "wires": [
-            [
-                "f529ba09.ae1848"
-            ]
-        ]
-    },
-    {
-        "id": "9fd69b2c.5d0218",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_Time_Z2",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 251, \n    'quantity': 1 }; \nmsg.topic = \"Z2_Time\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 220,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "4e4c3af8.355544",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_Time_Z3",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 252, \n    'quantity': 1 }; \nmsg.topic = \"Z3_Time\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 570,
-        "y": 280,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "e1ff3260.e9f79",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_Time_Z4",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 253, \n    'quantity': 1 }; \nmsg.topic = \"Z4_Time\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 340,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "3168cf3e.85b7c",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_Time_Z5",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 254, \n    'quantity': 1 }; \nmsg.topic = \"Z5_Time\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 400,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "6701e16f.c5e7",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_Time_Z6",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 255, \n    'quantity': 1 }; \nmsg.topic = \"Z6_Time\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 460,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "1b21429b.756e7d",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_Time_Z6",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z6_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1151,
-        "y": 460,
-        "wires": [
-            [
-                "eff69ab8.b30838"
-            ]
-        ]
-    },
-    {
-        "id": "b08beef.453d51",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_Time_Z5",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z5_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1151,
-        "y": 400,
-        "wires": [
-            [
-                "69c93f53.8a513"
-            ]
-        ]
-    },
-    {
-        "id": "e4bbdfe9.3f9b3",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_Time_Z4",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z4_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1151,
-        "y": 340,
-        "wires": [
-            [
-                "da6e8349.64d3d"
-            ]
-        ]
-    },
-    {
-        "id": "dba01c68.4a74f",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_Time_Z3",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z3_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1151,
-        "y": 280,
-        "wires": [
-            [
-                "1addd14d.256fef"
-            ]
-        ]
-    },
-    {
-        "id": "26053033.17d2e",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_Time_Z2",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z2_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1151,
-        "y": 220,
-        "wires": [
-            [
-                "db80724c.6ec12"
-            ]
-        ]
-    },
-    {
-        "id": "db80724c.6ec12",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "Time_Zone2",
-        "label": "Time Zone 2",
-        "tooltip": "",
-        "group": "bded4c6c.4d80c",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "Time_Zone2",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "2359",
-        "step": 1,
-        "x": 1465,
-        "y": 220,
-        "wires": [
-            [
-                "1801d5b9.2ac12a"
-            ]
-        ]
-    },
-    {
-        "id": "1addd14d.256fef",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "",
-        "label": "Time_Zone3",
-        "tooltip": "",
-        "group": "bded4c6c.4d80c",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "2359",
-        "step": 1,
-        "x": 1465,
-        "y": 280,
-        "wires": [
-            [
-                "9c205054.3d074"
-            ]
-        ]
-    },
-    {
-        "id": "da6e8349.64d3d",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "",
-        "label": "Time_Zone4",
-        "tooltip": "",
-        "group": "bded4c6c.4d80c",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "2359",
-        "step": 1,
-        "x": 1465,
-        "y": 340,
-        "wires": [
-            [
-                "c5d14884.1b4d68"
-            ]
-        ]
-    },
-    {
-        "id": "69c93f53.8a513",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "",
-        "label": "Time_Zone5",
-        "tooltip": "",
-        "group": "bded4c6c.4d80c",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "2359",
-        "step": 1,
-        "x": 1465,
-        "y": 400,
-        "wires": [
-            [
-                "acaf47eb.103898"
-            ]
-        ]
-    },
-    {
-        "id": "eff69ab8.b30838",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "",
-        "label": "Time_Zone6",
-        "tooltip": "",
-        "group": "bded4c6c.4d80c",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "2359",
-        "step": 1,
-        "x": 1465,
-        "y": 460,
-        "wires": [
-            [
-                "126710f7.1feeff"
-            ]
-        ]
-    },
-    {
-        "id": "a8ad345d.7cf7e8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SoC_Z1",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 268, \n    'quantity': 1 }; \nmsg.topic = \"Z1_SoC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 554,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "2221e8b.f105b18",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SoC_Z2",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 269, \n    'quantity': 1 }; \nmsg.topic = \"Z2_SoC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 614,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "2b9b1902.fd3206",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SoC_Z3",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 270, \n    'quantity': 1 }; \nmsg.topic = \"Z3_SoC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 674,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "7d79d2aa.040a0c",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SoC_Z4",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 271, \n    'quantity': 1 }; \nmsg.topic = \"Z4_SoC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 734,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "1cac4c95.80ac53",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SoC_Z5",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 272, \n    'quantity': 1 }; \nmsg.topic = \"Z5_SoC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 794,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "fefbedd.643051",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SoC_Z6",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 273, \n    'quantity': 1 }; \nmsg.topic = \"Z6_SoC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 854,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "78d80ad7.bf0a64",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SoC_Zone1",
-        "label": "SoC Zone 1",
-        "tooltip": "",
-        "group": "390e3beb.306c94",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SoC_Zone1",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "step": "1",
-        "x": 1465,
-        "y": 552,
-        "wires": [
-            [
-                "71d26d9e.c2f954"
-            ]
-        ]
-    },
-    {
-        "id": "53fb0c4a.450c74",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SoC_Z1",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z1_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 552,
-        "wires": [
-            [
-                "78d80ad7.bf0a64"
-            ]
-        ]
-    },
-    {
-        "id": "641ac69f.0f9038",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SoC_Z6",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z6_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 852,
-        "wires": [
-            [
-                "76e57d17.e037f4"
-            ]
-        ]
-    },
-    {
-        "id": "20d4502f.4a2dd",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SoC_Z5",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z5_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 792,
-        "wires": [
-            [
-                "9f1f2f09.70a38"
-            ]
-        ]
-    },
-    {
-        "id": "8d8b5d92.fe473",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SoC_Z4",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z4_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 732,
-        "wires": [
-            [
-                "6251a225.75f10c"
-            ]
-        ]
-    },
-    {
-        "id": "c75a14d4.4345a8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SoC_Z3",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z3_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 672,
-        "wires": [
-            [
-                "79c961a1.9776b"
-            ]
-        ]
-    },
-    {
-        "id": "a0b54fd5.27924",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SoC_Z2",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z2_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 612,
-        "wires": [
-            [
-                "9f4dadd.2d6f25"
-            ]
-        ]
-    },
-    {
-        "id": "9f4dadd.2d6f25",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SoC_Zone2",
-        "label": "SoC Zone 2",
-        "tooltip": "",
-        "group": "390e3beb.306c94",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SoC_Zone2",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 1465,
-        "y": 612,
-        "wires": [
-            [
-                "43092442.35c8ac"
-            ]
-        ]
-    },
-    {
-        "id": "79c961a1.9776b",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SoC_Zone3",
-        "label": "SoC Zone 3",
-        "tooltip": "",
-        "group": "390e3beb.306c94",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SoC_Zone3",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 1465,
-        "y": 672,
-        "wires": [
-            [
-                "e5da11ae.1ca8"
-            ]
-        ]
-    },
-    {
-        "id": "6251a225.75f10c",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SoC_Zone4",
-        "label": "SoC Zone 4",
-        "tooltip": "",
-        "group": "390e3beb.306c94",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SoC_Zone4",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 1465,
-        "y": 732,
-        "wires": [
-            [
-                "e5d9a286.2faed"
-            ]
-        ]
-    },
-    {
-        "id": "9f1f2f09.70a38",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SoC_Zone5",
-        "label": "SoC Zone 5",
-        "tooltip": "",
-        "group": "390e3beb.306c94",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SoC_Zone5",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 1465,
-        "y": 792,
-        "wires": [
-            [
-                "2de4865c.a0860a"
-            ]
-        ]
-    },
-    {
-        "id": "76e57d17.e037f4",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SoC_Zone6",
-        "label": "SoC Zone 6",
-        "tooltip": "",
-        "group": "390e3beb.306c94",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SoC_Zone6",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 1465,
-        "y": 852,
-        "wires": [
-            [
-                "70ba5371.9d6d1c"
-            ]
-        ]
-    },
-    {
-        "id": "d05d1b9c.580448",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_GC_Z1",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 274, \n    'quantity': 1 }; \nmsg.topic = \"Z1_GC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 938,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "8e32466d.f87f28",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_GC_Z2",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 275, \n    'quantity': 1 }; \nmsg.topic = \"Z2_GC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 998,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "fd676b46.12cbd8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_GC_Z3",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 276, \n    'quantity': 1 }; \nmsg.topic = \"Z3_GC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 1058,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "debed75b.f8c8e8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_GC_Z4",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 277, \n    'quantity': 1 }; \nmsg.topic = \"Z4_GC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 1118,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "41eb1cc5.2376e4",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_GC_Z5",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 278, \n    'quantity': 1 }; \nmsg.topic = \"Z5_GC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 1178,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "93745c18.b03c1",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_GC_Z6",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 279, \n    'quantity': 1 }; \nmsg.topic = \"Z6_GC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 571,
-        "y": 1238,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "ba8666d0.781858",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_GC_Z1",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 || a == 5 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z1_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 938,
-        "wires": [
-            [
-                "b56a9144.bb7e7"
-            ]
-        ]
-    },
-    {
-        "id": "1eeff26f.1cc8ee",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_GC_Z6",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 || a == 5 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z6_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 1238,
-        "wires": [
-            [
-                "78f0bfbe.f2e06"
-            ]
-        ]
-    },
-    {
-        "id": "e541c882.6ada48",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_GC_Z5",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 || a == 5 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z5_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 1178,
-        "wires": [
-            [
-                "17b6267d.a8af3a"
-            ]
-        ]
-    },
-    {
-        "id": "8ef36ceb.2b646",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_GC_Z4",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 || a == 5 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z4_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 1118,
-        "wires": [
-            [
-                "b07322b7.71b86"
-            ]
-        ]
-    },
-    {
-        "id": "dc0cfd6f.a0ccf",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_GC_Z3",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 || a == 5 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z3_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 1058,
-        "wires": [
-            [
-                "99a522bd.77bbb"
-            ]
-        ]
-    },
-    {
-        "id": "cb5e1333.77f9e",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_GC_Z2",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 || a == 5 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z2_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1141,
-        "y": 998,
-        "wires": [
-            [
-                "72476019.75735"
-            ]
-        ]
-    },
-    {
-        "id": "b56a9144.bb7e7",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "GC_Zone1",
-        "label": "Grid Charge 1",
-        "tooltip": "",
-        "group": "b7da8ffe.4e9ea",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1465,
-        "y": 938,
-        "wires": [
-            [
-                "edd83161.1fbdc"
-            ]
-        ]
-    },
-    {
-        "id": "72476019.75735",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "GC_Zone2",
-        "label": "Grid Charge 2",
-        "tooltip": "",
-        "group": "b7da8ffe.4e9ea",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1465,
-        "y": 998,
-        "wires": [
-            [
-                "2af45570.01ff8a"
-            ]
-        ]
-    },
-    {
-        "id": "99a522bd.77bbb",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "GC_Zone3",
-        "label": "Grid Charge 3",
-        "tooltip": "",
-        "group": "b7da8ffe.4e9ea",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1465,
-        "y": 1058,
-        "wires": [
-            [
-                "8d8e9a95.b7ab68"
-            ]
-        ]
-    },
-    {
-        "id": "b07322b7.71b86",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "GC_Zone4",
-        "label": "Grid Charge 4",
-        "tooltip": "",
-        "group": "b7da8ffe.4e9ea",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1465,
-        "y": 1118,
-        "wires": [
-            [
-                "cdcdb2d5.a08fb"
-            ]
-        ]
-    },
-    {
-        "id": "17b6267d.a8af3a",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "GC_Zone5",
-        "label": "Grid Charge 5",
-        "tooltip": "",
-        "group": "b7da8ffe.4e9ea",
-        "order": 8,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1465,
-        "y": 1178,
-        "wires": [
-            [
-                "c487d909.c51ad8"
-            ]
-        ]
-    },
-    {
-        "id": "78f0bfbe.f2e06",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "GC_Zone6",
-        "label": "Grid Charge 6",
-        "tooltip": "",
-        "group": "b7da8ffe.4e9ea",
-        "order": 9,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1465,
-        "y": 1238,
-        "wires": [
-            [
-                "d6a079bf.fd8d68"
-            ]
-        ]
-    },
-    {
-        "id": "42c1fc5b.cbe244",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_PL",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 243, \n    'quantity': 1 }; \nmsg.topic = \"PL\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 540,
-        "y": 1760,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "7d73e08f.0808e",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_PL",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"PL\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1120,
-        "y": 1760,
-        "wires": [
-            [
-                "e7fc97b0.b52ca8"
-            ]
-        ]
-    },
-    {
-        "id": "e7fc97b0.b52ca8",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "PL",
-        "label": "Priority Load",
-        "tooltip": "",
-        "group": "5c1577a6.26f468",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1434,
-        "y": 1760,
-        "wires": [
-            [
-                "93d94504.69ffd8"
-            ]
-        ]
-    },
-    {
-        "id": "aeab9268.9aa4c",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_UseTimer",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 248, \n    'quantity': 1 }; \nmsg.topic = \"Use_Timer\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 1820,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "9bdef9a5.77d2f8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_UseTimer",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 255 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Use_Timer\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1140,
-        "y": 1820,
-        "wires": [
-            [
-                "4ff70af5.b50034"
-            ]
-        ]
-    },
-    {
-        "id": "4ff70af5.b50034",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "Use_Timer",
-        "label": "Use Timer",
-        "tooltip": "",
-        "group": "5c1577a6.26f468",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1454,
-        "y": 1820,
-        "wires": [
-            [
-                "bf04c5f5.3cb2d8"
-            ]
-        ]
-    },
-    {
-        "id": "98d94e9a.48d64",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SolarExport",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 247, \n    'quantity': 1 }; \nmsg.topic = \"Solar_Export\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 570,
-        "y": 1880,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "5da59d15.b9bff4",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SolarExport",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Solar_Export\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1140,
-        "y": 1880,
-        "wires": [
-            [
-                "bd23aef1.011bf"
-            ]
-        ]
-    },
-    {
-        "id": "bd23aef1.011bf",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "Solar_Export",
-        "label": "Solar Export",
-        "tooltip": "",
-        "group": "5c1577a6.26f468",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1454,
-        "y": 1880,
-        "wires": [
-            [
-                "48af54c9.9cd59c"
-            ]
-        ]
-    },
-    {
-        "id": "7db6793a.e2bee8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_LoadLimit",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 244, \n    'quantity': 1 }; \nmsg.topic = \"Load_Limit\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 1940,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "c2e87a05.38b2b8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_LoadLimit",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Load_Limit\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1140,
-        "y": 1940,
-        "wires": [
-            [
-                "9ea51801.cb7ed8"
-            ]
-        ]
-    },
-    {
-        "id": "6bc7b0a7.3c6d",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_BatShut",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Bat_Shut\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1130,
-        "y": 2139,
-        "wires": [
-            [
-                "d4c8b28b.14441"
-            ]
-        ]
-    },
-    {
-        "id": "d4c8b28b.14441",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "BatShut",
-        "label": "Battery Shutdown %",
-        "tooltip": "",
-        "group": "96e729df.b8f718",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 1444,
-        "y": 2139,
-        "wires": [
-            [
-                "a06f8151.e755c"
-            ]
-        ]
-    },
-    {
-        "id": "9dad3045.a72e8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_BatShut",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 217, \n    'quantity': 1 }; \nmsg.topic = \"Bat_Shut\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 2138,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "fe31bd6e.aa04a",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_BatLow",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 219, \n    'quantity': 1 }; \nmsg.topic = \"Bat_Low\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 2198,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "e826cb17.8cc8c8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_BatLow",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Bat_Low\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1130,
-        "y": 2199,
-        "wires": [
-            [
-                "72d7daca.0e7724"
-            ]
-        ]
-    },
-    {
-        "id": "72d7daca.0e7724",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "BatLow",
-        "label": "Battery Low Warning %",
-        "tooltip": "",
-        "group": "96e729df.b8f718",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 1444,
-        "y": 2199,
-        "wires": [
-            [
-                "a03788c2.679bb8"
-            ]
-        ]
-    },
-    {
-        "id": "108f5915.eb7bf7",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_BatRestart",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 218, \n    'quantity': 1 }; \nmsg.topic = \"Bat_Restart\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 570,
-        "y": 2258,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "3e95c6ba.5c52ca",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_BatRestart",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Bat_Restart\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1140,
-        "y": 2259,
-        "wires": [
-            [
-                "13ffea7c.b6c5b6"
-            ]
-        ]
-    },
-    {
-        "id": "13ffea7c.b6c5b6",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "BatRestart",
-        "label": "Battery Restart %",
-        "tooltip": "",
-        "group": "96e729df.b8f718",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 1454,
-        "y": 2259,
-        "wires": [
-            [
-                "37e2d670.3ddd1a"
-            ]
-        ]
-    },
-    {
-        "id": "893a0d49.17346",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_BatMaxC",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 210, \n    'quantity': 1 }; \nmsg.topic = \"Bat_MaxC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 2318,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "fe3ae2ca.00569",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_BatMaxC",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Bat_MaxC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1140,
-        "y": 2319,
-        "wires": [
-            [
-                "d1981048.8db2a"
-            ]
-        ]
-    },
-    {
-        "id": "d1981048.8db2a",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "BatMaxC",
-        "label": "Max Charge Current",
-        "tooltip": "",
-        "group": "96e729df.b8f718",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "185",
-        "step": 1,
-        "x": 1444,
-        "y": 2319,
-        "wires": [
-            [
-                "38852b5f.67f6f4"
-            ]
-        ]
-    },
-    {
-        "id": "2e94f451.69303c",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_BatMaxDC",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 211, \n    'quantity': 1 }; \nmsg.topic = \"Bat_MaxDC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 570,
-        "y": 2378,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "3540e795.63b718",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_BatMaxDC",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Bat_MaxDC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1140,
-        "y": 2379,
-        "wires": [
-            [
-                "577dd499.fc179c"
-            ]
-        ]
-    },
-    {
-        "id": "577dd499.fc179c",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "BatMaxDC",
-        "label": "Max Discharge Current",
-        "tooltip": "",
-        "group": "96e729df.b8f718",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "185",
-        "step": 1,
-        "x": 1454,
-        "y": 2379,
-        "wires": [
-            [
-                "8b9e9d0a.67306"
-            ]
-        ]
-    },
-    {
-        "id": "a79c4f8b.9afec",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_GridEn",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 232, \n    'quantity': 1 }; \nmsg.topic = \"Bat_GridEn\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 2438,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "56cb3f4c.feecc",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_GridEn",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Bat_GridEn\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1130,
-        "y": 2439,
-        "wires": [
-            [
-                "d87a6052.8255f"
-            ]
-        ]
-    },
-    {
-        "id": "d87a6052.8255f",
-        "type": "ui_switch",
-        "z": "ca54f1a.9c8f41",
-        "name": "Bat_GridEn",
-        "label": "Grid Charge Enabled",
-        "tooltip": "",
-        "group": "96e729df.b8f718",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "decouple": "false",
-        "topic": "",
-        "style": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "onicon": "",
-        "oncolor": "",
-        "offvalue": "false",
-        "offvalueType": "bool",
-        "officon": "",
-        "offcolor": "",
-        "x": 1454,
-        "y": 2439,
-        "wires": [
-            [
-                "5f551bd9.3e9324"
-            ]
-        ]
-    },
-    {
-        "id": "b677fc71.d75",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_GridC",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 230, \n    'quantity': 1 }; \nmsg.topic = \"Bat_GridC\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 550,
-        "y": 2498,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "2b831a8b.f1dfe6",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_GridC",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Bat_GridC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1130,
-        "y": 2499,
-        "wires": [
-            [
-                "b5935c51.1a555"
-            ]
-        ]
-    },
-    {
-        "id": "b5935c51.1a555",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "GridC",
-        "label": "Grid Charge Current",
-        "tooltip": "",
-        "group": "96e729df.b8f718",
-        "order": 7,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "185",
-        "step": 1,
-        "x": 1434,
-        "y": 2499,
-        "wires": [
-            [
-                "83f034ae.f3bfd8"
-            ]
-        ]
-    },
-    {
-        "id": "9ea51801.cb7ed8",
-        "type": "ui_dropdown",
-        "z": "ca54f1a.9c8f41",
-        "name": "Load_Limit",
-        "label": "Export Options",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "5c1577a6.26f468",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Zero Export Disabled",
-                "value": 0,
-                "type": "num"
-            },
-            {
-                "label": "Zero Export Enabled",
-                "value": "2",
-                "type": "str"
-            },
-            {
-                "label": "Zero Export + Load Limit Enabled",
-                "value": 1,
-                "type": "num"
-            }
-        ],
-        "payload": "",
-        "topic": "",
-        "x": 1454,
-        "y": 1939,
-        "wires": [
-            [
-                "69f7e73d.4e2398"
-            ]
-        ]
-    },
-    {
-        "id": "2ba42c01.f957a4",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_ExportLimit",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 245, \n    'quantity': 1 }; \nmsg.topic = \"ExportLimit\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 570,
-        "y": 1998,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "7be5a59e.4db07c",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_ExportLimit",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"ExportLimit\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1140,
-        "y": 1999,
-        "wires": [
-            [
-                "fd890b5b.93cce8"
-            ]
-        ]
-    },
-    {
-        "id": "fd890b5b.93cce8",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "ExportLimit",
-        "label": "Export Power Limit",
-        "tooltip": "",
-        "group": "5c1577a6.26f468",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "8000",
-        "step": 1,
-        "x": 1454,
-        "y": 1999,
-        "wires": [
-            [
-                "615b8080.a4ec"
-            ]
-        ]
-    },
-    {
-        "id": "adcd4cc3.368f4",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Time_Zone1",
-        "links": [
-            "2e2c9207.49b2ae",
-            "9c6d3e2d.6020d",
-            "68e3bab5.c8e6e4",
-            "ddaa211d.a9925"
-        ],
-        "x": 1595,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "1801d5b9.2ac12a",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Time_Zone2",
-        "links": [
-            "62481dc4.9089b4",
-            "e970d028.7fa8c",
-            "7ac40e87.e5a79",
-            "b83b9b32.76f2f8"
-        ],
-        "x": 1595,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "9c205054.3d074",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Time_Zone3",
-        "links": [
-            "60e49f1.501bd6",
-            "e5cff645.41dff8",
-            "c3fca3a3.f2409",
-            "242e0084.5ae29"
-        ],
-        "x": 1595,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "c5d14884.1b4d68",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Time_Zone4",
-        "links": [
-            "2f905698.7cd0aa",
-            "812b071b.a72318",
-            "e8e26ca3.cc57e",
-            "99d7e60b.ea8f88"
-        ],
-        "x": 1595,
-        "y": 340,
-        "wires": []
-    },
-    {
-        "id": "acaf47eb.103898",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Time_Zone5",
-        "links": [
-            "3bf6cc25.959834",
-            "6028900a.387d7",
-            "cae079c4.326668",
-            "47a82bf5.5b7f14"
-        ],
-        "x": 1595,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "126710f7.1feeff",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Time_Zone6",
-        "links": [
-            "4783634d.b9861c",
-            "c8f5ddb9.5da48",
-            "c72a21ca.89211",
-            "25ddb3f8.1e448c"
-        ],
-        "x": 1595,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "71d26d9e.c2f954",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SoC_Zone1",
-        "links": [
-            "a872d2b7.3b026",
-            "d46d2b99.6c85e8",
-            "8703b236.18fc2"
-        ],
-        "x": 1595,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "43092442.35c8ac",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SoC_Zone2",
-        "links": [
-            "1aad902a.304c9",
-            "e7ae8b0e.6bba48",
-            "aef20bcd.e03448"
-        ],
-        "x": 1595,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "e5da11ae.1ca8",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SoC_Zone3",
-        "links": [
-            "32445ff9.d6c1f",
-            "5c5e7a27.a7aa14",
-            "eb04a4f.751e758"
-        ],
-        "x": 1595,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "e5d9a286.2faed",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SoC_Zone4",
-        "links": [
-            "1a2b0466.6b948c",
-            "a862a227.7bbb2",
-            "c50d44ca.d99d88"
-        ],
-        "x": 1595,
-        "y": 740,
-        "wires": []
-    },
-    {
-        "id": "2de4865c.a0860a",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SoC_Zone5",
-        "links": [
-            "15e7f1c4.a0bfee",
-            "7dec58ab.8841a8",
-            "48f6ab07.4e8a24"
-        ],
-        "x": 1595,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "70ba5371.9d6d1c",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SoC_Zone6",
-        "links": [
-            "583de080.9ce0b",
-            "d6c4a6d6.ac9338",
-            "5345a1be.28cb9"
-        ],
-        "x": 1595,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "edd83161.1fbdc",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_GC_Zone1",
-        "links": [
-            "6f64ab4b.e221a4",
-            "d42c362e.49d4f8",
-            "c19391c.210977"
-        ],
-        "x": 1595,
-        "y": 940,
-        "wires": []
-    },
-    {
-        "id": "2af45570.01ff8a",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_GC_Zone2",
-        "links": [
-            "32415262.21465e",
-            "6c1fd8e5.aa4638",
-            "26775d5c.3a7c22"
-        ],
-        "x": 1595,
-        "y": 1000,
-        "wires": []
-    },
-    {
-        "id": "8d8e9a95.b7ab68",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_GC_Zone3",
-        "links": [
-            "73d8632b.f7104c",
-            "87f83b09.7e99c8",
-            "13fa5cfd.c7fef3"
-        ],
-        "x": 1595,
-        "y": 1060,
-        "wires": []
-    },
-    {
-        "id": "cdcdb2d5.a08fb",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_GC_Zone4",
-        "links": [
-            "35a3cce9.401714",
-            "855fa4dd.eb0618",
-            "b45ec2c8.0816a"
-        ],
-        "x": 1595,
-        "y": 1120,
-        "wires": []
-    },
-    {
-        "id": "c487d909.c51ad8",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_GC_Zone5",
-        "links": [
-            "111860af.b6c04f",
-            "309b3865.48b248",
-            "e4216287.273d2"
-        ],
-        "x": 1595,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "d6a079bf.fd8d68",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_GC_Zone6",
-        "links": [
-            "530ec4f0.17e71c",
-            "e15de0a9.50f01",
-            "6f12e07f.6bbd9"
-        ],
-        "x": 1595,
-        "y": 1240,
-        "wires": []
-    },
-    {
-        "id": "93d94504.69ffd8",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_PL",
-        "links": [
-            "30eb9ce6.c947d4",
-            "bf00b181.08d51",
-            "b07f76e3.3e7078"
-        ],
-        "x": 1584,
-        "y": 1759,
-        "wires": []
-    },
-    {
-        "id": "bf04c5f5.3cb2d8",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Use_Timer",
-        "links": [
-            "71a50425.0f369c",
-            "9d11fde9.480c5",
-            "2d54b0e2.2fd6f"
-        ],
-        "x": 1584,
-        "y": 1819,
-        "wires": []
-    },
-    {
-        "id": "48af54c9.9cd59c",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Solar_Export",
-        "links": [
-            "4277f207.301cfc",
-            "41c156c8.5e55a8",
-            "6d3b5be0.b46b94"
-        ],
-        "x": 1584,
-        "y": 1879,
-        "wires": []
-    },
-    {
-        "id": "69f7e73d.4e2398",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Load_Limit",
-        "links": [
-            "4b6380f2.177ad",
-            "a4323ef2.21c5",
-            "85e16d8b.976bd"
-        ],
-        "x": 1584,
-        "y": 1939,
-        "wires": []
-    },
-    {
-        "id": "615b8080.a4ec",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Export_Limit",
-        "links": [
-            "64abf8dc.1a7168",
-            "b663d4a7.6b38a8",
-            "2289d395.84998c"
-        ],
-        "x": 1584,
-        "y": 1999,
-        "wires": []
-    },
-    {
-        "id": "a06f8151.e755c",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_BatShut",
-        "links": [
-            "669e0493.46387c",
-            "520ef76a.15ee08",
-            "dce192db.7812a"
-        ],
-        "x": 1584,
-        "y": 2139,
-        "wires": []
-    },
-    {
-        "id": "a03788c2.679bb8",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_BatLow",
-        "links": [
-            "4797ca8b.fcd7b4",
-            "1ab6e690.c8a289",
-            "f1faaae7.7a0c68"
-        ],
-        "x": 1584,
-        "y": 2199,
-        "wires": []
-    },
-    {
-        "id": "37e2d670.3ddd1a",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_BatRestart",
-        "links": [
-            "730dca72.594f34",
-            "67631460.4ee0ac",
-            "b62ca136.b8f2d"
-        ],
-        "x": 1584,
-        "y": 2259,
-        "wires": []
-    },
-    {
-        "id": "38852b5f.67f6f4",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_BatMaxC",
-        "links": [
-            "5e9b308f.ba4dc",
-            "e94e2b29.4e7fe8",
-            "b53b35e6.2500a8"
-        ],
-        "x": 1584,
-        "y": 2319,
-        "wires": []
-    },
-    {
-        "id": "8b9e9d0a.67306",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_BatMaxDC",
-        "links": [
-            "8c9184b.b71fb78",
-            "28a0ad4d.f30972",
-            "6504fccc.c1ce74"
-        ],
-        "x": 1584,
-        "y": 2379,
-        "wires": []
-    },
-    {
-        "id": "5f551bd9.3e9324",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_Bat_GridEn",
-        "links": [
-            "fe7fdb50.5d3198",
-            "79f06770.c31368",
-            "434b8127.a4f49"
-        ],
-        "x": 1584,
-        "y": 2439,
-        "wires": []
-    },
-    {
-        "id": "83f034ae.f3bfd8",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_GridC",
-        "links": [
-            "d368b04b.e8a7b",
-            "e985ed0.bda281",
-            "eef8acbe.80b23"
-        ],
-        "x": 1584,
-        "y": 2499,
-        "wires": []
-    },
-    {
-        "id": "aa50c6ad.9e7278",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "SSRead_Out",
-        "links": [
-            "f8adef44.19ef2"
-        ],
-        "x": 835,
-        "y": 960,
-        "wires": []
-    },
-    {
-        "id": "f0f44a0f.7c36a8",
-        "type": "link in",
-        "z": "ca54f1a.9c8f41",
-        "name": "SSRead_In",
-        "links": [
-            "98c41121.a29ce"
-        ],
-        "x": 875,
-        "y": 960,
-        "wires": [
-            [
-                "aa5b6bfe.586a18",
-                "26053033.17d2e",
-                "dba01c68.4a74f",
-                "e4bbdfe9.3f9b3",
-                "b08beef.453d51",
-                "1b21429b.756e7d",
-                "53fb0c4a.450c74",
-                "a0b54fd5.27924",
-                "c75a14d4.4345a8",
-                "8d8b5d92.fe473",
-                "20d4502f.4a2dd",
-                "641ac69f.0f9038",
-                "ba8666d0.781858",
-                "cb5e1333.77f9e",
-                "dc0cfd6f.a0ccf",
-                "8ef36ceb.2b646",
-                "e541c882.6ada48",
-                "1eeff26f.1cc8ee",
-                "7d73e08f.0808e",
-                "9bdef9a5.77d2f8",
-                "5da59d15.b9bff4",
-                "c2e87a05.38b2b8",
-                "7be5a59e.4db07c",
-                "6bc7b0a7.3c6d",
-                "e826cb17.8cc8c8",
-                "3e95c6ba.5c52ca",
-                "fe3ae2ca.00569",
-                "3540e795.63b718",
-                "56cb3f4c.feecc",
-                "2b831a8b.f1dfe6",
-                "73bb63ef.c316fc",
-                "e7b23bc6.c7ad38",
-                "9110a995.3752d8",
-                "95f53fbb.97b4e",
-                "ce818a77.e32e08",
-                "86e244de.7f5088"
-            ]
-        ]
-    },
-    {
-        "id": "ac979e12.98be6",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SM_Z1",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 256, \n    'quantity': 1 }; \nmsg.topic = \"Z1_SM\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 1320,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "6e66c0b8.6c9d2",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SM_Z2",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 257, \n    'quantity': 1 }; \nmsg.topic = \"Z2_SM\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 1380,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "83ee7c82.ba98",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SM_Z3",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 258, \n    'quantity': 1 }; \nmsg.topic = \"Z3_SM\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 1440,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "393733aa.46bbbc",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SM_Z4",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 259, \n    'quantity': 1 }; \nmsg.topic = \"Z4_SM\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 1500,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "8a6e9c61.e4adb",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SM_Z5",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 260, \n    'quantity': 1 }; \nmsg.topic = \"Z5_SM\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 1560,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "300d4307.795d3c",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "Read_SM_Z6",
-        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 261, \n    'quantity': 1 }; \nmsg.topic = \"Z6_SM\"\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 560,
-        "y": 1620,
-        "wires": [
-            [
-                "aa50c6ad.9e7278"
-            ]
-        ]
-    },
-    {
-        "id": "73bb63ef.c316fc",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SM_Z1",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z1_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1150,
-        "y": 1320,
-        "wires": [
-            [
-                "a3fc7cba.7d1b7"
-            ]
-        ]
-    },
-    {
-        "id": "86e244de.7f5088",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SM_Z6",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z6_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1150,
-        "y": 1620,
-        "wires": [
-            [
-                "265dcb4.37d1234"
-            ]
-        ]
-    },
-    {
-        "id": "ce818a77.e32e08",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SM_Z5",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z5_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1150,
-        "y": 1560,
-        "wires": [
-            [
-                "e8412fc5.36ec2"
-            ]
-        ]
-    },
-    {
-        "id": "95f53fbb.97b4e",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SM_Z4",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z4_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1150,
-        "y": 1500,
-        "wires": [
-            [
-                "b3b9c533.530fc8"
-            ]
-        ]
-    },
-    {
-        "id": "9110a995.3752d8",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SM_Z3",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z3_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1150,
-        "y": 1440,
-        "wires": [
-            [
-                "b9777913.d42898"
-            ]
-        ]
-    },
-    {
-        "id": "e7b23bc6.c7ad38",
-        "type": "function",
-        "z": "ca54f1a.9c8f41",
-        "name": "For_SM_Z2",
-        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1;\n}\nif (msg.topic === \"Z2_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1150,
-        "y": 1380,
-        "wires": [
-            [
-                "934dcddd.4b7c1"
-            ]
-        ]
-    },
-    {
-        "id": "a060b229.54ce6",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SM_Zone1",
-        "links": [
-            "7f1b6947.727138",
-            "b6fddde1.3ce8e",
-            "25b80ae.016d6f6"
-        ],
-        "x": 1604,
-        "y": 1322,
-        "wires": []
-    },
-    {
-        "id": "b736f0ba.feebf",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SM_Zone2",
-        "links": [
-            "6e60bbb8.c065b4",
-            "f685b778.5740b8",
-            "12e8de00.0bc7e2"
-        ],
-        "x": 1604,
-        "y": 1382,
-        "wires": []
-    },
-    {
-        "id": "ea3205a3.ac6498",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SM_Zone3",
-        "links": [
-            "24e97e6c.005ee2",
-            "72300a65.1e51e4",
-            "a429b169.919f1"
-        ],
-        "x": 1604,
-        "y": 1442,
-        "wires": []
-    },
-    {
-        "id": "ced3bdb.eae6c4",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SM_Zone4",
-        "links": [
-            "bd72aff0.392c3",
-            "3a290b7d.ffbf34",
-            "bb498a1b.5631f8"
-        ],
-        "x": 1604,
-        "y": 1502,
-        "wires": []
-    },
-    {
-        "id": "c5084e47.e8fe5",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SM_Zone5",
-        "links": [
-            "bd21fa49.b7ac58",
-            "69387642.d96e38",
-            "847a6736.b02d48"
-        ],
-        "x": 1604,
-        "y": 1562,
-        "wires": []
-    },
-    {
-        "id": "fb1ba666.0252c8",
-        "type": "link out",
-        "z": "ca54f1a.9c8f41",
-        "name": "FormDS_SM_Zone6",
-        "links": [
-            "57eaaab0.1c1364",
-            "6d28567d.04dd48",
-            "b1c9b51e.42c558"
-        ],
-        "x": 1604,
-        "y": 1622,
-        "wires": []
-    },
-    {
-        "id": "a3fc7cba.7d1b7",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SM_Zone1",
-        "label": "Sell Point Zone 1",
-        "tooltip": "",
-        "group": "801d051.dbea6f8",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SM_Zone1",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "8000",
-        "step": "1",
-        "x": 1470,
-        "y": 1320,
-        "wires": [
-            [
-                "a060b229.54ce6"
-            ]
-        ]
-    },
-    {
-        "id": "934dcddd.4b7c1",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SM_Zone2",
-        "label": "Sell Point Zone 2",
-        "tooltip": "",
-        "group": "801d051.dbea6f8",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SM_Zone2",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "8000",
-        "step": 1,
-        "x": 1470,
-        "y": 1380,
-        "wires": [
-            [
-                "b736f0ba.feebf"
-            ]
-        ]
-    },
-    {
-        "id": "b9777913.d42898",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SM_Zone3",
-        "label": "Sell Point Zone 3",
-        "tooltip": "",
-        "group": "801d051.dbea6f8",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SM_Zone3",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "8000",
-        "step": 1,
-        "x": 1470,
-        "y": 1440,
-        "wires": [
-            [
-                "ea3205a3.ac6498"
-            ]
-        ]
-    },
-    {
-        "id": "b3b9c533.530fc8",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SM_Zone4",
-        "label": "Sell Point Zone 4",
-        "tooltip": "",
-        "group": "801d051.dbea6f8",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SM_Zone4",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "8000",
-        "step": 1,
-        "x": 1470,
-        "y": 1500,
-        "wires": [
-            [
-                "ced3bdb.eae6c4"
-            ]
-        ]
-    },
-    {
-        "id": "e8412fc5.36ec2",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SM_Zone5",
-        "label": "Sell Point Zone 5",
-        "tooltip": "",
-        "group": "801d051.dbea6f8",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SM_Zone5",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "8000",
-        "step": 1,
-        "x": 1470,
-        "y": 1560,
-        "wires": [
-            [
-                "c5084e47.e8fe5"
-            ]
-        ]
-    },
-    {
-        "id": "265dcb4.37d1234",
-        "type": "ui_numeric",
-        "z": "ca54f1a.9c8f41",
-        "name": "SM_Zone6",
-        "label": "Sell Point Zone 6",
-        "tooltip": "",
-        "group": "801d051.dbea6f8",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "SM_Zone6",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "8000",
-        "step": 1,
-        "x": 1470,
-        "y": 1620,
-        "wires": [
-            [
-                "fb1ba666.0252c8"
-            ]
-        ]
     },
     {
         "id": "c841bd3d.0bc7c",
@@ -28201,39 +25060,10 @@
         ]
     },
     {
-        "id": "e542b53f.82ca78",
-        "type": "inject",
-        "z": "ca54f1a.9c8f41",
-        "name": "timestamp",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1800",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "60",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 110,
-        "y": 1080,
-        "wires": [
-            [
-                "a07399b7.408928"
-            ]
-        ]
-    },
-    {
         "id": "d6b3d858.c23e48",
         "type": "cycle",
         "z": "6896d5b1.4a006c",
-        "name": "Cycle - 0.4 seconds",
+        "name": "Cycle - 0.5 seconds",
         "outputs": 19,
         "x": 510,
         "y": 1920,
@@ -28294,6 +25124,3397 @@
             ],
             [
                 "7481b913.1cbb58"
+            ]
+        ]
+    },
+    {
+        "id": "28fc0870.cf14d8",
+        "type": "mqtt out",
+        "z": "f6c1caf4.a89c98",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "604800",
+        "broker": "f35ad748.1790a8",
+        "x": 830,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "37b95ba1.4c56e4",
+        "type": "function",
+        "z": "f6c1caf4.a89c98",
+        "name": "Assemble Value",
+        "func": "//var fulltopic\nmsg.shorttopic = msg.topic\nmsg.topic = \"homeassistant/sensor/SunSynkSettings\" + \"/\" + \"/\" + msg.topic + \"/\" + \"value\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 140,
+        "wires": [
+            [
+                "28fc0870.cf14d8",
+                "6ee3dd2d.4cc214",
+                "63f9fc74.ad0064"
+            ]
+        ]
+    },
+    {
+        "id": "6ee3dd2d.4cc214",
+        "type": "debug",
+        "z": "f6c1caf4.a89c98",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 790,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "72ff0cbd.2255b4",
+        "type": "comment",
+        "z": "f6c1caf4.a89c98",
+        "name": "Send to MQTT",
+        "info": "",
+        "x": 480,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "63f9fc74.ad0064",
+        "type": "function",
+        "z": "f6c1caf4.a89c98",
+        "name": "Assemble Config",
+        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynkSettings\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n\n  \"state_topic\": \"homeassistant/sensor/SunSynkSettings\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynkSettings_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"device\": {\n    \"identifiers\": [\n      \"SunSynkSettings\"\n    ],\n    \"name\": \"SunSynkSettings\",\n    \"model\": \"SynSynkSettings\",\n    \"manufacturer\": \"SunSynkSettings\"\n  }  \n}\nif ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n  msg.payload.device_class = msg.deviceclass\n}\nif (msg.unit != \"\") {\n  msg.payload.unit_of_measurement = msg.unit\n}  \nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 280,
+        "wires": [
+            [
+                "350ec448.db696c",
+                "7a501859.d3c608"
+            ]
+        ]
+    },
+    {
+        "id": "350ec448.db696c",
+        "type": "mqtt out",
+        "z": "f6c1caf4.a89c98",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "false",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "604800",
+        "broker": "f35ad748.1790a8",
+        "x": 1030,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7a501859.d3c608",
+        "type": "debug",
+        "z": "f6c1caf4.a89c98",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": true,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 990,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "35d98f90.1738f",
+        "type": "link in",
+        "z": "f6c1caf4.a89c98",
+        "name": "MQTT ONLY Publish",
+        "links": [
+            "adcd4cc3.368f4",
+            "9c205054.3d074",
+            "c5d14884.1b4d68",
+            "acaf47eb.103898",
+            "126710f7.1feeff",
+            "71d26d9e.c2f954",
+            "43092442.35c8ac",
+            "e5da11ae.1ca8",
+            "edd83161.1fbdc",
+            "e5d9a286.2faed",
+            "2de4865c.a0860a",
+            "70ba5371.9d6d1c",
+            "2af45570.01ff8a",
+            "8d8e9a95.b7ab68",
+            "cdcdb2d5.a08fb",
+            "c487d909.c51ad8",
+            "d6a079bf.fd8d68",
+            "a060b229.54ce6",
+            "b736f0ba.feebf",
+            "ea3205a3.ac6498",
+            "ced3bdb.eae6c4",
+            "c5084e47.e8fe5",
+            "fb1ba666.0252c8",
+            "93d94504.69ffd8",
+            "bf04c5f5.3cb2d8",
+            "48af54c9.9cd59c",
+            "69f7e73d.4e2398",
+            "615b8080.a4ec",
+            "a03788c2.679bb8",
+            "37e2d670.3ddd1a",
+            "38852b5f.67f6f4",
+            "8b9e9d0a.67306",
+            "5f551bd9.3e9324",
+            "83f034ae.f3bfd8",
+            "1801d5b9.2ac12a",
+            "a06f8151.e755c"
+        ],
+        "x": 275,
+        "y": 140,
+        "wires": [
+            [
+                "37b95ba1.4c56e4"
+            ]
+        ]
+    },
+    {
+        "id": "b970bf47.be16",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_Time_Z1",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 250, \n    'quantity': 1 }; \nmsg.topic = \"Z1_Time\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 160,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "68e1a11a.15d1",
+        "type": "modbus-response",
+        "z": "5d2e350d.a110ac",
+        "name": "",
+        "registerShowMax": 20,
+        "x": 3307,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "cc6bbbb.a2d3a48",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "Time_Zone1",
+        "label": "Time Zone 1",
+        "tooltip": "",
+        "group": "bded4c6c.4d80c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "Time_Zone1",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2359",
+        "step": "1",
+        "x": 1465,
+        "y": 160,
+        "wires": [
+            [
+                "48f9334a.b9f01c"
+            ]
+        ]
+    },
+    {
+        "id": "da55077d.0a0a88",
+        "type": "ui_button",
+        "z": "5d2e350d.a110ac",
+        "name": "",
+        "group": "bded4c6c.4d80c",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "label": "Read",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "reset",
+        "payloadType": "str",
+        "topic": "Settings_Write_Gate",
+        "topicType": "str",
+        "x": 230,
+        "y": 1000,
+        "wires": [
+            [
+                "53db8d76.52a8d4",
+                "82b72058.a0191",
+                "67cb6ab6.6188e4",
+                "e4247d98.0eda",
+                "468cef0a.5e036",
+                "422be20a.54f2cc",
+                "12c36314.cd90dd",
+                "98973093.18bde",
+                "f492e7fa.483e38",
+                "eb924dcf.0b7b8",
+                "21ca01e7.191a6e",
+                "cdd41071.23fd2",
+                "551afd98.0e6124",
+                "e9118189.8eb5d",
+                "270ea768.b53a58",
+                "e61b85bc.676e78",
+                "78b08973.d2e5a8",
+                "f5c2a127.3bfdf",
+                "48cb1ce3.9297a4",
+                "1e157aa6.ca25e5",
+                "27b3cbf6.d49194",
+                "6b528a9f.bc32a4",
+                "b61f0d64.18238",
+                "92de572d.6f26a8",
+                "7847baf9.55dde4",
+                "cab0d8f8.9ba438",
+                "ce9072f5.7dc0f",
+                "7813dbf7.6a8c54",
+                "cc25dbb3.bf01a8",
+                "4f4711da.90be3",
+                "e1dcabf.dd3d758",
+                "ad3861c0.80815",
+                "fc502e47.1ca67",
+                "b17eb5f1.23cc88",
+                "6ea28f27.13f7f",
+                "b970bf47.be16"
+            ]
+        ]
+    },
+    {
+        "id": "27b6bbe3.2321f4",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_Time_Z1",
+        "func": "var a\na = (msg.payload.data / 1)  ;\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1 ;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2) + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z1_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1151,
+        "y": 160,
+        "wires": [
+            [
+                "cc6bbbb.a2d3a48"
+            ]
+        ]
+    },
+    {
+        "id": "6ea28f27.13f7f",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_Time_Z2",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 251, \n    'quantity': 1 }; \nmsg.topic = \"Z2_Time\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 220,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "b17eb5f1.23cc88",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_Time_Z3",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 252, \n    'quantity': 1 }; \nmsg.topic = \"Z3_Time\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 280,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "fc502e47.1ca67",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_Time_Z4",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 253, \n    'quantity': 1 }; \nmsg.topic = \"Z4_Time\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 340,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "ad3861c0.80815",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_Time_Z5",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 254, \n    'quantity': 1 }; \nmsg.topic = \"Z5_Time\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 400,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "e1dcabf.dd3d758",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_Time_Z6",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 255, \n    'quantity': 1 }; \nmsg.topic = \"Z6_Time\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 460,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "340d492f.1d5a36",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_Time_Z6",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z6_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1151,
+        "y": 460,
+        "wires": [
+            [
+                "5aa7534d.45369c"
+            ]
+        ]
+    },
+    {
+        "id": "6f6d0cab.8bb764",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_Time_Z5",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z5_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1151,
+        "y": 400,
+        "wires": [
+            [
+                "f91011fc.09a2a"
+            ]
+        ]
+    },
+    {
+        "id": "91bfe396.2d579",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_Time_Z4",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z4_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1151,
+        "y": 340,
+        "wires": [
+            [
+                "5f8d203.68382e"
+            ]
+        ]
+    },
+    {
+        "id": "703d691e.6fb568",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_Time_Z3",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z3_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1151,
+        "y": 280,
+        "wires": [
+            [
+                "2e9992e.cdfa66e"
+            ]
+        ]
+    },
+    {
+        "id": "9227f0e7.b7ed7",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_Time_Z2",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z2_Time\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1151,
+        "y": 220,
+        "wires": [
+            [
+                "62651c9.734bde4"
+            ]
+        ]
+    },
+    {
+        "id": "62651c9.734bde4",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "Time_Zone2",
+        "label": "Time Zone 2",
+        "tooltip": "",
+        "group": "bded4c6c.4d80c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "Time_Zone2",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2359",
+        "step": 1,
+        "x": 1465,
+        "y": 220,
+        "wires": [
+            [
+                "8b43c7b5.c7e4e8"
+            ]
+        ]
+    },
+    {
+        "id": "2e9992e.cdfa66e",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "Time_Zone3",
+        "label": "Time_Zone3",
+        "tooltip": "",
+        "group": "bded4c6c.4d80c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "Time_Zone3",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2359",
+        "step": 1,
+        "x": 1465,
+        "y": 280,
+        "wires": [
+            [
+                "5a0ecd34.0ea194"
+            ]
+        ]
+    },
+    {
+        "id": "5f8d203.68382e",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "Time_Zone4",
+        "label": "Time_Zone4",
+        "tooltip": "",
+        "group": "bded4c6c.4d80c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "Time_Zone4",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2359",
+        "step": 1,
+        "x": 1465,
+        "y": 340,
+        "wires": [
+            [
+                "ed87fa79.a7a898"
+            ]
+        ]
+    },
+    {
+        "id": "f91011fc.09a2a",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "Time_Zone5",
+        "label": "Time_Zone5",
+        "tooltip": "",
+        "group": "bded4c6c.4d80c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "Time_Zone5",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2359",
+        "step": 1,
+        "x": 1465,
+        "y": 400,
+        "wires": [
+            [
+                "d1de3ecc.dcc6b"
+            ]
+        ]
+    },
+    {
+        "id": "5aa7534d.45369c",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "Time_Zone6",
+        "label": "Time_Zone6",
+        "tooltip": "",
+        "group": "bded4c6c.4d80c",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "Time_Zone6",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "2359",
+        "step": 1,
+        "x": 1465,
+        "y": 460,
+        "wires": [
+            [
+                "29667c2b.55e684"
+            ]
+        ]
+    },
+    {
+        "id": "4f4711da.90be3",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SoC_Z1",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 268, \n    'quantity': 1 }; \nmsg.topic = \"Z1_SoC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 554,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "cc25dbb3.bf01a8",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SoC_Z2",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 269, \n    'quantity': 1 }; \nmsg.topic = \"Z2_SoC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 614,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "7813dbf7.6a8c54",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SoC_Z3",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 270, \n    'quantity': 1 }; \nmsg.topic = \"Z3_SoC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 674,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "ce9072f5.7dc0f",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SoC_Z4",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 271, \n    'quantity': 1 }; \nmsg.topic = \"Z4_SoC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 734,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "cab0d8f8.9ba438",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SoC_Z5",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 272, \n    'quantity': 1 }; \nmsg.topic = \"Z5_SoC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 794,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "7847baf9.55dde4",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SoC_Z6",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 273, \n    'quantity': 1 }; \nmsg.topic = \"Z6_SoC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 854,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "2428ad2e.9b03e2",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SoC_Zone1",
+        "label": "SoC Zone 1",
+        "tooltip": "",
+        "group": "390e3beb.306c94",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SoC_Zone1",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": "1",
+        "x": 1465,
+        "y": 552,
+        "wires": [
+            [
+                "f9ce9ef.3a11c6"
+            ]
+        ]
+    },
+    {
+        "id": "487e5228.da592c",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SoC_Z1",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z1_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 552,
+        "wires": [
+            [
+                "2428ad2e.9b03e2"
+            ]
+        ]
+    },
+    {
+        "id": "89d6b1cb.771b3",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SoC_Z6",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z6_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 852,
+        "wires": [
+            [
+                "952678de.70a108"
+            ]
+        ]
+    },
+    {
+        "id": "6f42035e.65be8c",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SoC_Z5",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z5_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 792,
+        "wires": [
+            [
+                "91792f7b.4a927"
+            ]
+        ]
+    },
+    {
+        "id": "83db88cb.1ab688",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SoC_Z4",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z4_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 732,
+        "wires": [
+            [
+                "6b5dc956.3ead78"
+            ]
+        ]
+    },
+    {
+        "id": "577c7b78.739094",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SoC_Z3",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z3_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 672,
+        "wires": [
+            [
+                "474af5ef.c5dc4c"
+            ]
+        ]
+    },
+    {
+        "id": "360e67c6.1dee08",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SoC_Z2",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z2_SoC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 612,
+        "wires": [
+            [
+                "86c259cf.da2938"
+            ]
+        ]
+    },
+    {
+        "id": "86c259cf.da2938",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SoC_Zone2",
+        "label": "SoC Zone 2",
+        "tooltip": "",
+        "group": "390e3beb.306c94",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SoC_Zone2",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 1465,
+        "y": 612,
+        "wires": [
+            [
+                "5b8784fb.9e7cfc"
+            ]
+        ]
+    },
+    {
+        "id": "474af5ef.c5dc4c",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SoC_Zone3",
+        "label": "SoC Zone 3",
+        "tooltip": "",
+        "group": "390e3beb.306c94",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SoC_Zone3",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 1465,
+        "y": 672,
+        "wires": [
+            [
+                "ed2ea172.7e9e5"
+            ]
+        ]
+    },
+    {
+        "id": "6b5dc956.3ead78",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SoC_Zone4",
+        "label": "SoC Zone 4",
+        "tooltip": "",
+        "group": "390e3beb.306c94",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SoC_Zone4",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 1465,
+        "y": 732,
+        "wires": [
+            [
+                "2066772e.7dad18"
+            ]
+        ]
+    },
+    {
+        "id": "91792f7b.4a927",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SoC_Zone5",
+        "label": "SoC Zone 5",
+        "tooltip": "",
+        "group": "390e3beb.306c94",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SoC_Zone5",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 1465,
+        "y": 792,
+        "wires": [
+            [
+                "6b7cad4c.fcbec4"
+            ]
+        ]
+    },
+    {
+        "id": "952678de.70a108",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SoC_Zone6",
+        "label": "SoC Zone 6",
+        "tooltip": "",
+        "group": "390e3beb.306c94",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SoC_Zone6",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 1465,
+        "y": 852,
+        "wires": [
+            [
+                "94bb83bf.ae3d1"
+            ]
+        ]
+    },
+    {
+        "id": "92de572d.6f26a8",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_GC_Z1",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 274, \n    'quantity': 1 }; \nmsg.topic = \"Z1_GC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 938,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "b61f0d64.18238",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_GC_Z2",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 275, \n    'quantity': 1 }; \nmsg.topic = \"Z2_GC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 998,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "6b528a9f.bc32a4",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_GC_Z3",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 276, \n    'quantity': 1 }; \nmsg.topic = \"Z3_GC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 1058,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "27b3cbf6.d49194",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_GC_Z4",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 277, \n    'quantity': 1 }; \nmsg.topic = \"Z4_GC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 1118,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "1e157aa6.ca25e5",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_GC_Z5",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 278, \n    'quantity': 1 }; \nmsg.topic = \"Z5_GC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 1178,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "48cb1ce3.9297a4",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_GC_Z6",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 279, \n    'quantity': 1 }; \nmsg.topic = \"Z6_GC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 571,
+        "y": 1238,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "29380d00.a34b74",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_GC_Z1",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z1_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 938,
+        "wires": [
+            [
+                "74f8a5a8.e255bc"
+            ]
+        ]
+    },
+    {
+        "id": "51a22a61.5072e4",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_GC_Z6",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z6_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 1238,
+        "wires": [
+            [
+                "8a401d5d.3ac4d"
+            ]
+        ]
+    },
+    {
+        "id": "d93a6543.67c498",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_GC_Z5",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z5_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 1178,
+        "wires": [
+            [
+                "6348a6bf.48dcd8"
+            ]
+        ]
+    },
+    {
+        "id": "c0d32490.d58c68",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_GC_Z4",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z4_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 1118,
+        "wires": [
+            [
+                "476a2b92.b53184"
+            ]
+        ]
+    },
+    {
+        "id": "15e43c19.04fdd4",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_GC_Z3",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z3_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 1058,
+        "wires": [
+            [
+                "7b7481f7.5e138"
+            ]
+        ]
+    },
+    {
+        "id": "b5376ec0.4b023",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_GC_Z2",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Z2_GC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1141,
+        "y": 998,
+        "wires": [
+            [
+                "f4e0a06a.69375"
+            ]
+        ]
+    },
+    {
+        "id": "74f8a5a8.e255bc",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "GC_Zone1",
+        "label": "Grid Charge 1",
+        "tooltip": "",
+        "group": "b7da8ffe.4e9ea",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1465,
+        "y": 938,
+        "wires": [
+            [
+                "10160de0.92a3c2"
+            ]
+        ]
+    },
+    {
+        "id": "f4e0a06a.69375",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "GC_Zone2",
+        "label": "Grid Charge 2",
+        "tooltip": "",
+        "group": "b7da8ffe.4e9ea",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1465,
+        "y": 998,
+        "wires": [
+            [
+                "51a061aa.c9bad"
+            ]
+        ]
+    },
+    {
+        "id": "7b7481f7.5e138",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "GC_Zone3",
+        "label": "Grid Charge 3",
+        "tooltip": "",
+        "group": "b7da8ffe.4e9ea",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1465,
+        "y": 1058,
+        "wires": [
+            [
+                "e1939f40.6a145"
+            ]
+        ]
+    },
+    {
+        "id": "476a2b92.b53184",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "GC_Zone4",
+        "label": "Grid Charge 4",
+        "tooltip": "",
+        "group": "b7da8ffe.4e9ea",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1465,
+        "y": 1118,
+        "wires": [
+            [
+                "6c7919b9.2905c8"
+            ]
+        ]
+    },
+    {
+        "id": "6348a6bf.48dcd8",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "GC_Zone5",
+        "label": "Grid Charge 5",
+        "tooltip": "",
+        "group": "b7da8ffe.4e9ea",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1465,
+        "y": 1178,
+        "wires": [
+            [
+                "8dc64a00.cb4dd8"
+            ]
+        ]
+    },
+    {
+        "id": "8a401d5d.3ac4d",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "GC_Zone6",
+        "label": "Grid Charge 6",
+        "tooltip": "",
+        "group": "b7da8ffe.4e9ea",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1465,
+        "y": 1238,
+        "wires": [
+            [
+                "d4e20e6a.e5784"
+            ]
+        ]
+    },
+    {
+        "id": "53db8d76.52a8d4",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_PL",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 243, \n    'quantity': 1 }; \nmsg.topic = \"PL\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 540,
+        "y": 1760,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "5e0f710f.cb0c8",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_PL",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"PL\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1120,
+        "y": 1760,
+        "wires": [
+            [
+                "5783fab5.567c64"
+            ]
+        ]
+    },
+    {
+        "id": "5783fab5.567c64",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "PL",
+        "label": "Priority Load",
+        "tooltip": "",
+        "group": "5c1577a6.26f468",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1434,
+        "y": 1760,
+        "wires": [
+            [
+                "f8babd43.44f05"
+            ]
+        ]
+    },
+    {
+        "id": "f492e7fa.483e38",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_UseTimer",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 248, \n    'quantity': 1 }; \nmsg.topic = \"Use_Timer\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 1820,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "93d9c661.fd3b68",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_UseTimer",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Use_Timer\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1140,
+        "y": 1820,
+        "wires": [
+            [
+                "60219b81.d8e074"
+            ]
+        ]
+    },
+    {
+        "id": "60219b81.d8e074",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "Use_Timer",
+        "label": "Use Timer",
+        "tooltip": "",
+        "group": "5c1577a6.26f468",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1454,
+        "y": 1820,
+        "wires": [
+            [
+                "4accc4cd.ddf71c"
+            ]
+        ]
+    },
+    {
+        "id": "eb924dcf.0b7b8",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SolarExport",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 247, \n    'quantity': 1 }; \nmsg.topic = \"Solar_Export\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 1880,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "eee8b6ca.c76208",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SolarExport",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Solar_Export\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1140,
+        "y": 1880,
+        "wires": [
+            [
+                "3c3fac73.4e6c34"
+            ]
+        ]
+    },
+    {
+        "id": "3c3fac73.4e6c34",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "Solar_Export",
+        "label": "Solar Export",
+        "tooltip": "",
+        "group": "5c1577a6.26f468",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1454,
+        "y": 1880,
+        "wires": [
+            [
+                "67be65ac.28cbac"
+            ]
+        ]
+    },
+    {
+        "id": "21ca01e7.191a6e",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_LoadLimit",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 244, \n    'quantity': 1 }; \nmsg.topic = \"Load_Limit\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 1940,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "97ae9d15.1ece4",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_LoadLimit",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Load_Limit\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1140,
+        "y": 1940,
+        "wires": [
+            [
+                "96dc1d8c.a066b"
+            ]
+        ]
+    },
+    {
+        "id": "113ee14f.a30e6f",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_BatShut",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Bat_Shut\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1130,
+        "y": 2139,
+        "wires": [
+            [
+                "bf98fe72.51e9c"
+            ]
+        ]
+    },
+    {
+        "id": "bf98fe72.51e9c",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "BatShut",
+        "label": "Battery Shutdown %",
+        "tooltip": "",
+        "group": "96e729df.b8f718",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 1444,
+        "y": 2139,
+        "wires": [
+            [
+                "4bad881e.ba66a8"
+            ]
+        ]
+    },
+    {
+        "id": "82b72058.a0191",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_BatShut",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 217, \n    'quantity': 1 }; \nmsg.topic = \"Bat_Shut\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 2138,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "67cb6ab6.6188e4",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_BatLow",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 219, \n    'quantity': 1 }; \nmsg.topic = \"Bat_Low\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 2198,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "33f405ad.dc87ba",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_BatLow",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Bat_Low\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1130,
+        "y": 2199,
+        "wires": [
+            [
+                "1c291091.10821f"
+            ]
+        ]
+    },
+    {
+        "id": "1c291091.10821f",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "BatLow",
+        "label": "Battery Low Warning %",
+        "tooltip": "",
+        "group": "96e729df.b8f718",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 1444,
+        "y": 2199,
+        "wires": [
+            [
+                "2ddf3816.ac7c48"
+            ]
+        ]
+    },
+    {
+        "id": "e4247d98.0eda",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_BatRestart",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 218, \n    'quantity': 1 }; \nmsg.topic = \"Bat_Restart\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 2258,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "dad0ba45.e08638",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_BatRestart",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Bat_Restart\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1140,
+        "y": 2259,
+        "wires": [
+            [
+                "188e7c4d.dcbb24"
+            ]
+        ]
+    },
+    {
+        "id": "188e7c4d.dcbb24",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "BatRestart",
+        "label": "Battery Restart %",
+        "tooltip": "",
+        "group": "96e729df.b8f718",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "x": 1454,
+        "y": 2259,
+        "wires": [
+            [
+                "aaf48d99.6128b"
+            ]
+        ]
+    },
+    {
+        "id": "468cef0a.5e036",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_BatMaxC",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 210, \n    'quantity': 1 }; \nmsg.topic = \"Bat_MaxC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 2318,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "4c289825.082048",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_BatMaxC",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Bat_MaxC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1140,
+        "y": 2319,
+        "wires": [
+            [
+                "ac8d601.ce7ffa"
+            ]
+        ]
+    },
+    {
+        "id": "ac8d601.ce7ffa",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "BatMaxC",
+        "label": "Max Charge Current",
+        "tooltip": "",
+        "group": "96e729df.b8f718",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "185",
+        "step": 1,
+        "x": 1444,
+        "y": 2319,
+        "wires": [
+            [
+                "86018802.cefad8"
+            ]
+        ]
+    },
+    {
+        "id": "422be20a.54f2cc",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_BatMaxDC",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 211, \n    'quantity': 1 }; \nmsg.topic = \"Bat_MaxDC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 2378,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "cc0d5d0a.108d6",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_BatMaxDC",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Bat_MaxDC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1140,
+        "y": 2379,
+        "wires": [
+            [
+                "573e59b2.da04c8"
+            ]
+        ]
+    },
+    {
+        "id": "573e59b2.da04c8",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "BatMaxDC",
+        "label": "Max Discharge Current",
+        "tooltip": "",
+        "group": "96e729df.b8f718",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "185",
+        "step": 1,
+        "x": 1454,
+        "y": 2379,
+        "wires": [
+            [
+                "e45e246.539d1d8"
+            ]
+        ]
+    },
+    {
+        "id": "12c36314.cd90dd",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_GridEn",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 232, \n    'quantity': 1 }; \nmsg.topic = \"Bat_GridEn\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 2438,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "ffb82974.8aaa28",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_GridEn",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a == 1 ) {\n  msg.payload = true;\n} else {\n    msg.payload = false;\n}\nif (msg.topic === \"Bat_GridEn\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1130,
+        "y": 2439,
+        "wires": [
+            [
+                "2e77db86.eb56e4"
+            ]
+        ]
+    },
+    {
+        "id": "2e77db86.eb56e4",
+        "type": "ui_switch",
+        "z": "5d2e350d.a110ac",
+        "name": "Bat_GridEn",
+        "label": "Grid Charge Enabled",
+        "tooltip": "",
+        "group": "96e729df.b8f718",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "x": 1454,
+        "y": 2439,
+        "wires": [
+            [
+                "935b0436.aaf998"
+            ]
+        ]
+    },
+    {
+        "id": "98973093.18bde",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_GridC",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 230, \n    'quantity': 1 }; \nmsg.topic = \"Bat_GridC\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 550,
+        "y": 2498,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "33b70b0b.7bbf84",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_GridC",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Bat_GridC\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1130,
+        "y": 2499,
+        "wires": [
+            [
+                "63709f91.3e728"
+            ]
+        ]
+    },
+    {
+        "id": "63709f91.3e728",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "GridC",
+        "label": "Grid Charge Current",
+        "tooltip": "",
+        "group": "96e729df.b8f718",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "185",
+        "step": 1,
+        "x": 1434,
+        "y": 2499,
+        "wires": [
+            [
+                "436e65bd.9e2c5c"
+            ]
+        ]
+    },
+    {
+        "id": "96dc1d8c.a066b",
+        "type": "ui_dropdown",
+        "z": "5d2e350d.a110ac",
+        "name": "Load_Limit",
+        "label": "Export Options",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "5c1577a6.26f468",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Zero Export Disabled",
+                "value": 0,
+                "type": "num"
+            },
+            {
+                "label": "Zero Export Enabled",
+                "value": "2",
+                "type": "str"
+            },
+            {
+                "label": "Zero Export + Load Limit Enabled",
+                "value": 1,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 1454,
+        "y": 1939,
+        "wires": [
+            [
+                "28312e0b.5f0262"
+            ]
+        ]
+    },
+    {
+        "id": "cdd41071.23fd2",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_ExportLimit",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 245, \n    'quantity': 1 }; \nmsg.topic = \"ExportLimit\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 1998,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "f4eb795f.d1c6a8",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_ExportLimit",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"ExportLimit\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1140,
+        "y": 1999,
+        "wires": [
+            [
+                "19134841.3f6848"
+            ]
+        ]
+    },
+    {
+        "id": "19134841.3f6848",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "ExportLimit",
+        "label": "Export Power Limit",
+        "tooltip": "",
+        "group": "5c1577a6.26f468",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "8000",
+        "step": 1,
+        "x": 1454,
+        "y": 1999,
+        "wires": [
+            [
+                "6c9f8e46.b524c"
+            ]
+        ]
+    },
+    {
+        "id": "48f9334a.b9f01c",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Time_Zone1",
+        "links": [
+            "35d98f90.1738f",
+            "9c6d3e2d.6020d"
+        ],
+        "x": 1595,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8b43c7b5.c7e4e8",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Time_Zone2",
+        "links": [
+            "35d98f90.1738f",
+            "62481dc4.9089b4"
+        ],
+        "x": 1595,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "5a0ecd34.0ea194",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Time_Zone3",
+        "links": [
+            "60e49f1.501bd6",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ed87fa79.a7a898",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Time_Zone4",
+        "links": [
+            "2f905698.7cd0aa",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "d1de3ecc.dcc6b",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Time_Zone5",
+        "links": [
+            "3bf6cc25.959834",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "29667c2b.55e684",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Time_Zone6",
+        "links": [
+            "c8f5ddb9.5da48",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f9ce9ef.3a11c6",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SoC_Zone1",
+        "links": [
+            "a872d2b7.3b026",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5b8784fb.9e7cfc",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SoC_Zone2",
+        "links": [
+            "e7ae8b0e.6bba48",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "ed2ea172.7e9e5",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SoC_Zone3",
+        "links": [
+            "5c5e7a27.a7aa14",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "2066772e.7dad18",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SoC_Zone4",
+        "links": [
+            "a862a227.7bbb2",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "6b7cad4c.fcbec4",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SoC_Zone5",
+        "links": [
+            "15e7f1c4.a0bfee",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "94bb83bf.ae3d1",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SoC_Zone6",
+        "links": [
+            "d6c4a6d6.ac9338",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "10160de0.92a3c2",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_GC_Zone1",
+        "links": [
+            "d42c362e.49d4f8",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "51a061aa.c9bad",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_GC_Zone2",
+        "links": [
+            "32415262.21465e",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "e1939f40.6a145",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_GC_Zone3",
+        "links": [
+            "73d8632b.f7104c",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "6c7919b9.2905c8",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_GC_Zone4",
+        "links": [
+            "35a3cce9.401714",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "8dc64a00.cb4dd8",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_GC_Zone5",
+        "links": [
+            "111860af.b6c04f",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "d4e20e6a.e5784",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_GC_Zone6",
+        "links": [
+            "530ec4f0.17e71c",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1595,
+        "y": 1240,
+        "wires": []
+    },
+    {
+        "id": "f8babd43.44f05",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_PL",
+        "links": [
+            "30eb9ce6.c947d4",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 1759,
+        "wires": []
+    },
+    {
+        "id": "4accc4cd.ddf71c",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Use_Timer",
+        "links": [
+            "71a50425.0f369c",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 1819,
+        "wires": []
+    },
+    {
+        "id": "67be65ac.28cbac",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Solar_Export",
+        "links": [
+            "4277f207.301cfc",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 1879,
+        "wires": []
+    },
+    {
+        "id": "28312e0b.5f0262",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Load_Limit",
+        "links": [
+            "4b6380f2.177ad",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 1939,
+        "wires": []
+    },
+    {
+        "id": "6c9f8e46.b524c",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Export_Limit",
+        "links": [
+            "64abf8dc.1a7168",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 1999,
+        "wires": []
+    },
+    {
+        "id": "4bad881e.ba66a8",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_BatShut",
+        "links": [
+            "35d98f90.1738f",
+            "669e0493.46387c"
+        ],
+        "x": 1584,
+        "y": 2139,
+        "wires": []
+    },
+    {
+        "id": "2ddf3816.ac7c48",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_BatLow",
+        "links": [
+            "4797ca8b.fcd7b4",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 2199,
+        "wires": []
+    },
+    {
+        "id": "aaf48d99.6128b",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_BatRestart",
+        "links": [
+            "730dca72.594f34",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 2259,
+        "wires": []
+    },
+    {
+        "id": "86018802.cefad8",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_BatMaxC",
+        "links": [
+            "5e9b308f.ba4dc",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 2319,
+        "wires": []
+    },
+    {
+        "id": "e45e246.539d1d8",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_BatMaxDC",
+        "links": [
+            "8c9184b.b71fb78",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 2379,
+        "wires": []
+    },
+    {
+        "id": "935b0436.aaf998",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_Bat_GridEn",
+        "links": [
+            "ed2dca6a.9ca398",
+            "fe7fdb50.5d3198"
+        ],
+        "x": 1584,
+        "y": 2439,
+        "wires": []
+    },
+    {
+        "id": "436e65bd.9e2c5c",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_GridC",
+        "links": [
+            "d368b04b.e8a7b",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1584,
+        "y": 2499,
+        "wires": []
+    },
+    {
+        "id": "c1f14223.c6a6",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "SSRead_Out",
+        "links": [
+            "f8adef44.19ef2"
+        ],
+        "x": 835,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "a7ab304a.c1022",
+        "type": "link in",
+        "z": "5d2e350d.a110ac",
+        "name": "SSRead_In",
+        "links": [
+            "98c41121.a29ce"
+        ],
+        "x": 875,
+        "y": 960,
+        "wires": [
+            [
+                "27b6bbe3.2321f4",
+                "9227f0e7.b7ed7",
+                "703d691e.6fb568",
+                "91bfe396.2d579",
+                "6f6d0cab.8bb764",
+                "340d492f.1d5a36",
+                "487e5228.da592c",
+                "360e67c6.1dee08",
+                "577c7b78.739094",
+                "83db88cb.1ab688",
+                "6f42035e.65be8c",
+                "89d6b1cb.771b3",
+                "29380d00.a34b74",
+                "b5376ec0.4b023",
+                "15e43c19.04fdd4",
+                "c0d32490.d58c68",
+                "d93a6543.67c498",
+                "51a22a61.5072e4",
+                "5e0f710f.cb0c8",
+                "93d9c661.fd3b68",
+                "eee8b6ca.c76208",
+                "97ae9d15.1ece4",
+                "f4eb795f.d1c6a8",
+                "113ee14f.a30e6f",
+                "33f405ad.dc87ba",
+                "dad0ba45.e08638",
+                "4c289825.082048",
+                "cc0d5d0a.108d6",
+                "ffb82974.8aaa28",
+                "33b70b0b.7bbf84",
+                "5325c7df.0aa628",
+                "6cfd5a42.944c24",
+                "48df2f56.9dd6a",
+                "522f73c.105398c",
+                "e70ef397.34944",
+                "7fa6f38b.a62aac"
+            ]
+        ]
+    },
+    {
+        "id": "f5c2a127.3bfdf",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SM_Z1",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 256, \n    'quantity': 1 }; \nmsg.topic = \"Z1_SM\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 1320,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "270ea768.b53a58",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SM_Z2",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 257, \n    'quantity': 1 }; \nmsg.topic = \"Z2_SM\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 1380,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "e61b85bc.676e78",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SM_Z3",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 258, \n    'quantity': 1 }; \nmsg.topic = \"Z3_SM\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 1440,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "78b08973.d2e5a8",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SM_Z4",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 259, \n    'quantity': 1 }; \nmsg.topic = \"Z4_SM\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 1500,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "551afd98.0e6124",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SM_Z5",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 260, \n    'quantity': 1 }; \nmsg.topic = \"Z5_SM\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 1560,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "e9118189.8eb5d",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "Read_SM_Z6",
+        "func": "msg.payload = { \n    'fc': 3, \n    'unitid': 1, \n    'address': 261, \n    'quantity': 1 }; \nmsg.topic = \"Z6_SM\"\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 560,
+        "y": 1620,
+        "wires": [
+            [
+                "c1f14223.c6a6"
+            ]
+        ]
+    },
+    {
+        "id": "5325c7df.0aa628",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SM_Z1",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z1_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1150,
+        "y": 1320,
+        "wires": [
+            [
+                "6e9b9506.cca27c"
+            ]
+        ]
+    },
+    {
+        "id": "7fa6f38b.a62aac",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SM_Z6",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z6_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1150,
+        "y": 1620,
+        "wires": [
+            [
+                "fcb4082d.09c088"
+            ]
+        ]
+    },
+    {
+        "id": "e70ef397.34944",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SM_Z5",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z5_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1150,
+        "y": 1560,
+        "wires": [
+            [
+                "842d33c5.b56bd"
+            ]
+        ]
+    },
+    {
+        "id": "522f73c.105398c",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SM_Z4",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z4_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1150,
+        "y": 1500,
+        "wires": [
+            [
+                "6e1a749c.e9761c"
+            ]
+        ]
+    },
+    {
+        "id": "48df2f56.9dd6a",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SM_Z3",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z3_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1150,
+        "y": 1440,
+        "wires": [
+            [
+                "8abb89e.4b89c78"
+            ]
+        ]
+    },
+    {
+        "id": "6cfd5a42.944c24",
+        "type": "function",
+        "z": "5d2e350d.a110ac",
+        "name": "For_SM_Z2",
+        "func": "var a\na = (msg.payload.data / 1)\nif (a > 32767) {\n  msg.payload = (a - 65535) / 1;\n} else {\n    msg.payload = (a) / 1 + Math.floor(Math.random() * 2);\n}\nif (msg.topic === \"Z2_SM\") {\n   return [ msg, null ];\n} else {\n   return [ null, msg ];\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1150,
+        "y": 1380,
+        "wires": [
+            [
+                "289a1456.cb87fc"
+            ]
+        ]
+    },
+    {
+        "id": "a4c37502.1d60b8",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SM_Zone1",
+        "links": [
+            "7f1b6947.727138",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1604,
+        "y": 1322,
+        "wires": []
+    },
+    {
+        "id": "f6018e7c.89888",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SM_Zone2",
+        "links": [
+            "6e60bbb8.c065b4",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1604,
+        "y": 1382,
+        "wires": []
+    },
+    {
+        "id": "5f4bcaf.66e8534",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SM_Zone3",
+        "links": [
+            "24e97e6c.005ee2",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1604,
+        "y": 1442,
+        "wires": []
+    },
+    {
+        "id": "57c33d49.152984",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SM_Zone4",
+        "links": [
+            "bd72aff0.392c3",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1604,
+        "y": 1502,
+        "wires": []
+    },
+    {
+        "id": "817deda7.130ca",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SM_Zone5",
+        "links": [
+            "bd21fa49.b7ac58",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1604,
+        "y": 1562,
+        "wires": []
+    },
+    {
+        "id": "6cfb9175.1d5a3",
+        "type": "link out",
+        "z": "5d2e350d.a110ac",
+        "name": "FormDS_SM_Zone6",
+        "links": [
+            "57eaaab0.1c1364",
+            "ed2dca6a.9ca398"
+        ],
+        "x": 1604,
+        "y": 1622,
+        "wires": []
+    },
+    {
+        "id": "6e9b9506.cca27c",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SM_Zone1",
+        "label": "Sell Point Zone 1",
+        "tooltip": "",
+        "group": "801d051.dbea6f8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SM_Zone1",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "8000",
+        "step": "1",
+        "x": 1470,
+        "y": 1320,
+        "wires": [
+            [
+                "a4c37502.1d60b8"
+            ]
+        ]
+    },
+    {
+        "id": "289a1456.cb87fc",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SM_Zone2",
+        "label": "Sell Point Zone 2",
+        "tooltip": "",
+        "group": "801d051.dbea6f8",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SM_Zone2",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "8000",
+        "step": 1,
+        "x": 1470,
+        "y": 1380,
+        "wires": [
+            [
+                "f6018e7c.89888"
+            ]
+        ]
+    },
+    {
+        "id": "8abb89e.4b89c78",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SM_Zone3",
+        "label": "Sell Point Zone 3",
+        "tooltip": "",
+        "group": "801d051.dbea6f8",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SM_Zone3",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "8000",
+        "step": 1,
+        "x": 1470,
+        "y": 1440,
+        "wires": [
+            [
+                "5f4bcaf.66e8534"
+            ]
+        ]
+    },
+    {
+        "id": "6e1a749c.e9761c",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SM_Zone4",
+        "label": "Sell Point Zone 4",
+        "tooltip": "",
+        "group": "801d051.dbea6f8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SM_Zone4",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "8000",
+        "step": 1,
+        "x": 1470,
+        "y": 1500,
+        "wires": [
+            [
+                "57c33d49.152984"
+            ]
+        ]
+    },
+    {
+        "id": "842d33c5.b56bd",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SM_Zone5",
+        "label": "Sell Point Zone 5",
+        "tooltip": "",
+        "group": "801d051.dbea6f8",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SM_Zone5",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "8000",
+        "step": 1,
+        "x": 1470,
+        "y": 1560,
+        "wires": [
+            [
+                "817deda7.130ca"
+            ]
+        ]
+    },
+    {
+        "id": "fcb4082d.09c088",
+        "type": "ui_numeric",
+        "z": "5d2e350d.a110ac",
+        "name": "SM_Zone6",
+        "label": "Sell Point Zone 6",
+        "tooltip": "",
+        "group": "801d051.dbea6f8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "SM_Zone6",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "8000",
+        "step": 1,
+        "x": 1470,
+        "y": 1620,
+        "wires": [
+            [
+                "6cfb9175.1d5a3"
+            ]
+        ]
+    },
+    {
+        "id": "217916b4.9ea93a",
+        "type": "inject",
+        "z": "5d2e350d.a110ac",
+        "name": "timestamp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 720,
+        "wires": [
+            [
+                "c8c8c258.3ad91"
+            ]
+        ]
+    },
+    {
+        "id": "39b1a5c9.bff9ca",
+        "type": "exec",
+        "z": "5d2e350d.a110ac",
+        "command": "sudo reboot",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "oldrc": false,
+        "name": "",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a5cb4b7a.621d88",
+        "type": "inject",
+        "z": "5d2e350d.a110ac",
+        "name": "timestamp",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1800",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "60",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 90,
+        "y": 460,
+        "wires": [
+            [
+                "39b1a5c9.bff9ca"
+            ]
+        ]
+    },
+    {
+        "id": "c8c8c258.3ad91",
+        "type": "ui_ui_control",
+        "z": "5d2e350d.a110ac",
+        "name": "",
+        "events": "all",
+        "x": 200,
+        "y": 780,
+        "wires": [
+            [
+                "da55077d.0a0a88"
+            ]
+        ]
+    },
+    {
+        "id": "344e004c4f4636b8",
+        "type": "mqtt out",
+        "z": "28c7d530.54db9a",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "false",
+        "broker": "f35ad748.1790a8",
+        "x": 870,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "48b808c0e9dfc11e",
+        "type": "function",
+        "z": "28c7d530.54db9a",
+        "name": "Assemble Value",
+        "func": "//var fulltopic\nmsg.shorttopic = msg.topic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.topic + \"/\" + \"value\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 180,
+        "wires": [
+            [
+                "344e004c4f4636b8",
+                "e83f6c803179065b"
+            ]
+        ]
+    },
+    {
+        "id": "e0349bb8de69783d",
+        "type": "function",
+        "z": "28c7d530.54db9a",
+        "name": "Convert to Influx Friendly Value",
+        "func": "lowertopic = msg.topic\nlowertopic = lowertopic.toLowerCase()\nmsg.payload = [\n    {\n        measurement: lowertopic,\n        fields: {\n            value: Number(msg.payload),\n        },\n        timestamp: new Date()\n    }]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 620,
+        "wires": [
+            [
+                "cf5a39985ff46faa"
+            ]
+        ]
+    },
+    {
+        "id": "cf5a39985ff46faa",
+        "type": "influxdb batch",
+        "z": "28c7d530.54db9a",
+        "influxdb": "332d824c.c7d53e",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "Send to Influx",
+        "x": 860,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b78fc5537488ae5b",
+        "type": "comment",
+        "z": "28c7d530.54db9a",
+        "name": "Send to influxdb",
+        "info": "",
+        "x": 520,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e12729ab475812c7",
+        "type": "comment",
+        "z": "28c7d530.54db9a",
+        "name": "Send to MQTT",
+        "info": "",
+        "x": 520,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e83f6c803179065b",
+        "type": "function",
+        "z": "28c7d530.54db9a",
+        "name": "Assemble Config",
+        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n  \"unit_of_measurement\": msg.unit,\n  \"state_topic\": \"homeassistant/sensor/SunSynk\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynk_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"state_class\": msg.state_class,\n  \"last_reset_topic\": \"SunSynk/lastreset\",\n  \"last_reset_value_template\": \"1970-01-01T00:00:00+00:00\",\n   \"device\": {\n    \"identifiers\": [\n      \"SunSynk\"\n    ],\n    \"name\": \"SunSynk\",\n    \"model\": \"SynSynk\",\n    \"manufacturer\": \"SunSynk\"\n  }  \n}\n  if ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n     msg.payload.device_class = msg.deviceclass\n  }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 750,
+        "y": 320,
+        "wires": [
+            [
+                "ba78fe6f833b09f0"
+            ]
+        ]
+    },
+    {
+        "id": "ba78fe6f833b09f0",
+        "type": "mqtt out",
+        "z": "28c7d530.54db9a",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "false",
+        "broker": "f35ad748.1790a8",
+        "x": 1190,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "93139e01ab30139e",
+        "type": "inject",
+        "z": "28c7d530.54db9a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "59 23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 510,
+        "y": 458,
+        "wires": [
+            [
+                "9ef01f2ab91b3e14"
+            ]
+        ]
+    },
+    {
+        "id": "32121758bcf3264f",
+        "type": "debug",
+        "z": "28c7d530.54db9a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 558,
+        "wires": []
+    },
+    {
+        "id": "c8a085198f02cc40",
+        "type": "function",
+        "z": "28c7d530.54db9a",
+        "name": "Assemble Config",
+        "func": "//var fulltopic\nmsg.topic = \"SunSynk/lastreset\" \nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 950,
+        "y": 458,
+        "wires": [
+            [
+                "32121758bcf3264f",
+                "c2d8a09ad1464a28"
+            ]
+        ]
+    },
+    {
+        "id": "c2d8a09ad1464a28",
+        "type": "mqtt out",
+        "z": "28c7d530.54db9a",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "true",
+        "broker": "f35ad748.1790a8",
+        "x": 1190,
+        "y": 458,
+        "wires": []
+    },
+    {
+        "id": "c7fe0ba447eecad2",
+        "type": "comment",
+        "z": "28c7d530.54db9a",
+        "name": "Send to LastReset to MQTT",
+        "info": "",
+        "x": 560,
+        "y": 398,
+        "wires": []
+    },
+    {
+        "id": "9ef01f2ab91b3e14",
+        "type": "moment",
+        "z": "28c7d530.54db9a",
+        "name": "",
+        "topic": "",
+        "input": "",
+        "inputType": "msg",
+        "inTz": "",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "",
+        "output": "",
+        "outputType": "msg",
+        "outTz": "",
+        "x": 720,
+        "y": 458,
+        "wires": [
+            [
+                "c8a085198f02cc40"
             ]
         ]
     }
