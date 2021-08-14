@@ -1582,7 +1582,7 @@
         "tcpPort": "8899",
         "tcpType": "DEFAULT",
         "serialPort": "/dev/ttyS0",
-        "serialType": "RTU",
+        "serialType": "RTU-BUFFERD",
         "serialBaudrate": "9600",
         "serialDatabits": "8",
         "serialStopbits": "1",
