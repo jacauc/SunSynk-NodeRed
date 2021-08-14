@@ -91,6 +91,13 @@
         "info": ""
     },
     {
+        "id": "27b640f1a0c2d238",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "20f5b48f.283ffc",
         "type": "subflow",
         "name": "Timer Settings (2)",
@@ -1872,24 +1879,6 @@
         ]
     },
     {
-        "id": "50585779.327488",
-        "type": "mqtt out",
-        "z": "28c7d530.54db9a",
-        "name": "Publish to MQTT",
-        "topic": "",
-        "qos": "",
-        "retain": "true",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "86400",
-        "broker": "f35ad748.1790a8",
-        "x": 830,
-        "y": 140,
-        "wires": []
-    },
-    {
         "id": "118dd23d.2cd0de",
         "type": "link in",
         "z": "28c7d530.54db9a",
@@ -1902,160 +1891,10 @@
         "y": 220,
         "wires": [
             [
-                "8bda0137.80198",
-                "dc909889.782338"
+                "48b808c0e9dfc11e",
+                "e0349bb8de69783d"
             ]
         ]
-    },
-    {
-        "id": "8bda0137.80198",
-        "type": "function",
-        "z": "28c7d530.54db9a",
-        "name": "Assemble Value",
-        "func": "//var fulltopic\nmsg.shorttopic = msg.topic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.topic + \"/\" + \"value\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 480,
-        "y": 140,
-        "wires": [
-            [
-                "50585779.327488",
-                "6fde1ced.cab524",
-                "be3ebae7.6ed828"
-            ]
-        ]
-    },
-    {
-        "id": "6fde1ced.cab524",
-        "type": "debug",
-        "z": "28c7d530.54db9a",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": true,
-        "tostatus": true,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 790,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "dc909889.782338",
-        "type": "function",
-        "z": "28c7d530.54db9a",
-        "name": "Convert to Influx Friendly Value",
-        "func": "lowertopic = msg.topic\nlowertopic = lowertopic.toLowerCase()\nmsg.payload = [\n    {\n        measurement: lowertopic,\n        fields: {\n            value: Number(msg.payload),\n        },\n        timestamp: new Date()\n    }]\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 530,
-        "y": 580,
-        "wires": [
-            [
-                "294abb40.fafc64",
-                "bd764a32.3d0268"
-            ]
-        ]
-    },
-    {
-        "id": "294abb40.fafc64",
-        "type": "debug",
-        "z": "28c7d530.54db9a",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": true,
-        "tostatus": true,
-        "complete": "topic",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 810,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "bf96e450.75e2c8",
-        "type": "comment",
-        "z": "28c7d530.54db9a",
-        "name": "Send to influxdb",
-        "info": "",
-        "x": 480,
-        "y": 540,
-        "wires": []
-    },
-    {
-        "id": "6da1888c.d76a78",
-        "type": "comment",
-        "z": "28c7d530.54db9a",
-        "name": "Send to MQTT",
-        "info": "",
-        "x": 480,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "be3ebae7.6ed828",
-        "type": "function",
-        "z": "28c7d530.54db9a",
-        "name": "Assemble Config",
-        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n  \"state_topic\": \"homeassistant/sensor/SunSynk\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynk_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"device\": {\n    \"identifiers\": [\n      \"SunSynk\"\n    ],\n    \"name\": \"SunSynk\",\n    \"model\": \"SynSynk\",\n    \"manufacturer\": \"SunSynk\"\n  }  \n}\nif ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n  msg.payload.device_class = msg.deviceclass\n}\nif (msg.unit != \"\") {\n  msg.payload.unit_of_measurement = msg.unit\n}  \nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 280,
-        "wires": [
-            [
-                "cf57d2c1.c918f",
-                "d329b5a1.56bb08"
-            ]
-        ]
-    },
-    {
-        "id": "cf57d2c1.c918f",
-        "type": "mqtt out",
-        "z": "28c7d530.54db9a",
-        "name": "Publish to MQTT",
-        "topic": "",
-        "qos": "",
-        "retain": "true",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "86400",
-        "broker": "f35ad748.1790a8",
-        "x": 1030,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "d329b5a1.56bb08",
-        "type": "debug",
-        "z": "28c7d530.54db9a",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": true,
-        "tostatus": true,
-        "complete": "shorttopic",
-        "targetType": "msg",
-        "statusVal": "payload",
-        "statusType": "auto",
-        "x": 1030,
-        "y": 360,
-        "wires": []
     },
     {
         "id": "3d1decef.134f84",
@@ -4361,18 +4200,6 @@
                 "9e5c4ee2.45a8f"
             ]
         ]
-    },
-    {
-        "id": "bd764a32.3d0268",
-        "type": "influxdb batch",
-        "z": "28c7d530.54db9a",
-        "influxdb": "332d824c.c7d53e",
-        "precision": "",
-        "retentionPolicy": "",
-        "name": "Send to Influx",
-        "x": 820,
-        "y": 580,
-        "wires": []
     },
     {
         "id": "b2a8c602.292988",
@@ -28499,6 +28326,227 @@
         "wires": [
             [
                 "da55077d.0a0a88"
+            ]
+        ]
+    },
+    {
+        "id": "344e004c4f4636b8",
+        "type": "mqtt out",
+        "z": "28c7d530.54db9a",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "false",
+        "broker": "f35ad748.1790a8",
+        "x": 870,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "48b808c0e9dfc11e",
+        "type": "function",
+        "z": "28c7d530.54db9a",
+        "name": "Assemble Value",
+        "func": "//var fulltopic\nmsg.shorttopic = msg.topic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.topic + \"/\" + \"value\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 180,
+        "wires": [
+            [
+                "344e004c4f4636b8",
+                "e83f6c803179065b"
+            ]
+        ]
+    },
+    {
+        "id": "e0349bb8de69783d",
+        "type": "function",
+        "z": "28c7d530.54db9a",
+        "name": "Convert to Influx Friendly Value",
+        "func": "lowertopic = msg.topic\nlowertopic = lowertopic.toLowerCase()\nmsg.payload = [\n    {\n        measurement: lowertopic,\n        fields: {\n            value: Number(msg.payload),\n        },\n        timestamp: new Date()\n    }]\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 570,
+        "y": 620,
+        "wires": [
+            [
+                "cf5a39985ff46faa"
+            ]
+        ]
+    },
+    {
+        "id": "cf5a39985ff46faa",
+        "type": "influxdb batch",
+        "z": "28c7d530.54db9a",
+        "influxdb": "332d824c.c7d53e",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "Send to Influx",
+        "x": 860,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "b78fc5537488ae5b",
+        "type": "comment",
+        "z": "28c7d530.54db9a",
+        "name": "Send to influxdb",
+        "info": "",
+        "x": 520,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "e12729ab475812c7",
+        "type": "comment",
+        "z": "28c7d530.54db9a",
+        "name": "Send to MQTT",
+        "info": "",
+        "x": 520,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e83f6c803179065b",
+        "type": "function",
+        "z": "28c7d530.54db9a",
+        "name": "Assemble Config",
+        "func": "//var fulltopic\nmsg.topic = \"homeassistant/sensor/SunSynk\" + \"/\" + \"/\" + msg.shorttopic + \"/\" + \"config\";\nmsg.topic = msg.topic.replace(\"//\", \"/\");\nmsg.payload = {\n  \"unit_of_measurement\": msg.unit,\n  \"state_topic\": \"homeassistant/sensor/SunSynk\" + \"/\" + msg.shorttopic + \"/\" + \"value\",\n  \"name\": \"SunSynk_\" + msg.shorttopic,\n  \"unique_id\": msg.shorttopic,\n  \"state_class\": msg.state_class,\n  \"last_reset_topic\": \"SunSynk/lastreset\",\n  \"last_reset_value_template\": \"1970-01-01T00:00:00+00:00\",\n   \"device\": {\n    \"identifiers\": [\n      \"SunSynk\"\n    ],\n    \"name\": \"SunSynk\",\n    \"model\": \"SynSynk\",\n    \"manufacturer\": \"SunSynk\"\n  }  \n}\n  if ((msg.deviceclass != \"\") && (msg.deviceclass != \"none\"))  {\n     msg.payload.device_class = msg.deviceclass\n  }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 750,
+        "y": 320,
+        "wires": [
+            [
+                "ba78fe6f833b09f0"
+            ]
+        ]
+    },
+    {
+        "id": "ba78fe6f833b09f0",
+        "type": "mqtt out",
+        "z": "28c7d530.54db9a",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "false",
+        "broker": "f35ad748.1790a8",
+        "x": 1190,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "93139e01ab30139e",
+        "type": "inject",
+        "z": "28c7d530.54db9a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "59 23 * * *",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 510,
+        "y": 458,
+        "wires": [
+            [
+                "9ef01f2ab91b3e14"
+            ]
+        ]
+    },
+    {
+        "id": "32121758bcf3264f",
+        "type": "debug",
+        "z": "28c7d530.54db9a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 558,
+        "wires": []
+    },
+    {
+        "id": "c8a085198f02cc40",
+        "type": "function",
+        "z": "28c7d530.54db9a",
+        "name": "Assemble Config",
+        "func": "//var fulltopic\nmsg.topic = \"SunSynk/lastreset\" \nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 950,
+        "y": 458,
+        "wires": [
+            [
+                "32121758bcf3264f",
+                "c2d8a09ad1464a28"
+            ]
+        ]
+    },
+    {
+        "id": "c2d8a09ad1464a28",
+        "type": "mqtt out",
+        "z": "28c7d530.54db9a",
+        "name": "Publish to MQTT",
+        "topic": "",
+        "qos": "",
+        "retain": "true",
+        "broker": "f35ad748.1790a8",
+        "x": 1190,
+        "y": 458,
+        "wires": []
+    },
+    {
+        "id": "c7fe0ba447eecad2",
+        "type": "comment",
+        "z": "28c7d530.54db9a",
+        "name": "Send to LastReset to MQTT",
+        "info": "",
+        "x": 560,
+        "y": 398,
+        "wires": []
+    },
+    {
+        "id": "9ef01f2ab91b3e14",
+        "type": "moment",
+        "z": "28c7d530.54db9a",
+        "name": "",
+        "topic": "",
+        "input": "",
+        "inputType": "msg",
+        "inTz": "",
+        "adjAmount": 0,
+        "adjType": "days",
+        "adjDir": "add",
+        "format": "",
+        "locale": "",
+        "output": "",
+        "outputType": "msg",
+        "outTz": "",
+        "x": 720,
+        "y": 458,
+        "wires": [
+            [
+                "c8a085198f02cc40"
             ]
         ]
     }
