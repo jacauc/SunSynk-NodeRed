@@ -1747,7 +1747,7 @@
         "z": "ceeb1673.a381f8",
         "name": "Inverter",
         "showStatusActivities": true,
-        "showErrors": false,
+        "showErrors": true,
         "logIOActivities": false,
         "server": "e58adf35.07bda",
         "useIOFile": false,
