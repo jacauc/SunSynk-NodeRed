@@ -3490,6 +3490,13 @@
                 "pt": "msg",
                 "to": "kWh",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "state_class",
+                "pt": "msg",
+                "to": "total_increasing",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -3565,6 +3572,13 @@
                 "pt": "msg",
                 "to": "kWh",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "state_class",
+                "pt": "msg",
+                "to": "total_increasing",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -3639,6 +3653,13 @@
                 "p": "unit",
                 "pt": "msg",
                 "to": "kWh",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "state_class",
+                "pt": "msg",
+                "to": "total_increasing",
                 "tot": "str"
             }
         ],
@@ -3800,6 +3821,13 @@
                 "p": "unit",
                 "pt": "msg",
                 "to": "kWh",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "state_class",
+                "pt": "msg",
+                "to": "total_increasing",
                 "tot": "str"
             }
         ],
