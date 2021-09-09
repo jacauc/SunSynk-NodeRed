@@ -4329,7 +4329,7 @@
         "type": "function",
         "z": "6896d5b1.4a006c",
         "name": "Grid_Total_Load_Calc",
-        "func": "var v3value = flow.get(\"v3value\");\nvar v4value = flow.get(\"v4value\");\nvar total;\n\nif (msg.topic == \"grid_load_calc\") {\n    v1value = msg.payload;\n    flow.set(\"v3value\",msg.payload);\n}else if (msg.topic == \"invrt_total_pwr\"){\n    v2value = msg.payload;\n    flow.set(\"v4value\",msg.payload);\n}\nif (v1value !== undefined && v2value !== undefined) {\n   total = v3value + v4value;\n   msg.payload = total;\n   msg.topic = 'total_load_calc';\n   return msg;\n}\nreturn msg;",
+        "func": "var v3value = flow.get(\"v3value\");\nvar v4value = flow.get(\"v4value\");\nvar v1value;\nvar v2value;\nvar total;\n\nif (msg.topic == \"grid_load_calc\") {\n    v1value = msg.payload;\n    flow.set(\"v3value\",msg.payload);\n}else if (msg.topic == \"invrt_total_pwr\"){\n    v2value = msg.payload;\n    flow.set(\"v4value\",msg.payload);\n}\nif (v1value !== undefined && v2value !== undefined) {\n   total = v3value + v4value;\n   msg.payload = total;\n   msg.topic = 'total_load_calc';\n   return msg;\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
