@@ -1315,20 +1315,6 @@
         "sessionExpiry": ""
     },
     {
-        "id": "332d824c.c7d53e",
-        "type": "influxdb",
-        "hostname": "192.168.1.10",
-        "port": "8086",
-        "protocol": "http",
-        "database": "InverterDB",
-        "name": "Home Assistant Inverter",
-        "usetls": false,
-        "tls": "",
-        "influxdbVersion": "1.x",
-        "url": "",
-        "rejectUnauthorized": false
-    },
-    {
         "id": "185f31e8.09195e",
         "type": "ui_tab",
         "name": "Monitor",
@@ -1683,6 +1669,20 @@
         "order": 2,
         "disabled": false,
         "hidden": false
+    },
+    {
+        "id": "332d824c.c7d53e",
+        "type": "influxdb",
+        "hostname": "192.168.1.10",
+        "port": "8086",
+        "protocol": "http",
+        "database": "InverterDB",
+        "name": "Home Assistant Inverter",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "",
+        "rejectUnauthorized": false
     },
     {
         "id": "33447edd.f55762",
@@ -28402,18 +28402,6 @@
         ]
     },
     {
-        "id": "cf5a39985ff46faa",
-        "type": "influxdb batch",
-        "z": "28c7d530.54db9a",
-        "influxdb": "332d824c.c7d53e",
-        "precision": "",
-        "retentionPolicy": "",
-        "name": "Send to Influx",
-        "x": 860,
-        "y": 620,
-        "wires": []
-    },
-    {
         "id": "b78fc5537488ae5b",
         "type": "comment",
         "z": "28c7d530.54db9a",
@@ -28555,7 +28543,7 @@
     {
         "id": "9ef01f2ab91b3e14",
         "type": "moment",
-        "z": "28c7d530.54db9a",
+        "z": "83f51df8.1b7f6",
         "name": "",
         "topic": "",
         "input": "",
@@ -28576,5 +28564,17 @@
                 "c8a085198f02cc40"
             ]
         ]
+    },
+    {
+        "id": "cf5a39985ff46faa",
+        "type": "influxdb batch",
+        "z": "28c7d530.54db9a",
+        "influxdb": "332d824c.c7d53e",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "Send to Influx",
+        "x": 860,
+        "y": 620,
+        "wires": []
     }
 ]
