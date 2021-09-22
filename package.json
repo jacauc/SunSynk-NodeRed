@@ -8,7 +8,8 @@
         "node-red-contrib-queue-gate": "1.5.3",
         "node-red-contrib-schedex": "1.10.3",
         "node-red-contrib-simple-gate": "0.4.0",
-        "node-red-dashboard": "2.29.1"
+        "node-red-dashboard": "2.29.1",
+        "node-red-contrib-moment": "4.0.0"
     },
     "node-red": {
         "settings": {
