@@ -1,7 +1,7 @@
 SunSynk-NodeRed
 ===============
 
-### About
+Code of Sunsunk Inverter monitoring via Modbus through node-red.
+Credit to @bloubul7
 
-This is your project's README.md file. It helps users understand what your
-project does, how to use it and anything else they may need to know.
+https://powerforum.co.za/topic/8451-sunsynk-inverter-monitoring
