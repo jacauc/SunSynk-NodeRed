@@ -1,6 +1,6 @@
 {
     "name": "SunSynk-NodeRed",
-    "description": "A Node-RED Project",
+    "description": "SunSynk Inverter Monitoring through Node Red and Modbus",
     "version": "0.0.1",
     "dependencies": {
         "node-red-contrib-cycle": "0.1.4",
